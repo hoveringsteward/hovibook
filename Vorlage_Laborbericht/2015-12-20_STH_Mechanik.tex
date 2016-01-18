@@ -19,35 +19,27 @@ Der Rotorschutz umrandet den Propeller, damit dieser im Falle eines Absturzes ni
 Der Ring wird durch die Strebe (rot) gestützt, damit er nicht nach unten abbrechen kann. 
 Durch die großen Abmessungen bzw. der Form, kann der Ring nicht als ein Teil gedruckt werden, er wird dadurch in verschiedene Sektoren unterteilt. Der Ring wird in eine untere und obere Hälfte unterteilt bzw. beide Hälften wieder in zwei Teile. Die einzelnen Glieder werden dann mit Schrauben und Zweikomponentenkleber zusammengefügt. 
 
-\section{Platinen}
-Um das Projekt umsetzen zu können, ist es erforderlich einerseits den Mikroprozessor mit den Sensoren zu verbinden und andererseits die Kommunikation zwischen der Speisekarten-App und dem Hexacopter zu können. 
-Damit diese Funktionen erfüllt werden können, werden zwei Platinen verwendet.
+\section{Halterung des Ultraschallsensors}
+An dem Hexacopter wird ein Ultraschallsensor angebracht, der die Höhe des Copters messen soll, das ist wichtig damit dieser in der richtigen Höhe fliegt. Der Sensor wird mittels einer selbst konstruierten und angefertigten Halterung am Multicopter montiert.
+Bei der Konstruktion der Halterung ist es wichtig, dass sie so leicht wie möglich bzw. einfach anzubringen ist. Die folgenden Abbildungen zeigen die Position bzw. die angefertigte Halltevorrichtung.
 
-Das wichtigsten Bauteilgruppen der Kommunikationsplatine sind das WLAN-Modul, dieses ermöglicht die Kommunikation zwischen der App und dem Hexacopter und der Spannungsregler. Der Spannungsregler sorgt dafür, dass das WLAN-Modul mit 3.3 V versorgt wird und der Rest der Platine mit 5 V.
-Die Hauptplatine beinhaltet ebenso mehrere Bereiche: Den Multiplexer, den Mikroprozessor und die Steckverbindungen für die einzelnen Sensoren.
-Der Multiplexer wechslet zwischen der Steuerung der Flugmodi durch die Fernbedienung oder dem Mikroprozessor.
-
-\begin{figure}[tbh]
+\begin{figure}[htb]
 \begin{centering}
-\includegraphics[width = 100mm]{Bilder/WP_Bottom_Beschriftung}
+\includegraphics[width = 100mm]{Bilder/halterung_ultraschall_creo}
 \par\end{centering}
-\caption{Kommunikationsplatine Unterseite}
-\label{WLAN Platine}
+\caption{Position der Halterung am Hexacopter}
+\label{Halterung des Ultraschallsensor}
 \end{figure}
 
-\begin{figure}[tbh]
+\begin{figure}[htb]
 \begin{centering}
-\includegraphics[width = 100mm]{Bilder/HP_Top_Beschriftung}
+\includegraphics[width = 60mm]{Bilder/halterung_ultraschall_fertig}
 \par\end{centering}
-\caption{Sensorplatine Oberseite}
-\label{Sensor Platine oben}
+\caption{angefertigte Halterung des Ultraschallsensor}
+\label{Halterung des Ultraschallsensor}
 \end{figure}
 
+Die Halterung wurde, wie auch der Rotorschutz, im 3D Drucker angefertigt, da das Material sehr leicht ist und die Form sehr einfach anzufertigen ist. Mittels den drei Laschen, wird das Werkstück an der Centerplate angeklammert.
+Das Material ist so robust, dass man diese weit auseinander dehnen, aber sie sich dann wieder zurückverformen können. 
 
-\begin{figure}[tbh]
-\begin{centering}
-\includegraphics[width=100mm]{Bilder/HP_Bottom_Beschriftung}
-\par\end{centering}
-\caption{Sensorplatine Unterseite}
-\label{Sensor Platine unten}
-\end{figure}
+
