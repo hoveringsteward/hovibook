@@ -128,3 +128,5 @@ sympy-plots-for-*.tex/
 
 ##Large filetypes (pictures etc)
 #*.jpg
+*.png
+*.bmp
