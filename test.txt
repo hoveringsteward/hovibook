@@ -1,4 +1,8 @@
 test1
 test2
 test3
+<<<<<<< HEAD
 test Lucas
+=======
+test4
+>>>>>>> 9ffebcfc757df610c687a63080b3f2d4ff3b3c0a
