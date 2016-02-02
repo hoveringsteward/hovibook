@@ -8,11 +8,11 @@
 
     \subsubsection{PhpStorm}
     
-PhpStorm ist eine integrierte Entwicklungsumgebung für die Programmiersprache PHP, für welche man eine kostenpflichtige Lizenz zur Verwendung benötigt. Diese Entwicklungsumgebung wurde von JetBrains entwickelt und erschien erstmals 2009 auf dem Markt. Zu den besonderen Features von PhpStorm zählen Tools zur Kontrolle der Versionierung, Refaktorisierung, Code- und Syntax-Highlighting. Außerdem unterstützt es PHP-Unit, welches von Symfony verwendet wird und zum Testen von PHP-Skripten dient.
+PhpStorm ist eine integrierte Entwicklungsumgebung fŸr die Programmiersprache PHP, fŸr welche man eine kostenpflichtige Lizenz zur Verwendung benštigt. Diese Entwicklungsumgebung wurde von JetBrains entwickelt und erschien erstmals 2009 auf dem Markt. Zu den besonderen Features von PhpStorm zŠhlen Tools zur Kontrolle der Versionierung, Refaktorisierung, Code- und Syntax-Highlighting. Au§erdem unterstŸtzt es PHP-Unit, welches von Symfony verwendet wird und zum Testen von PHP-Skripten dient.
 
     \subsubsection{Eclipse}
     
-Eclipse, entwickelt von der Eclipse Foundation, ist ein Open Source Programmierwerkzeug. Ursprünglich wurde es als integrierte Entwicklungsumgebung für die Programmiersprache Java entwickelt, heutzutage wird es jedoch auch zur Bewältigung vieler anderer Entwicklungsaufgaben verwendet.
+Eclipse, entwickelt von der Eclipse Foundation, ist ein Open Source Programmierwerkzeug. UrsprŸnglich wurde es als integrierte Entwicklungsumgebung fŸr die Programmiersprache Java entwickelt, heutzutage wird es jedoch auch zur BewŠltigung einiger anderer Entwicklungsaufgaben verwendet.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Backend}
@@ -21,23 +21,40 @@ Eclipse, entwickelt von der Eclipse Foundation, ist ein Open Source Programmierw
 
     \subsubsection{MAMP und XAMPP}
 
+auch zugriff auf mysql erklŠren
+
     \subsubsection{Symfony}
     
-Symfony ist ein Open Source Web Application Framework, welches das Modell-View-Controller-Schema nützt und den Datenbankzugriff mittels einem objektrelationalen Abbild regelt. Durch die Einteilung in Modell, View und Controller, ergibt sich beim Entwickeln einer Web Applikation mithilfe von Symfony eine ordentliche Struktur. Beim Modell kann man zur Speicherung der Objekte Doctrine verwenden, welches als Bibliothek zur objektrelationalen Abbildung dient.Die View-Ebene ist für die visuelle Darstellung der Applikation zuständig. Für die  Darstellung werden meistens Templates miteinbezogen. Symfony unterstützt hierbei die Template Engine Twig. Der Controller verwaltet die visuellen Darstellungen der Applikation und nimmt von ihnen Benutzeraktionen entgegen, wertet diese aus und behandelt sie entsprechend. Außerdem fungiert der Controller als Schnittstelle zwischen Modell und View, was bedeutet, dass er die Daten an die von der einen Schicht zur anderen weiterleitet.
+Symfony ist ein Open Source Web Application Framework, welches das Modell-View-Controller-Schema nŸtzt und den Datenbankzugriff mittels einem objektrelationalen Abbild regelt. Durch die Einteilung in Modell, View und Controller, ergibt sich beim Entwickeln einer Web Applikation mithilfe von Symfony eine ordentliche Struktur. Beim Modell kann man zur Speicherung der Objekte Doctrine verwenden, welches als Bibliothek zur objektrelationalen Abbildung dient.Die View-Ebene ist fŸr die visuelle Darstellung der Applikation zustŠndig. FŸr die  Darstellung werden meistens Templates miteinbezogen. Symfony unterstŸtzt hierbei die Template Engine Twig. Der Controller verwaltet die visuellen Darstellungen der Applikation und nimmt von ihnen Benutzeraktionen entgegen, wertet diese aus und behandelt sie entsprechend. Au§erdem fungiert der Controller als Schnittstelle zwischen Modell und View, was bedeutet, dass er die Daten an die von der einen Schicht zur anderen weiterleitet.
 
     \subsubsection{Doctrine}
 
+Was ist Doctrine?
+bissl Codeschnipsel
+
     \subsubsection{ER-Modell}
+
+hier kommt dann ein Screenshot von ER-Modell hin + ErklŠrung pks und fks
 
   \subsection{Umsetzung}
   
     \subsubsection{Framework einrichten}
 
+Terminalbefehle + ErklŠrung
+
     \subsubsection{Datenbankgenerierung}
+
+Was ich in config.yml und param.yml eingegeben habe
+wie das schema meiner db mit code  first durch doctrine ausschaut
 
     \subsubsection{Datenzugriff}
 
-  \subsection{Herausforderungen und LÃ¶sungen}
+zugriff mit controller
+
+  \subsection{Herausforderungen und Lšsungen}
+
+fk deklarierung
+symfony cache lšschen
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Frontend}
@@ -46,18 +63,36 @@ Symfony ist ein Open Source Web Application Framework, welches das Modell-View-C
 
     \subsubsection{Bootstrap}
 
+was ist bootstrap? wieso bootstrap? durch klassen layout designen
+
     \subsubsection{Sass}
+
+was ist sass? sass mit bootstrap? 
+durch Šndern der klassenvariablen layout angepasst
 
     \subsubsection{Gulp}
 
+was ist gulp? wieso gulp und nicht grunt? -> weil gulp schneller
+
     \subsubsection{Twig}
 
+was macht twig? codeschnipsel?
+
     \subsubsection{Screen Mockups}
+
+bilder von screenmockups & weshalb schaun sie so aus, aspekte aus designerperspektve aufzŠhlen -> usability
 
   \subsection{Umsetzung}
 
     \subsubsection{Layout}
 
+Bilder von entgŸltigen screens
+bissl was von sass und bootstrap bzw. gulp erklŠren -> terminal befehle (code nicht, da er eh auf der cd sein wird)
+
     \subsubsection{Formulargenerierung}
 
+controller & twig
+
     \subsubsection{Datenausgabe}
+
+twig daten holen von controller 
