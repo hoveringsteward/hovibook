@@ -33,20 +33,20 @@ Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches üb
 
       Bei einer Messung derart schneller Signale muss ein hoher Aufwand betrieben werden um eine Messgenauigkeit von einigen cm zu erzielen. Eine weitere Herausforderung sind Mauern \bzw Hindernisse. Hier muss ständig berücksichtigt werden wo ein Objekt steht und ob der geplante Weg überhaupt frei ist.
       \item \textbf{Relative Positionsmessung}\\
-      Hier wird die Position von einem wechselnden Punkt aus gemessen. Um hier eine Positionierung im Raum ermöglichen zu können, ist es erforderlich immer zu einem bestimmten Punkt zu messen. Ein Wechsel dieses Punktes ist jedoch möglich, deshalb muss auch die Position der Punkte im Raum bekannt sein. Ist die Zielposition im Raum bekannt kann zu dieser hinnavigiert werden. Auch hier muss wie bei einer absoluten Positionsmessung auf Hindernisse geachtet werden.
+      Hier wird die Position von einem wechselnden Punkt aus gemessen. Um hier eine Positionierung im Raum ermöglichen zu können, ist es erforderlich immer zu einem bestimmten Punkt zu messen. Ein Wechsel dieses Punktes ist jedoch möglich, deshalb muss auch die Position der Punkte im Raum bekannt sein. Ist die Zielposition im Raum bekannt kann zu dieser hin navigiert werden. Auch hier muss wie bei einer absoluten Positionsmessung auf Hindernisse geachtet werden.
 
       Die zweite Alternative ist, dass eine bestimmte Route bekannt ist und sich das zu positionierende Objekt nur in einem bestimmten Bereich um diese Route bewegt. Wird bei der Positionierung der Route bereits auf Hindernisse geachtet müssen diese im Anschluss nicht mehr zwingend beachtet werden.
     \end{itemize}
 
   \subsection{Umsetzung}
-  Durch die PIXY CMUcam5 lässt sich eine relative Positionsmessung vergleichsweise einfach verwirklichen. Werden ein oder mehrer Objekte erkannt wird eine bestimmte Nummer (abhängig von der Farbe) sowie die Position am Bild und die Objektgröße übermittelt. Die Kamera arbeitet dabei mit einer Bildwiederholreate von 50 Hz, es ist also alle 20 ms eine Auswertung möglich.
+  Durch die PIXY CMUcam5 lässt sich eine relative Positionsmessung vergleichsweise einfach verwirklichen. Werden ein oder mehrere Objekte erkannt wird eine bestimmte Nummer (abhängig von der Farbe) sowie die Position am Bild und die Objektgröße übermittelt. Die Kamera arbeitet dabei mit einer Bildwiederholrate von 50 Hz, es ist also alle 20 ms eine Auswertung möglich.
 
-  Die Kamera wird auf dem Hexacopter befestigt, mehrere Farbcodes kennzeichen den Weg zu einem Tisch. Um an dieser Stelle eine Navigation zu erreichen wirde der Hexacopter so gesteuert, dass er, abhängig von der Route, immer einen bestimmten Farbcode betrachtet, ist er über diesem sucht er den nächsten.
+  Die Kamera wird auf dem Hexacopter befestigt, mehrere Farbcodes kennzeichnen den Weg zu einem Tisch. Um an dieser Stelle eine Navigation zu erreichen wird der Hexacopter so gesteuert, dass er, abhängig von der Route, immer einen bestimmten Farbcode betrachtet, ist er über diesem sucht er den nächsten.
 
     \subsubsection{SPI Schnittstelle}
-    Als Schnitstelle für die Kommunikation mit der Kamera wird eine SPI-Schnitstelle verwendet. Die Kamera selbst unterstützt unter anderem die seriellen Schnitstellen UART, I2C und SPI. Außerdem werden noch ein analoger und digitaler Output unterstütz, diese sind jedoch vergleichsweise beschränkt, da keine näheren Informationen zu dem Objekt übermittelt werden können sondern nur die Position \bzw ob überhaupt ein Objekt erkannt wurde.
+    Als Schnittstelle für die Kommunikation mit der Kamera wird eine SPI-Schnittstelle verwendet. Die Kamera selbst unterstützt unter anderem die seriellen Schnittstellen UART, I2C und SPI. Außerdem werden noch ein analoger und digitaler Output unterstütz, diese sind jedoch vergleichsweise beschränkt, da keine näheren Informationen zu dem Objekt übermittelt werden können sondern nur die Position \bzw ob überhaupt ein Objekt erkannt wurde.
 
-    Die SPI-Schnitstelle ist bei der Kamera besonders ausfallsicher. Hier wird ein Synchronisationsbyte gefordert, wird dieses nicht erkannt, \zB aufgrund eines Fehlers in der Datenübertragung, schickt die Kamera keine Daten.
+    Die SPI-Schnittstelle ist bei der Kamera besonders ausfallsicher. Hier wird ein Synchronisationsbyte gefordert, wird dieses nicht erkannt, \zB aufgrund eines Fehlers in der Datenübertragung, schickt die Kamera keine Daten.
 
     \paragraph{Überprüfen der SPI-Schnitstelle}
     Um zu überprüfen ob die SPI-Schnittstelle auch korrekt arbeitet wird bei der ersten Inbetriebnahme der Output überprüft. Hierzu wird der Zustand der 3 Leitungen mit einem Oszilloskop betrachtet.
@@ -59,7 +59,7 @@ Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches üb
     \begin{figure}[tbh]
       \begin{centering}
         \subfigure[Großer Zeitbereich]{\includegraphics[width = 0.49\textwidth]{Bilder/SPI_gross}}
-        \subfigure[Kleiner Zeitbreich]{\includegraphics[width = 0.49\textwidth]{Bilder/SPI_klein}}
+        \subfigure[Kleiner Zeitbereich]{\includegraphics[width = 0.49\textwidth]{Bilder/SPI_klein}}
       \par\end{centering}
       \caption{Ausgang der SPI Schnittstelle}
       \label{SPI-Ausgang}
@@ -69,7 +69,7 @@ Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches üb
     Der Dateneingang des PIC, respektive der Ausgang der Kamera, zeigt eine deutliche Störung durch die Taktleitung an.
 
     \subsubsection{Erkennen und Auswerten eines Bildes}
-    Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung die ein neues Bild markiert. Mit den diversen Informationen zum Objekt ergbeben sich folgende Daten:
+    Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung die ein neues Bild markiert. Mit den diversen Informationen zum Objekt ergeben sich folgende Daten:
     \begin{itemize}
       \item Neues Bild 0xAA55
       \item Objekt 0xAA55 oder Farbcode 0xAA56
@@ -83,9 +83,9 @@ Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches üb
     \end{itemize}
     Dabei ist die Objektnummer von den im Objekt oder Farbcode vorkommenden Farben abhängig, zusätzlich ist zu beachten, dass sie oktal dargestellt wird. Ein übermittelter Wert von dezimal 10, also oktal 12, bedeutet, dass die Farben 1 und 2 erkannt wurden.
 
-    Will man nun ein neues Bild finden muss man so lange nach 0xAA55 suchen bis man diese Daten gesendet bekommt. Anschließend gilt es noch festzustellen ob man einen Farbcode oder ein Obkekt betrachtet, es muss also direkt darauf 0xAA56 oder nochmals 0xAA55 erkannt werden. Ist dies nicht der Fall, wurde kein neues Bild erkannt und man betrachtet ein normales Obkjekt.
+    Will man nun ein neues Bild finden muss man so lange nach 0xAA55 suchen bis man diese Daten gesendet bekommt. Anschließend gilt es noch festzustellen ob man einen Farbcode oder ein Objekt betrachtet, es muss also direkt darauf 0xAA56 oder nochmals 0xAA55 erkannt werden. Ist dies nicht der Fall, wurde kein neues Bild erkannt und man betrachtet ein normales Objekt.
 
-    Betrachtet man nun die bis zum erkennen eines neuen Bildes gesendeten Daten als gegenstandslos ergibt sich eine vergleichsweise einfache Schleife um ein Bild zu erkennen.
+    Betrachtet man nun die bis zum Erkennen eines neuen Bildes gesendeten Daten als gegenstandslos ergibt sich eine vergleichsweise einfache Schleife um ein Bild zu erkennen.
 
     \lstset{language = c}
     \begin{lstlisting}
@@ -112,7 +112,7 @@ while(frame == 0) {
     Um nicht ewig in dieser Schleife fest zu hängen, wenn kein Bild erkannt wird und einen Fehler auslösen zu können wird die gesamte Funktion der Bildauswertung nach 255 Versuchen verlassen.
 
     Die weiteren Werte eines Objekts werden der Reihe nach in einer Structur abgespeichert, hier ist nichts besonderes mehr zu beachten.
-    
+
   \subsection{Herausforderungen und Lösungen}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
