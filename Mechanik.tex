@@ -63,22 +63,80 @@
 			\label{stl_file_optionen}
 			\end{figure}
 
-			Mit diesem File kann man anschließend in Programmen wie Slic3r den gewünschten Maschinencode generieren lassen.
-			In diesen Programmen gibt man die Lage des Werkstückes an \bzw in genaueren Einstellungen auch die Temperatur des Druckbettes, den Geschwindigkeiten und ähnliche Konfigurationen.
+		Mit diesem File kann man anschließend in Programmen wie Slic3r den gewünschten Maschinencode generieren lassen.
+		In diesen Programmen gibt man die Lage des Werkstückes an \bzw in genaueren Einstellungen auch die Temperatur des Druckbettes, den Geschwindigkeiten und ähnliche Konfigurationen.
 
-			Am häufigsten haben die Drucker eine USB Schnittstelle, \bzw verfügen über einen SD Karten Slot.
-			Der Maschinencode wird auf diesen Speichermedien gespeichert und einfach auf den Drucker überspielt.
+		Am häufigsten haben die Drucker eine USB Schnittstelle, \bzw verfügen über einen SD Karten Slot.
+		Der Maschinencode wird auf diesen Speichermedien gespeichert und einfach auf den Drucker überspielt.
 
 
 \section{Halterung für Cupcakes}
 
-	\subsection{Technische Planung}
+		\subsection{Technische Planung}
+
+		Die Diplomarbeit hat sich speziell auf den Transport von Cupcakes präzisiert, um diesen sicher transportieren zu können, ist es notwendig eine Halterung zu konzipieren.
+		Diese Halterung soll möglichst leicht und nicht zu kompliziert zu montieren sein.
+		Der Akku wurde an der Unterseite des Hexacopters befestigt, daher war es nur mehr möglich die Halterung an der oberen Centerplate zu platzieren.
+		Damit der Multicopter möglichst ausgewogen ist, muss sich das zu transportierende Objekt in der Mitte befinden. Die Idee war es daher, den Cupcake mit einer Halterung zu umranden, damit er nicht verrutschen kann.
+		Die Geometrie der Platte \bzw die Größe des Objektes hat die Befestigungsmöglichkeiten stark eingeschränkt (siehe Abbildung \ref{platte_cupcake}).
+
+			\begin{figure}[tbh]
+			\begin{centering}
+			\includegraphics[width = 0.5\textwidth]{Bilder/platte_cupcake}
+			\par\end{centering}
+			\caption{Position Cupcake}
+			\label{platte_cupcake}
+			\end{figure}
+
+		Damit der Cupcake optimal gehalten wird, sollten Stützen entwickelt werden, die in den inneren Rillen der Centerplate befestigt werden.
+		Diese Stützen liegen direkt an der Form des Desserts an, um es gegen Verrutschen zu sichern. Die Umsetzung der Planung wird in dem folgenden Punkt erklärt.
+
+			\newpage
 
 	\subsection{Umsetzung}
 
+	Wie schon in der technischen Planung erwähnt wurde, sollte das Objekt von Stützen umrandet werden. Die inneren Ausnehmungen der oberen Centerplate haben sich optimal angeboten, da diese zu der Form des Cupcake reichen.
+	Es wurden Stützen konstruiert, die in den Ausnehmungen fixiert werden können und sich direkt an das Dessert anpassen. Die folgenden Abbildungen zeigen die konstruierten Halterungsstutzen und ihre Fixiermöglichkeit.
+
+	\begin{figure}[H]
+	  \begin{centering}
+	    \subfigure[Halterung Cupcake oben]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_cupcake_oben_grosz}}
+	    \subfigure[Halterung Cupcake unten]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_cupcake_unten_grosz}} %%%%%%%%%Objekt statt Colorcode
+	  \par\end{centering}
+	  \caption{Halterung Cupcake}
+	  \label{Halterung_Cupcake}
+	\end{figure}
+
+	Die Stützen wurden so entworfen, dass sie sich dem Radius \bzw der Höhe der Form des Cupcake anpassen. Die Höhe der Halterung wurde so gewählt, dass etwa die Hälfte der Cupcakeform frei liegt.
+	Das soll vermeiden, dass man sich die Finger an der Creme schmutzig machen muss.
+
+	Die Halterung wird mittels Sechskantmutter \bzw Zylinderkopfschrauben festgeschraubt. Aufgrund dessen, dass die Muttern zwischen den zwei Centerplates befestigt werden müssen, wurden die \textcolor{red}{roten} Mutternhalter konstruiert.
+	Diese sollen verhindern, dass sich die Muttern beim Festschrauben der Schrauben mitdrehen. Durch diese Halterungen muss man die Muttern nicht mit den Fingern oder einem Gabelschlüssel festhalten.
+	Da der Platz sehr begrenzt ist, überlappen sich die zwei Schrauben \bzw die Muttern, aufgrund dieses Problems wurden Höhenunterschiede zwischen den Schraubenköpfen \bzw der Sechskantmuttern eingeplant.
+
+		\newpage
+
 	\subsection{Herausforderungen und Lösungen}
 
-	%\subsection{Implementierung}
+	Die größte Herausforderung am Konstruieren war es, die Halterung exakt an die Form des Cupcakes anzupassen. Die Rundung in der Halterung sollte genau an die Kegelform des Cupcakes passen.
+	Um dieses Problem zu lösen, wurde der exakte Mittelpunkt der Centerplate ermittelt. Von diesem Mittelpunkt aus, wurden dann alle Maße gemessen, die benötigt wurden.
+	Der Durchmesserverlauf der Form wurde mit Winkelfunktionen errechnet und dann an die Halterung angepasst.
+
+	Wie schon erwähnt, war der Platz für Befestigungsschrauben sehr eingeschränkt. Die großen Toleranzen des Druckers haben die Konstruktion sehr beeinflusst.
+	Da manche Bohrungen nur sehr dünne Wände haben, brachen diese beim Drucken ein oder wurden nur sehr grob gefertigt. Die folgende Abbildung zeigt die Halterungen an dem Hexacopter befestigt.
+
+		\begin{figure}[tbh]
+		\begin{centering}
+		\includegraphics[width = 0.65\textwidth]{Bilder/halterung_cupcake_fertig}
+		\par\end{centering}
+		\caption{Gedruckte Halterungssystem}
+		\label{halterung_cupcake_fertig}
+		\end{figure}
+
+		Wie man an manchen Stellen der Stützen erkennen kann, sind die Wände leicht eigerissen, jedoch kann man dies nicht verhindern.
+		Die Langlöcher der Centerplate sind nur so kurz, dass man die Schrauben nicht weiter nach hinten versetzen kann, um die Wände dicker machen zu können.
+
+		%\subsection{Implementierung}
 
 \section{Rotorschutz}
 
