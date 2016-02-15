@@ -116,9 +116,20 @@ while(frame == 0) {
   \subsection{Herausforderungen und Lösungen}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ultraschall}
+\section{Ultraschallsensor HC-SR04}
+Der Ultrschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abstände zu messen. Die Messung geschieht durch das Aussenden von Ultraschallimpulsen, die Messgröße wird dabei als laufzeitabhängiger Impuls retourniert.
+
+\begin{figure}[tbh]
+  \begin{centering}
+    \includegraphics[width = 0.5\textwidth]{Bilder/Ultraschallsensor}
+  \par\end{centering}
+  \caption{Ultraschallsensor HC-SR04}
+  \label{Ultraschallsensor}
+\end{figure}
 
   \subsection{Technische Planung}
+  Für die Steuerung des Hexacopter ist es notwendig die aktuelle Flughöhe zu wissen. Es ist mit einer bekannten Objektgröße und den von der Kamera vorliegenden Daten zwar möglich die aktuelle FLughöhe rechnerisch zu bestimmen, jedoch gestaltet sich dies sehr rechenaufwändig. Um die Höhe möglichst einfach messen zu können bietet sich daher eine vergleichsweise langsame Messung wie jene mit einem Ultraschallsignal an.
+  Bei einer Schallgeschwindigkeit von $343$ $\frac{m}{s}$ entstehen bei einer zu messenden Distanz von $2$ $m$ Laufzeiten des Ultraschallsignals von \ca $12$ $ms$ (Distanz mal 2 da das Signal wieder zurückkehren muss).
 
   \subsection{Umsetzung}
 
