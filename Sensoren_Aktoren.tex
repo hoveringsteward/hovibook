@@ -128,11 +128,41 @@ Der Ultrschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abständ
 \end{figure}
 
   \subsection{Technische Planung}
-  Für die Steuerung des Hexacopter ist es notwendig die aktuelle Flughöhe zu wissen. Es ist mit einer bekannten Objektgröße und den von der Kamera vorliegenden Daten zwar möglich die aktuelle FLughöhe rechnerisch zu bestimmen, jedoch gestaltet sich dies sehr rechenaufwändig. Um die Höhe möglichst einfach messen zu können bietet sich daher eine vergleichsweise langsame Messung wie jene mit einem Ultraschallsignal an.
-  Bei einer Schallgeschwindigkeit von $343$ $\frac{m}{s}$ entstehen bei einer zu messenden Distanz von $2$ $m$ Laufzeiten des Ultraschallsignals von \ca $12$ $ms$ (Distanz mal 2 da das Signal wieder zurückkehren muss).
+  Für die Steuerung des Hexacopter ist es notwendig die aktuelle Flughöhe zu wissen. Es ist mit einer bekannten Objektgröße und den von der Kamera vorliegenden Daten zwar möglich die aktuelle Flughöhe rechnerisch zu bestimmen, jedoch gestaltet sich dies sehr rechenaufwändig. Um die Höhe möglichst einfach messen zu können bietet sich daher eine vergleichsweise langsame Messung wie jene mit einem Ultraschallsignal an.
+  Bei einer Schallgeschwindigkeit von $343\,\frac{m}{s}$ entstehen bei einer zu messenden Distanz von $2\,m$ Laufzeiten des Ultraschallsignals von \ca $12\,ms$ (Distanz mal 2 da das Signal wieder zurückkehren muss).
 
   \subsection{Umsetzung}
+  Abhängig von der mit dem Mikroprozessor ermittelten Laufzeit $time_height$ lässt sich jederzeit die aktuelle Flughöhe bestimmen.
+  \[
+  s(time\_height) = \frac{v \cdot t}{2} = \frac{343 \cdot time\_height}{2}
+  \]
+  Die Höhe wird dabei in der main-Routine durch den Aufruf folgender Funktionen regelmäßig bestimmt:
+  \lstset{language = c}
+  \begin{lstlisting}
+void StartHeightMeasure(void) {
+  TMR5L = 0;
+  TMR5H = 0;
+  Trigger = 0;
+}
 
+void ReadHeight(void) {
+  while(TMR5GIF == 0);
+  TMR5GIF = 0;
+  time_height = 0;
+  time_height = TMR5H;
+  time_height <<= 8;
+  time_height |= TMR5L;
+  TMR5L = 0;
+  TMR5H = 0;
+  a_frame[0].height = time_height;
+  a_frame_dif[0].dif_height = a_frame[1].height - a_frame[0].height;
+  Trigger = 1;
+}
+  \end{lstlisting}
+
+  In der ersten Funktion wird die Messung gestartet. Dazu wird ein Triggersignal an den Ultraschallsensor gesendet, dieser reagiert auf eine fallende Flanke. Zuvor wird darafu geachtet, dass die Register in denen die Zeit zurückgegeben wird auch wirklich leer (= 0) sind.
+  In der zweiten Funktion folgt das Auslesen der vorhandenen Daten. Dazu werden die zwei 8 Bit Register in der 16 Bit Variable time_height abgespeichert. Zusätzlich wird die gemessene Höhe für die Auswertung in der a_frame[0].height variable abgespeichert und die Differenz zur vorhergehenden Messung ermittelt.
+  Auf eine Berechnung der genauen Höhe in wird zu gunsten der Verarbeitungszeit verzichtet, für die spätere Auswertung der Flugdaten hat dies keinen Einfluss.
     \subsubsection{Bestimmen der Flughöhe}
 
   \subsection{Herausforderungen und Lösungen}
