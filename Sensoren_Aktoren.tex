@@ -3,7 +3,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Pixy CMUcam5}
-Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches über eine Objekterkennung verfügt. Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkennen.
+Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches über eine Objekterkennung verfügt.
+Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkennen.
 
 \begin{figure}[H]
   \begin{centering}
@@ -27,29 +28,47 @@ Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches üb
     Hier muss grundsätzlich zwischen zwei Messmethoden unterschieden werden:
     \begin{itemize}
       \item \textbf{Absolute Positionsmessung}\\
-      Hier wird die Postion von einem gleichbleibenden Punkt aus gemessen. Dabei ist ein konstanter Referenzpunkt wichtig. Verändert sich dieser oder kann die Distanz nicht genau gemessen werden ist die Messung unbrauchbar.
+      Hier wird die Postion von einem gleichbleibenden Punkt aus gemessen. Dabei ist ein konstanter Referenzpunkt wichtig.
+      Verändert sich dieser oder kann die Distanz nicht genau gemessen werden ist die Messung unbrauchbar.
 
-      Für eine absolute Positionsmessung bieten sich diverse Triangulationsverfahren an, diese sind ausgesprochen rechenaufwändig und benötigen meist eine sehr genaue Laufzeitmessung. Für die Triangulation können die unterschiedlichsten Signale verwendet werden, am gängigsten sind jedoch jene die mit elektromagnetischen Wellen arbeiten, \zB WLAN, Bluetooth. Dies bedeutet, dass sich die Signale mit Lichtgeschwindigkeit ausbreiten.
+      Für eine absolute Positionsmessung bieten sich diverse Triangulationsverfahren an,
+      diese sind ausgesprochen rechenaufwändig und benötigen meist eine sehr genaue Laufzeitmessung.
+      Für die Triangulation können die unterschiedlichsten Signale verwendet werden, am gängigsten sind jedoch jene die mit elektromagnetischen Wellen arbeiten,
+      \zB WLAN, Bluetooth. Dies bedeutet, dass sich die Signale mit Lichtgeschwindigkeit ausbreiten.
 
-      Bei einer Messung derart schneller Signale muss ein hoher Aufwand betrieben werden um eine Messgenauigkeit von einigen cm zu erzielen. Eine weitere Herausforderung sind Mauern \bzw Hindernisse. Hier muss ständig berücksichtigt werden wo ein Objekt steht und ob der geplante Weg überhaupt frei ist.
+      Bei einer Messung derart schneller Signale muss ein hoher Aufwand betrieben werden um eine Messgenauigkeit von einigen cm zu erzielen.
+      Eine weitere Herausforderung sind Mauern \bzw Hindernisse. Hier muss ständig berücksichtigt werden wo ein Objekt steht und ob der geplante Weg überhaupt frei ist.
       \item \textbf{Relative Positionsmessung}\\
-      Hier wird die Position von einem wechselnden Punkt aus gemessen. Um hier eine Positionierung im Raum ermöglichen zu können, ist es erforderlich immer zu einem bestimmten Punkt zu messen. Ein Wechsel dieses Punktes ist jedoch möglich, deshalb muss auch die Position der Punkte im Raum bekannt sein. Ist die Zielposition im Raum bekannt kann zu dieser hin navigiert werden. Auch hier muss wie bei einer absoluten Positionsmessung auf Hindernisse geachtet werden.
+      Hier wird die Position von einem wechselnden Punkt aus gemessen. Um hier eine Positionierung im Raum ermöglichen zu können,
+      ist es erforderlich immer zu einem bestimmten Punkt zu messen. Ein Wechsel dieses Punktes ist jedoch möglich,
+      deshalb muss auch die Position der Punkte im Raum bekannt sein. Ist die Zielposition im Raum bekannt kann zu dieser hin navigiert werden.
+      Auch hier muss wie bei einer absoluten Positionsmessung auf Hindernisse geachtet werden.
 
-      Die zweite Alternative ist, dass eine bestimmte Route bekannt ist und sich das zu positionierende Objekt nur in einem bestimmten Bereich um diese Route bewegt. Wird bei der Positionierung der Route bereits auf Hindernisse geachtet müssen diese im Anschluss nicht mehr zwingend beachtet werden.
+      Die zweite Alternative ist, dass eine bestimmte Route bekannt ist und sich das zu positionierende Objekt nur in einem bestimmten Bereich um diese Route bewegt.
+      Wird bei der Positionierung der Route bereits auf Hindernisse geachtet müssen diese im Anschluss nicht mehr zwingend beachtet werden.
     \end{itemize}
 
   \subsection{Umsetzung}
-  Durch die PIXY CMUcam5 lässt sich eine relative Positionsmessung vergleichsweise einfach verwirklichen. Werden ein oder mehrere Objekte erkannt wird eine bestimmte Nummer (abhängig von der Farbe) sowie die Position am Bild und die Objektgröße übermittelt. Die Kamera arbeitet dabei mit einer Bildwiederholrate von 50 Hz, es ist also alle 20 ms eine Auswertung möglich.
+  Durch die PIXY CMUcam5 lässt sich eine relative Positionsmessung vergleichsweise einfach verwirklichen.
+  Werden ein oder mehrere Objekte erkannt wird eine bestimmte Nummer (abhängig von der Farbe) sowie die Position am Bild und die Objektgröße übermittelt.
+  Die Kamera arbeitet dabei mit einer Bildwiederholrate von 50 Hz, es ist also alle 20 ms eine Auswertung möglich.
 
-  Die Kamera wird auf dem Hexacopter befestigt, mehrere Farbcodes kennzeichnen den Weg zu einem Tisch. Um an dieser Stelle eine Navigation zu erreichen wird der Hexacopter so gesteuert, dass er, abhängig von der Route, immer einen bestimmten Farbcode betrachtet, ist er über diesem sucht er den nächsten.
+  Die Kamera wird auf dem Hexacopter befestigt, mehrere Farbcodes kennzeichnen den Weg zu einem Tisch.
+  Um an dieser Stelle eine Navigation zu erreichen wird der Hexacopter so gesteuert, dass er, abhängig von der Route,
+  immer einen bestimmten Farbcode betrachtet, ist er über diesem sucht er den nächsten.
 
     \subsubsection{SPI Schnittstelle}
-    Als Schnittstelle für die Kommunikation mit der Kamera wird eine SPI-Schnittstelle verwendet. Die Kamera selbst unterstützt unter anderem die seriellen Schnittstellen UART, I2C und SPI. Außerdem werden noch ein analoger und digitaler Output unterstütz, diese sind jedoch vergleichsweise beschränkt, da keine näheren Informationen zu dem Objekt übermittelt werden können sondern nur die Position \bzw ob überhaupt ein Objekt erkannt wurde.
+    Als Schnittstelle für die Kommunikation mit der Kamera wird eine SPI-Schnittstelle verwendet.
+    Die Kamera selbst unterstützt unter anderem die seriellen Schnittstellen UART, I2C und SPI.
+    Außerdem werden noch ein analoger und digitaler Output unterstütz, diese sind jedoch vergleichsweise beschränkt,
+    da keine näheren Informationen zu dem Objekt übermittelt werden können sondern nur die Position \bzw ob überhaupt ein Objekt erkannt wurde.
 
-    Die SPI-Schnittstelle ist bei der Kamera besonders ausfallsicher. Hier wird ein Synchronisationsbyte gefordert, wird dieses nicht erkannt, \zB aufgrund eines Fehlers in der Datenübertragung, schickt die Kamera keine Daten.
+    Die SPI-Schnittstelle ist bei der Kamera besonders ausfallsicher. Hier wird ein Synchronisationsbyte gefordert, wird dieses nicht erkannt,
+    \zB aufgrund eines Fehlers in der Datenübertragung, schickt die Kamera keine Daten.
 
     \paragraph{Überprüfen der SPI-Schnitstelle}
-    Um zu überprüfen ob die SPI-Schnittstelle auch korrekt arbeitet wird bei der ersten Inbetriebnahme der Output überprüft. Hierzu wird der Zustand der 3 Leitungen mit einem Oszilloskop betrachtet.
+    Um zu überprüfen ob die SPI-Schnittstelle auch korrekt arbeitet wird bei der ersten Inbetriebnahme der Output überprüft.
+    Hierzu wird der Zustand der 3 Leitungen mit einem Oszilloskop betrachtet.
     \begin{itemize}
       \item \textcolor{blue}{Taktleitung}
       \item \textcolor{red}{Dateneingang (PIC)}
@@ -65,11 +84,13 @@ Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches üb
       \label{SPI-Ausgang}
     \end{figure}
 
-    Der Wert mit dem diese Überprüfung durchgeführt wird sollte möglichst variabel sein, hier wird 0xAA (1010 1010) verwendet. Wird dieser Wert nicht variabel angenommen kann es dazu kommen, dass fälschlicher Weise angenommen wird, dass die Übertragung korrekt ist.
+    Der Wert mit dem diese Überprüfung durchgeführt wird sollte möglichst variabel sein, hier wird 0xAA (1010 1010) verwendet.
+    Wird dieser Wert nicht variabel angenommen kann es dazu kommen, dass fälschlicher Weise angenommen wird, dass die Übertragung korrekt ist.
     Der Dateneingang des PIC, respektive der Ausgang der Kamera, zeigt eine deutliche Störung durch die Taktleitung an.
 
     \subsubsection{Erkennen und Auswerten eines Bildes}
-    Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung die ein neues Bild markiert. Mit den diversen Informationen zum Objekt ergeben sich folgende Daten:
+    Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung die ein neues Bild markiert.
+    Mit den diversen Informationen zum Objekt ergeben sich folgende Daten:
     \begin{itemize}
       \item Neues Bild 0xAA55
       \item Objekt 0xAA55 oder Farbcode 0xAA56
@@ -81,9 +102,12 @@ Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches üb
       \item Höhe
       \item Drehwinkel, nur bei Farbcodes
     \end{itemize}
-    Dabei ist die Objektnummer von den im Objekt oder Farbcode vorkommenden Farben abhängig, zusätzlich ist zu beachten, dass sie oktal dargestellt wird. Ein übermittelter Wert von dezimal 10, also oktal 12, bedeutet, dass die Farben 1 und 2 erkannt wurden.
+    Dabei ist die Objektnummer von den im Objekt oder Farbcode vorkommenden Farben abhängig, zusätzlich ist zu beachten, dass sie oktal dargestellt wird.
+    Ein übermittelter Wert von dezimal 10, also oktal 12, bedeutet, dass die Farben 1 und 2 erkannt wurden.
 
-    Will man nun ein neues Bild finden muss man so lange nach 0xAA55 suchen bis man diese Daten gesendet bekommt. Anschließend gilt es noch festzustellen ob man einen Farbcode oder ein Objekt betrachtet, es muss also direkt darauf 0xAA56 oder nochmals 0xAA55 erkannt werden. Ist dies nicht der Fall, wurde kein neues Bild erkannt und man betrachtet ein normales Objekt.
+    Will man nun ein neues Bild finden muss man so lange nach 0xAA55 suchen bis man diese Daten gesendet bekommt.
+    Anschließend gilt es noch festzustellen ob man einen Farbcode oder ein Objekt betrachtet,
+    es muss also direkt darauf 0xAA56 oder nochmals 0xAA55 erkannt werden. Ist dies nicht der Fall, wurde kein neues Bild erkannt und man betrachtet ein normales Objekt.
 
     Betrachtet man nun die bis zum Erkennen eines neuen Bildes gesendeten Daten als gegenstandslos ergibt sich eine vergleichsweise einfache Schleife um ein Bild zu erkennen.
 
@@ -109,7 +133,8 @@ while(frame == 0) {
   }
 }
     \end{lstlisting}
-    Um nicht ewig in dieser Schleife fest zu hängen, wenn kein Bild erkannt wird und einen Fehler auslösen zu können wird die gesamte Funktion der Bildauswertung nach 255 Versuchen verlassen.
+    Um nicht ewig in dieser Schleife fest zu hängen, wenn kein Bild erkannt wird und einen Fehler auslösen zu können wird die gesamte Funktion der Bildauswertung
+    nach 255 Versuchen verlassen.
 
     Die weiteren Werte eines Objekts werden der Reihe nach in einer Structur abgespeichert, hier ist nichts besonderes mehr zu beachten.
 
@@ -117,7 +142,8 @@ while(frame == 0) {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ultraschallsensor HC-SR04}
-Der Ultrschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abstände zu messen. Die Messung geschieht durch das Aussenden von Ultraschallimpulsen, die Messgröße wird dabei als laufzeitabhängiger Impuls retourniert.
+Der Ultrschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abstände zu messen. Die Messung geschieht durch das Aussenden von Ultraschallimpulsen,
+die Messgröße wird dabei als laufzeitabhängiger Impuls retourniert.
 
 \begin{figure}[tbh]
   \begin{centering}
@@ -128,13 +154,17 @@ Der Ultrschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abständ
 \end{figure}
 
   \subsection{Technische Planung}
-  Für die Steuerung des Hexacopter ist es notwendig die aktuelle Flughöhe zu wissen. Es ist mit einer bekannten Objektgröße und den von der Kamera vorliegenden Daten zwar möglich die aktuelle Flughöhe rechnerisch zu bestimmen, jedoch gestaltet sich dies sehr rechenaufwändig. Um die Höhe möglichst einfach messen zu können bietet sich daher eine vergleichsweise langsame Messung wie jene mit einem Ultraschallsignal an.
-  Bei einer Schallgeschwindigkeit von $343\,\frac{m}{s}$ entstehen bei einer zu messenden Distanz von $2\,m$ Laufzeiten des Ultraschallsignals von \ca $12\,ms$ (Distanz mal 2 da das Signal wieder zurückkehren muss).
+  Für die Steuerung des Hexacopter ist es notwendig die aktuelle Flughöhe zu wissen.
+  Es ist mit einer bekannten Objektgröße und den von der Kamera vorliegenden Daten zwar möglich die aktuelle Flughöhe rechnerisch zu bestimmen,
+  jedoch gestaltet sich dies sehr rechenaufwändig. Um die Höhe möglichst einfach messen zu können bietet sich daher eine vergleichsweise langsame Messung,
+  wie jene mit einem Ultraschallsignal an.
+  Bei einer Schallgeschwindigkeit von $\SI{343}{\meter\per\second}$ entstehen bei einer zu messenden Distanz von $\SI{2}{\meter}$,
+  Laufzeiten des Ultraschallsignals von \ca $\SI{12}{\milli\second}$ (Distanz mal 2 da das Signal wieder zurückkehren muss).
 
   \subsection{Umsetzung}
-  Abhängig von der mit dem Mikroprozessor ermittelten Laufzeit $time_height$ lässt sich jederzeit die aktuelle Flughöhe bestimmen.
+  Abhängig von der mit dem Mikroprozessor ermittelten Laufzeit $time\_height$ lässt sich jederzeit die aktuelle Flughöhe bestimmen.
   \[
-  s(time\_height) = \frac{v \cdot t}{2} = \frac{343 \cdot time\_height}{2}
+  s(time\_height) = \frac{v \cdot t}{2} = \frac{\SI{343}{\meter\per\second} \cdot time\_height}{2}
   \]
   Die Höhe wird dabei in der main-Routine durch den Aufruf folgender Funktionen regelmäßig bestimmt:
   \lstset{language = c}
@@ -160,12 +190,15 @@ void ReadHeight(void) {
 }
   \end{lstlisting}
 
-  In der ersten Funktion wird die Messung gestartet. Dazu wird ein Triggersignal an den Ultraschallsensor gesendet, dieser reagiert auf eine fallende Flanke. Zuvor wird darafu geachtet, dass die Register in denen die Zeit zurückgegeben wird auch wirklich leer (= 0) sind.
-  In der zweiten Funktion folgt das Auslesen der vorhandenen Daten. Dazu werden die zwei 8 Bit Register in der 16 Bit Variable time_height abgespeichert. Zusätzlich wird die gemessene Höhe für die Auswertung in der a_frame[0].height variable abgespeichert und die Differenz zur vorhergehenden Messung ermittelt.
-  Auf eine Berechnung der genauen Höhe in wird zu gunsten der Verarbeitungszeit verzichtet, für die spätere Auswertung der Flugdaten hat dies keinen Einfluss.
-    \subsubsection{Bestimmen der Flughöhe}
+  In der ersten Funktion wird die Messung gestartet. Dazu wird ein Triggersignal an den Ultraschallsensor gesendet, dieser reagiert auf eine fallende Flanke.
+  Zuvor wird darafu geachtet, dass die Register in denen die Zeit zurückgegeben wird auch wirklich leer (= 0) sind.
+  In der zweiten Funktion folgt das Auslesen der vorhandenen Daten. Dazu werden die zwei 8-Bit Register in der 16-Bit Variable $time\_height$ abgespeichert.
+  Zusätzlich wird die gemessene Höhe für die Auswertung in der $a\_frame[0].height$ Variable abgespeichert und die Differenz zur vorhergehenden Messung ermittelt.
+
+  Auf eine Berechnung der genauen Höhe in m wird zu gunsten der Verarbeitungszeit verzichtet, auf die spätere Auswertung der Flugdaten hat dies keinen Einfluss.
 
   \subsection{Herausforderungen und Lösungen}
+  \textcolor{red}{to be continued after lifetime measurements}
 
 \chapter{Aktoren}
 \renewcommand{\kapitelautor}{Autor: Lucas Ullrich}
