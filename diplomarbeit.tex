@@ -75,6 +75,13 @@
 %Für Bilddarstellung
 \usepackage{float}
 
+%Einheitendarstellung
+\usepackage{siunitx}
+\sisetup{
+  locale = DE ,
+  per-mode = symbol
+}
+
 \makeatother
 
 \usepackage{listings}
@@ -374,6 +381,7 @@ EVO-tech GmbH
 
 \include{Testphase_Erfahrungen_Ergebnisse}
 
+\renewcommand{\kapitelautor}{}
 \appendix
 
 \chapter{Anhang 1\label{chap:Anhang-1}}
