@@ -8,7 +8,7 @@ Alle Daten müssen an einem zentralen Ort für eine Auswertung zusammenlaufen, a
 
   \subsection{Benötigte Elemente}
   Eine eigens entwickelte Ansteuerung der einzelnen Rotoren gestaltet sich als sehr umfangreich, deshalb wird ein fertiger Flight-Controller verwendet.
-  Das System selbst basiert auf einer Modulbauweise, so könenn einzelne Komponenten, je nach Bedarf, includiert oder excludiert werden.
+  Das System selbst basiert auf einer Modulbauweise, so können einzelne Komponenten, je nach Bedarf, inkludiert oder exkludiert werden.
   Sämtliche Informationen werden über einen PIC-Mikrocontroller geleitet und über diesen ausgewertet.
 
     \subsubsection{PIC}
@@ -17,13 +17,13 @@ Alle Daten müssen an einem zentralen Ort für eine Auswertung zusammenlaufen, a
     Auswertung erzielbar.
 
     Der PIC ist dabei für die Auswertung der Kamera, des Ultraschallsensors, des Fernsteuerungsempfängers AR610 von Spektrum sowie dem WLAN-Modul zuständig.
-    Je nach gewähltem Flugmodus steurt der PIC einen Multiplexer so an, dass ein autonomer oder manueller Flug möglich ist.
-    Außerdem werdn von ihm die Servor-Impulse für den Flightcontroller ausgegeben.
+    Je nach gewähltem Flugmodus steuert der PIC einen Multiplexer so an, dass ein autonomer oder manueller Flug möglich ist.
+    Außerdem werden von ihm die Servo-Impulse für den Flightcontroller ausgegeben.
 
     \subsubsection{DJI NAZA-M lite, Flamewheel F550}
     Der Flightcontroller NAZA-M lite von DJI ist ein bereits mit dem Flamewheel F550 ARF-Kit (Almost Ready to Fly) verkaufter Flugregler.
     Er ist dafür zuständig, dass die ankommenden Steuerimpulse namens Aileron, Elevator, Throttle und Rudder richtig verarbeitet werden.
-    Dabei findet bereits eine automatische Regelung der Fluglage statt, der Hexacopter neigt sich also nicht über einen bestimmten Winkel von \textcolor{red}{$\SI{1234567}{\degree}$}.
+    Dabei findet bereits eine automatische Regelung der Fluglage statt, der Hexacopter neigt sich also nicht \zB über einen Winkel von $\SI{45}{\degree}$.
     Ebenso werden die einzelnen Rotoren bereits so angesteuert, dass hier kein externer Eingriff mehr notwendig ist.
     \begin{figure}[H]
       \begin{centering}
@@ -34,7 +34,7 @@ Alle Daten müssen an einem zentralen Ort für eine Auswertung zusammenlaufen, a
     \end{figure}
 
     \subsubsection{WLAN}
-    Das WLAN-Modul RN171 von welches von Microchip verkauft wird bietet die Schnittstelle zwsichen Server und Hexcaopter. Die Daten können entweder vom Server gesendet
+    Das WLAN-Modul RN171 von welches von Microchip verkauft wird bietet die Schnittstelle zwischen Server und Hexacopter. Die Daten können entweder vom Server gesendet
     und vom PIC empfangen werden oder umgekehrt.
     Das WLAM-Modul wird mit einer UART-Schnittstelle betrieben. Für eine Kommunikation sind also nur 2 Leitungen notwendig.
     Es bietet die Möglichkeit über eine Anwendung wie TeraTerm oder HTerm eingestellt zu werden, zusätzlich wird aber auch ein Webinterface angeboten, dieses muss jedoch zuvor
@@ -54,7 +54,7 @@ Alle Daten müssen an einem zentralen Ort für eine Auswertung zusammenlaufen, a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Blockschaltbild}
 Die einzelnen Komponenten werden über den Mikrocontroller vereint. Sämtliche Berechnungen und Auswertung finden auf diesem statt und werden über diesen ausgegeben \bzw
-weitergeleitet. Der Flighcontroller NAZA-M lite wird an die A, E, R und T Pins angeschlossen.
+weitergeleitet. Der Flightcontroller NAZA-M lite wird an die A, E, R und T Pins angeschlossen.
 \begin{figure}[H]
   \begin{centering}
     \includegraphics[width = 1\textwidth]{Bilder/Blockschaltbild}
@@ -62,11 +62,25 @@ weitergeleitet. Der Flighcontroller NAZA-M lite wird an die A, E, R und T Pins a
   \caption{Blockschaltbild der Hauptplatine}
   \label{Blockschaltbild}
 \end{figure}
+
   \subsection{Hauptplatine}
+  Die Hauptplatine dient als zentrales Kommunikationselement. Auf dieser befindet sich der PIC welcher für sämtliche Berechnungen und Auswertungen zuständig ist.
+  Um ein ausreichendes Maß an Kommunikationsfähigkeit zu ermöglichen befinden sich auch ihr folgende Anschlüsse:
+  \begin{itemize}
+    \item $+\SI{5}{\volt}$ Spannungsversorgung
+    \item Eingänge des Fernsteuerungsempfängers (5 Pins)
+    \item Ausgänge zum Flightcontroller (4 Pins)
+    \item Anschluss für den Ultraschallsensor
+    \item Anschluss für die PIXY CMUcam5
+    \item Anschluss für das WLAN-Modul
+  \end{itemize}
 
     \subsubsection{Technische Planung}
+    Das Hauptkriterium für die Hauptplatine war es alle notwendigen Komponenten für einen autonomen Flug zu enthalten. Wichtig waren hier vor allem die Kamera,
+    der Ultraschallsensor sowie die Möglichkeit auf einen manuellen Flug zu wechseln.
 
     \subsubsection{Umsetzung}
+
 
     \subsubsection{Herausforderungen und Lösungen}
 

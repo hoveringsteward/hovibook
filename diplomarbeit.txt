@@ -9,7 +9,7 @@ Christina Bornberg Katharina Joksch
 Markus Kaiser Alexander Punz
 Lucas Ullrich
 unter der Anleitung von Mag. Andreas Fink DI Herbert Fleck
-Wien, 9. Februar 2016
+Wien, 18. Februar 2016
 
 Kurzfassung
 Darum geht es. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
@@ -22,7 +22,7 @@ Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Do
 v
 
 Ehrenwörtliche Erklärung
-Ich versichere, · dass ich meinen Anteil an dieser Diplomarbeit selbstständig verfasst habe, · dass ich keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe · und mich auch sonst keiner unerlaubten Hilfe bzw. Hilfsmittel bedient habe. Wien, am 9. Februar 2016
+Ich versichere, · dass ich meinen Anteil an dieser Diplomarbeit selbstständig verfasst habe, · dass ich keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe · und mich auch sonst keiner unerlaubten Hilfe bzw. Hilfsmittel bedient habe. Wien, am 18. Februar 2016
 Markus Kaiser
 Lucas Ullrich
 Christina Bornberg
@@ -40,28 +40,17 @@ ix
 
 Inhaltsverzeichnis
 
-1. Einleitung
-1.1. Projektidee . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2. Ausgangssituation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-1.2.1. Ideenfindung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2.2. Was es schon gibt . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2.3. Positionierungsverfahren . . . . . . . . . . . . . . . . . . . . . . . . . 1.3. Team . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.4. Betreuer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.5. Partner / Sponsoren . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.6. Danksagung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1. Einleitung 1.1. Projektidee . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2. Ausgangssituation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2.1. Ideenfindung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2.2. Was es schon gibt . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2.3. Positionierungsverfahren . . . . . . . . . . . . . . . . . . . . . . . . . 1.3. Team . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.4. Betreuer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.5. Partner / Sponsoren . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.6. Danksagung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-1
-1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1
 
-2. Projektmanagement
-2.1. Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.1. Muss-Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.2. Optionale Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.3. Optionale Erweiterungen . . . . . . . . . . . . . . . . . . . . . . . . 2.1.4. Nicht-Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-2.2. Projektmanagement-Methode . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.1. Kanban . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.2. Wasserfall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.3. Scrum . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-2.3. Teammanagement / Teambuilding . . . . . . . . . . . . . . . . . . . . . . . 2.3.1. KaTeCos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.3.2. Playground-Meetings . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.3.3. Sonstiges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2. Projektmanagement 2.1. Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.1. Muss-Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.2. Optionale Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.3. Optionale Erweiterungen . . . . . . . . . . . . . . . . . . . . . . . . 2.1.4. Nicht-Ziele . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2. Projektmanagement-Methode . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.1. Kanban . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.2. Wasserfall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.3. Scrum . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.3. Teammanagement / Teambuilding . . . . . . . . . . . . . . . . . . . . . . . 2.3.1. KaTeCos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.3.2. Playground-Meetings . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.3.3. Sonstiges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-3
-3 3 3 3 3 3 3 3 3 3 3 3 3
+3 3 3 3 3 3 3 3 3 3 3 3 3 3
 
-3. Marketing
-3.1. Allgemein . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.1.1. Martanalyse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.1.2. Marketing-Strategie . . . . . . . . . . . . . . . . . . . . . . . . . . .
-3.2. Blog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.3. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.4. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . .
-3.3. Social Media . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.3.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . .
+3. Marketing 3.1. Allgemein . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.1.1. Martanalyse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.1.2. Marketing-Strategie . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2. Blog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.3. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2.4. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 3.3. Social Media . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.3.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . .
 
-5
-6 6 6 6 6 6 6 6 6 6 6 6
+5 6 6 6 6 6 6 6 6 6 6 6 6
 
 xi
 
@@ -71,13 +60,9 @@ xi
 
 6 6 6
 
-4. Digitale Speisekarte
-4.1. Allgemeine technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . 4.1.1. Entwicklungsumgebungen . . . . . . . . . . . . . . . . . . . . . . . .
-4.2. Backend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.2.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . .
-4.3. Frontend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4. Digitale Speisekarte 4.1. Allgemeine technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . 4.1.1. Entwicklungsumgebungen . . . . . . . . . . . . . . . . . . . . . . . . 4.2. Backend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.2.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 4.3. Frontend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-7
-7 7 7 7 8 8 8 8 9
+7 7 7 7 7 8 8 8 8 9
 
 5. Elektronik
 
@@ -87,137 +72,138 @@ xi
 
 5.1.1. Benötigte Elemente . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
 
-5.2. Blockschaltbild . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5.2. Blockschaltbild . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
 
-5.2.1. Hauptplatine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5.2.1. Hauptplatine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
 
-5.2.2. WLAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5.2.2. WLAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
 
 6. Sensoren
 
-13
+15
 
-6.1. Pixy CMUcam5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+6.1. Pixy CMUcam5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
 
-6.1.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+6.1.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
 
-6.1.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.1.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
 
-6.1.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 17
+6.1.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 18
 
-6.2. Ultraschall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+6.2. Ultraschallsensor HC-SR04 . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
 
-6.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+6.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
 
-6.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+6.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
 
-6.2.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 17
+6.2.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 20
 
 7. Aktoren
 
-19
+21
 
-7.1. Propeller, A E T und R . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+7.1. Propeller, A E T und R . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
 
-7.1.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+7.1.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
 
-7.1.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+7.1.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
 
-7.1.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 19
+7.1.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 21
 
 8. Firmware
 
-21
+23
 
-8.1. Allgemeine teschnische Planung . . . . . . . . . . . . . . . . . . . . . . . . . 21
+8.1. Allgemeine teschnische Planung . . . . . . . . . . . . . . . . . . . . . . . . . 23
 
-8.1.1. Tischkonzept . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+8.1.1. Tischkonzept . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
 
-8.1.2. Flussdiagramme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+8.1.2. Flussdiagramme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
 
-8.1.3. Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+8.1.3. Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 
-8.2. Navigation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+8.2. Navigation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 
-8.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+8.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 
-8.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+8.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 
 xii
 
 Inhaltsverzeichnis
 
-8.3. Objekterkennung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.3.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 22
-8.4. Sicherheit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.4.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.4.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.4.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 22
-8.5. Systemausfall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.5.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.5.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22 8.5.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 22
+8.3. Objekterkennung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.3.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 24
+8.4. Sicherheit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.4.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.4.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.4.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 24
+8.5. Systemausfall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.5.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.5.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 8.5.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 24
 
 9. Mechanik
 
-23
+25
 
-9.1. Allgemeine technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.1. Allgemeine technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . 25
 
-9.2. Halterung für Cupcakes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.2. Halterung für Cupcakes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
 
-9.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.2.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
 
-9.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.2.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
 
-9.2.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 24
+9.2.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 29
 
-9.3. Rotorschutz . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.3. Rotorschutz . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.3.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.3.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.3.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 24
+9.3.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 30
 
-9.3.4. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.3.4. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.4. Halterung Ultraschallsensor . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.4. Halterung Ultraschallsensor . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.4.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.4.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.4.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.4.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.4.3. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.4.3. Herausforderungen und Lösungen . . . . . . . . . . . . . . . . . . . . 30
 
-9.5. Halterung PIXY cmucam5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.5. Halterung PIXY CMU cam5 . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.5.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.5.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.5.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.5.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.5.3. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.5.3. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.5.4. Testphase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.5.4. Testphase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.6. Führung für Testflüge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.6. Führung für Testflüge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.6.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.6.1. Technische Planung . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.6.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.6.2. Umsetzung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.6.3. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.6.3. Implementierung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.6.4. Testphase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.6.4. Testphase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
-9.7. Persönliche Erfahrungen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+9.7. Persönliche Erfahrungen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
 A. Anhang 1
 
-25
+31
 
 xiii
 
 Tabellenverzeichnis
 Tabellenverzeichnis
+9.1. Befehle G Code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
 xv
 
 Abbildungsverzeichnis
 Abbildungsverzeichnis
-6.1. PIXY CMUcam5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 6.2. Erkennbare Objekttypen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 6.3. Ausgang der SPI Schnittstelle . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+5.1. Flightcontroller DJI NAZA-M lite . . . . . . . . . . . . . . . . . . . . . . . 12 5.2. WLAN-Modul RN171 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 5.3. Blockschaltbild der Hauptplatine . . . . . . . . . . . . . . . . . . . . . . . . 13 6.1. PIXY CMUcam5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 6.2. Erkennbare Objekttypen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 6.3. Ausgang der SPI Schnittstelle . . . . . . . . . . . . . . . . . . . . . . . . . . 17 6.4. Ultraschallsensor HC-SR04 . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 9.1. Maschinencode Erklärung . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25 9.2. Einstellung für STL File . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 9.3. Position Cupcake . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 9.4. Halterung Cupcake . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 9.5. Gedrucktes Halterungssystem . . . . . . . . . . . . . . . . . . . . . . . . . . 29
 xvii
 
 1. Einleitung
@@ -278,27 +264,35 @@ Autor: Markus Kaiser
 PhpStorm ist eine integrierte Entwicklungsumgebung für die Programmiersprache PHP, für welche man eine kostenpflichtige Lizenz zur Verwendung benötigt. Diese Entwicklungsumgebung wurde von JetBrains entwickelt und erschien erstmals 2009 auf dem Markt. Zu den besonderen Features von PhpStorm zählen Tools zur Kontrolle der Versionierung, Refaktorisierung, Code- und Syntax-Highlighting. Außerdem unterstützt es PHP-Unit, welches von Symfony verwendet wird und zum Testen von PHP-Skripten dient.
 4.1.1.2. Eclipse
 Eclipse, entwickelt von der Eclipse Foundation, ist ein Open Source Programmierwerkzeug. Ursprünglich wurde es als integrierte Entwicklungsumgebung für die Programmiersprache Java entwickelt, heutzutage wird es jedoch auch zur Bewältigung einiger anderer Entwicklungsaufgaben verwendet.
+evtl noch eine extra überschrift für arten von speisekarte also ipad oder iphone + qr code
 4.2. Backend
 4.2.1. Technische Planung
 4.2.1.1. MAMP und XAMPP
 auch zugriff auf mysql erklären
 4.2.1.2. Symfony
-Symfony ist ein Open Source Web Application Framework, welches das Modell-ViewController-Schema nützt und den Datenbankzugriff mittels einem objektrelationalen Abbild regelt.
-Durch die Einteilung in Modell, View und Controller, ergibt sich beim Entwickeln einer Web Applikation mithilfe von Symfony eine ordentliche Struktur. Beim Modell kann man zur Speicherung der Objekte Doctrine verwenden, welches als Bibliothek zur objektrelationalen Abbildung dient. Die View-Ebene ist für die visuelle Darstellung der Applikation zuständig. Für die Darstellung werden meistens Templates miteinbezogen. Symfony unterstützt hierbei die Template Engine Twig. Der Controller verwaltet die visuellen Darstellungen der Applikation und nimmt von ihnen Benutzeraktionen entgegen, wertet diese aus und behandelt sie entsprechend. Außerdem fungiert der Controller als
+Symfony ist ein Open Source Web Application Framework, welches das Model-ViewController-Schema nützt und den Datenbankzugriff mittels einem objektrelationalen Abbild regelt.
+Durch die Einteilung in Model, View und Controller, ergibt sich beim Entwickeln einer Web Applikation mithilfe von Symfony eine ordentliche Struktur. Beim Model kann man zur Speicherung der Objekte Doctrine verwenden, welches als Bibliothek zur objektrelationalen Abbildung dient. Die View-Ebene ist für die visuelle Darstellung der Applikation zuständig. Für die Darstellung werden meistens Templates miteinbezogen. Symfony unterstützt hierbei die Template Engine Twig. Der Controller verwaltet die visuellen Darstellungen der Applikation und nimmt von ihnen Benutzeraktionen entgegen, wertet diese aus und
 
 Autor: Katharina Joksch
 
 7
 
 4.3. FRONTEND
-Schnittstelle zwischen Modell und View, was bedeutet, dass er die Daten an die von der einen Schicht zur anderen weiterleitet. 4.2.1.3. Doctrine Was ist Doctrine? bissl Codeschnipsel 4.2.1.4. ER-Modell hier kommt dann ein Screenshot von ER-Modell hin + Erklärung pks und fks
+behandelt sie entsprechend. Außerdem fungiert der Controller als Schnittstelle zwischen Modell und View, was bedeutet, dass er die Daten an die von der einen Schicht zur anderen weiterleitet.
+4.2.1.3. Doctrine Was ist Doctrine? bissl Codeschnipsel
+4.2.1.4. ER-Modell hier kommt dann ein Screenshot von ER-Modell hin + Erklärung pks und fks
 4.2.2. Umsetzung
-4.2.2.1. Framework einrichten Terminalbefehle + Erklärung 4.2.2.2. Datenbankgenerierung Was ich in config.yml und param.yml eingegeben habe wie das schema meiner db mit code first durch doctrine ausschaut 4.2.2.3. Datenzugriff zugriff mit controller
+4.2.2.1. Framework einrichten Terminalbefehle + Erklärung
+4.2.2.2. Datenbankgenerierung Was ich in config.yml und param.yml eingegeben habe wie das schema meiner db mit code first durch doctrine ausschaut
+4.2.2.3. Datenzugriff zugriff mit controller
 4.2.3. Herausforderungen und Lösungen
 fk deklarierung symfony cache löschen
 4.3. Frontend
 4.3.1. Technische Planung
-4.3.1.1. Bootstrap was ist bootstrap? wieso bootstrap? durch klassen layout designen 4.3.1.2. Sass was ist sass? sass mit bootstrap? durch ändern der klassenvariablen layout angepasst 4.3.1.3. Gulp was ist gulp? wieso gulp und nicht grunt? -> weil gulp schneller 4.3.1.4. Twig was macht twig? codeschnipsel?
+4.3.1.1. Bootstrap was ist bootstrap? wieso bootstrap? durch klassen layout designen
+4.3.1.2. Sass was ist sass? sass mit bootstrap? durch ändern der klassenvariablen layout angepasst
+4.3.1.3. Gulp was ist gulp? wieso gulp und nicht grunt? -> weil gulp schneller
+4.3.1.4. Twig was macht twig? codeschnipsel?
 8 Autor: Katharina Joksch
 
 4. Digitale Speisekarte
@@ -315,19 +309,39 @@ Autor: Katharina Joksch
 5. Elektronik
 5. Elektronik
 5.1. Allgemeine technische Planung
+Für die Umsetzung eines autonomen Fluges sind diverse Sensoren sowie eine entsprechende Auswertung der gelieferten Daten notwendig. Alle Daten müssen an einem zentralen Ort für eine Auswertung zusammenlaufen, aus diesen können schließlich die notwendigen Flugparameter ermittelt werden.
 5.1.1. Benötigte Elemente
-5.1.1.1. PIC 5.1.1.2. DJI NAZA-M lite, Flamewheel F550
-5.2. Blockschaltbild
-5.2.1. Hauptplatine
-5.2.1.1. Technische Planung 5.2.1.2. Umsetzung 5.2.1.3. Herausfoderungen und Lösungen
-5.2.2. WLAN
-5.2.2.1. Technische Planung 5.2.2.2. Umsetzung 5.2.2.3. Herausfoderungen und Lösungen
+Eine eigens entwickelte Ansteuerung der einzelnen Rotoren gestaltet sich als sehr umfangreich, deshalb wird ein fertiger Flight-Controller verwendet. Das System selbst basiert auf einer Modulbauweise, so könenn einzelne Komponenten, je nach Bedarf, includiert oder excludiert werden. Sämtliche Informationen werden über einen PIC-Mikrocontroller geleitet und über diesen ausgewertet.
+5.1.1.1. PIC Als zentrale Recheneinheit wird ein PIC18F46K22 verwendet. Dieser bietet ausreichend viel Speicherplatz und Pins für eine Testphase und kann mit einer Geschwindigkeit von bis zu 64 MHz intern getaktet werden. So ist keine aufwändige Oszillator-Schaltung notwendig und es ist eine vernünftig hohe Geschwindigkeit bei der Auswertung erzielbar.
+Der PIC ist dabei für die Auswertung der Kamera, des Ultraschallsensors, des Fernsteuerungsempfängers AR610 von Spektrum sowie dem WLAN-Modul zuständig. Je nach gewähltem Flugmodus steurt der PIC einen Multiplexer so an, dass ein autonomer oder manueller Flug möglich ist. Außerdem werdn von ihm die Servor-Impulse für den Flightcontroller ausgegeben.
+5.1.1.2. DJI NAZA-M lite, Flamewheel F550 Der Flightcontroller NAZA-M lite von DJI ist ein bereits mit dem Flamewheel F550 ARF-Kit (Almost Ready to Fly) verkaufter Flugregler. Er ist dafür zuständig, dass die ankommenden Steuerimpulse namens Aileron, Elevator, Throttle und Rudder richtig verarbeitet werden. Dabei findet bereits eine automatische Regelung der Fluglage statt, der Hexacopter neigt sich also nicht z. B. über einen Winkel von 45°. Ebenso werden die einzelnen Rotoren bereits so angesteuert, dass hier kein externer Eingriff mehr notwendig ist.
 
 Autor: Lucas Ullrich
 
 11
 
-6. Sensoren
+5.1. ALLGEMEINE TECHNISCHE PLANUNG
+Abbildung 5.1.: Flightcontroller DJI NAZA-M lite[1] 5.1.1.3. WLAN Das WLAN-Modul RN171 von welches von Microchip verkauft wird bietet die Schnittstelle zwsichen Server und Hexcaopter. Die Daten können entweder vom Server gesendet und vom PIC empfangen werden oder umgekehrt. Das WLAM-Modul wird mit einer UARTSchnittstelle betrieben. Für eine Kommunikation sind also nur 2 Leitungen notwendig. Es bietet die Möglichkeit über eine Anwendung wie TeraTerm oder HTerm eingestellt zu werden, zusätzlich wird aber auch ein Webinterface angeboten, dieses muss jedoch zuvor aktiviert werden.
+Abbildung 5.2.: WLAN-Modul RN171[2] Die Datenübertragung findet dabei für den Nutzer sehr unproblematisch dar. Einerseits sind konfigurierbare Pins vorhanden um die Verbindung zu steuern und zu überwachen, andererseits braucht man sich nicht mehr um das Verpacken der Datenpakete kümmern. 12 Autor: Lucas Ullrich
+
+5. Elektronik
+5.2. Blockschaltbild
+Die einzelnen Komponenten werden über den Mikrocontroller vereint. Sämtliche Berechnungen und Auswertung finden auf diesem statt und werden über diesen ausgegeben bzw. weitergeleitet. Der Flighcontroller NAZA-M lite wird an die A, E, R und T Pins angeschlossen.
+
+Abbildung 5.3.: Blockschaltbild der Hauptplatine
+
+Autor: Lucas Ullrich
+
+13
+
+5.2. BLOCKSCHALTBILD
+5.2.1. Hauptplatine
+Die Hauptplatine dient als zentrales Kommunikationselement. Auf dieser befindet sich der PIC welcher für sämtliche Berechnungen und Auswertungen zuständig ist. Um ein ausrechendes Maß an Kommunikationsfähigkeit zu ermöglichen befinden sich auch ihr folgende Anschlüsse: · +5 V Spannungsversorgung · Eingänge des Fernsteuerungsempfängers (5 Pins) · Ausgänge zum Flightcontroller (4 Pins) · Anschluss für den Ultraschallsensor · Anschluss für die PIXY CMUcam5 · Anschluss für das WLAN-Modul 5.2.1.1. Technische Planung Das Hauptkriterium für die Hauptplatine war es alle notwendigen Komponenten für einen autonomen Flug zu enthalten. Wichtig war hier vor allem die Kamera, der Ultraschallsensor sowie die Möglichkeit auf einen manuellen Flug zu wechseln. 5.2.1.2. Umsetzung 5.2.1.3. Herausforderungen und Lösungen
+5.2.2. WLAN
+5.2.2.1. Technische Planung 5.2.2.2. Umsetzung 5.2.2.3. Herausforderungen und Lösungen
+14 Autor: Lucas Ullrich
+
+6. Sensoren
 6. Sensoren
 6.1. Pixy CMUcam5
 Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches über eine Objekterkennung verfügt. Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkennen.
@@ -345,33 +359,34 @@ Abbildung 6.2.: Erkennbare Objekttypen
 
 Autor: Lucas Ullrich
 
-13
+15
 
 6.1. PIXY CMUCAM5
 · Absolute Positionsmessung Hier wird die Postion von einem gleichbleibenden Punkt aus gemessen. Dabei ist ein konstanter Referenzpunkt wichtig. Verändert sich dieser oder kann die Distanz nicht genau gemessen werden ist die Messung unbrauchbar.
 Für eine absolute Positionsmessung bieten sich diverse Triangulationsverfahren an, diese sind ausgesprochen rechenaufwändig und benötigen meist eine sehr genaue Laufzeitmessung. Für die Triangulation können die unterschiedlichsten Signale verwendet werden, am gängigsten sind jedoch jene die mit elektromagnetischen Wellen arbeiten, z. B. WLAN, Bluetooth. Dies bedeutet, dass sich die Signale mit Lichtgeschwindigkeit ausbreiten.
 Bei einer Messung derart schneller Signale muss ein hoher Aufwand betrieben werden um eine Messgenauigkeit von einigen cm zu erzielen. Eine weitere Herausforderung sind Mauern bzw. Hindernisse. Hier muss ständig berücksichtigt werden wo ein Objekt steht und ob der geplante Weg überhaupt frei ist.
-· Relative Positionsmessung Hier wird die Position von einem wechselnden Punkt aus gemessen. Um hier eine Positionierung im Raum ermöglichen zu können, ist es erforderlich immer zu einem bestimmten Punkt zu messen. Ein Wechsel dieses Punktes ist jedoch möglich, deshalb muss auch die Position der Punkte im Raum bekannt sein. Ist die Zielposition im Raum bekannt kann zu dieser hinnavigiert werden. Auch hier muss wie bei einer absoluten Positionsmessung auf Hindernisse geachtet werden.
+· Relative Positionsmessung Hier wird die Position von einem wechselnden Punkt aus gemessen. Um hier eine Positionierung im Raum ermöglichen zu können, ist es erforderlich immer zu einem bestimmten Punkt zu messen. Ein Wechsel dieses Punktes ist jedoch möglich, deshalb muss auch die Position der Punkte im Raum bekannt sein. Ist die Zielposition im Raum bekannt kann zu dieser hin navigiert werden. Auch hier muss wie bei einer absoluten Positionsmessung auf Hindernisse geachtet werden.
 Die zweite Alternative ist, dass eine bestimmte Route bekannt ist und sich das zu positionierende Objekt nur in einem bestimmten Bereich um diese Route bewegt. Wird bei der Positionierung der Route bereits auf Hindernisse geachtet müssen diese im Anschluss nicht mehr zwingend beachtet werden.
 6.1.2. Umsetzung
-Durch die PIXY CMUcam5 lässt sich eine relative Positionsmessung vergleichsweise einfach verwirklichen. Werden ein oder mehrer Objekte erkannt wird eine bestimmte Nummer (abhängig von der Farbe) sowie die Position am Bild und die Objektgröße übermittelt. Die Kamera arbeitet dabei mit einer Bildwiederholreate von 50 Hz, es ist also alle 20 ms eine Auswertung möglich.
-Die Kamera wird auf dem Hexacopter befestigt, mehrere Farbcodes kennzeichen den Weg zu einem Tisch. Um an dieser Stelle eine Navigation zu erreichen wirde der Hexacopter so gesteuert, dass er, abhängig von der Route, immer einen bestimmten Farbcode betrachtet, ist er über diesem sucht er den nächsten.
+Durch die PIXY CMUcam5 lässt sich eine relative Positionsmessung vergleichsweise einfach verwirklichen. Werden ein oder mehrere Objekte erkannt wird eine bestimmte Nummer (abhängig von der Farbe) sowie die Position am Bild und die Objektgröße übermittelt. Die Kamera arbeitet dabei mit einer Bildwiederholrate von 50 Hz, es ist also alle 20 ms eine Auswertung möglich.
+Die Kamera wird auf dem Hexacopter befestigt, mehrere Farbcodes kennzeichnen den Weg zu einem Tisch. Um an dieser Stelle eine Navigation zu erreichen wird der Hexacopter so gesteuert, dass er, abhängig von der Route, immer einen bestimmten Farbcode betrachtet, ist er über diesem sucht er den nächsten.
 6.1.2.1. SPI Schnittstelle
-Als Schnitstelle für die Kommunikation mit der Kamera wird eine SPI-Schnitstelle verwendet. Die Kamera selbst unterstützt unter anderem die seriellen Schnitstellen UART, I2C und SPI. Außerdem werden noch ein analoger und digitaler Output unterstütz, diese sind jedoch vergleichsweise beschränkt, da keine näheren Informationen zu dem Objekt übermittelt werden können sondern nur die Position bzw. ob überhaupt ein Objekt erkannt wurde.
-14 Autor: Lucas Ullrich
+Als Schnittstelle für die Kommunikation mit der Kamera wird eine SPI-Schnittstelle verwendet. Die Kamera selbst unterstützt unter anderem die seriellen Schnittstellen UART, I2C und SPI. Außerdem werden noch ein analoger und digitaler Output unterstütz, diese sind jedoch vergleichsweise beschränkt, da keine näheren Informationen zu dem Objekt übermittelt werden können sondern nur die Position bzw. ob überhaupt ein Objekt erkannt wurde.
+16 Autor: Lucas Ullrich
 
 6. Sensoren
-Die SPI-Schnitstelle ist bei der Kamera besonders ausfallsicher. Hier wird ein Synchronisationsbyte gefordert, wird dieses nicht erkannt, z. B. z.B. aufgrund eines Fehlers in der Datenübertragung, schickt die Kamera keine Daten.
+Die SPI-Schnittstelle ist bei der Kamera besonders ausfallsicher. Hier wird ein Synchronisationsbyte gefordert, wird dieses nicht erkannt, z. B. aufgrund eines Fehlers in der Datenübertragung, schickt die Kamera keine Daten.
 Überprüfen der SPI-Schnitstelle Um zu überprüfen ob die SPI-Schnittstelle auch korrekt arbeitet wird bei der ersten Inbetriebnahme der Output überprüft. Hierzu wird der Zustand der 3 Leitungen mit einem Oszilloskop betrachtet. · Taktleitung · Dateneingang (PIC) · Datenausgang (PIC)
 
 (a) Großer Zeitbereich
 
-(b) Kleiner Zeitbreich
+(b) Kleiner Zeitbereich
 
 Abbildung 6.3.: Ausgang der SPI Schnittstelle
+
 Der Wert mit dem diese Überprüfung durchgeführt wird sollte möglichst variabel sein, hier wird 0xAA (1010 1010) verwendet. Wird dieser Wert nicht variabel angenommen kann es dazu kommen, dass fälschlicher Weise angenommen wird, dass die Übertragung korrekt ist. Der Dateneingang des PIC, respektive der Ausgang der Kamera, zeigt eine deutliche Störung durch die Taktleitung an.
 
-6.1.2.2. Erkennen und Auswerten eines Bildes Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung die ein neues Bild markiert. Mit den diversen Informationen zum Objekt ergbeben sich folgende Daten:
+6.1.2.2. Erkennen und Auswerten eines Bildes Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung die ein neues Bild markiert. Mit den diversen Informationen zum Objekt ergeben sich folgende Daten:
 · Neues Bild 0xAA55
 · Objekt 0xAA55 oder Farbcode 0xAA56
 · Checksum
@@ -380,16 +395,16 @@ Der Wert mit dem diese Überprüfung durchgeführt wird sollte möglichst variabel s
 
 Autor: Lucas Ullrich
 
-15
+17
 
-6.1. PIXY CMUCAM5
+6.2. ULTRASCHALLSENSOR HC-SR04
 · Y-Position
 · Breite
 · Höhe
 · Drehwinkel, nur bei Farbcodes
 Dabei ist die Objektnummer von den im Objekt oder Farbcode vorkommenden Farben abhängig, zusätzlich ist zu beachten, dass sie oktal dargestellt wird. Ein übermittelter Wert von dezimal 10, also oktal 12, bedeutet, dass die Farben 1 und 2 erkannt wurden.
-Will man nun ein neues Bild finden muss man so lange nach 0xAA55 suchen bis man diese Daten gesendet bekommt. Anschließend gilt es noch festzustellen ob man einen Farbcode oder ein Obkekt betrachtet, es muss also direkt darauf 0xAA56 oder nochmals 0xAA55 erkannt werden. Ist dies nicht der Fall, wurde kein neues Bild erkannt und man betrachtet ein normales Obkjekt.
-Betrachtet man nun die bis zum erkennen eines neuen Bildes gesendeten Daten als gegenstandslos ergibt sich eine vergleichsweise einfache Schleife um ein Bild zu erkennen.
+Will man nun ein neues Bild finden muss man so lange nach 0xAA55 suchen bis man diese Daten gesendet bekommt. Anschließend gilt es noch festzustellen ob man einen Farbcode oder ein Objekt betrachtet, es muss also direkt darauf 0xAA56 oder nochmals 0xAA55 erkannt werden. Ist dies nicht der Fall, wurde kein neues Bild erkannt und man betrachtet ein normales Objekt.
+Betrachtet man nun die bis zum Erkennen eines neuen Bildes gesendeten Daten als gegenstandslos ergibt sich eine vergleichsweise einfache Schleife um ein Bild zu erkennen.
 1 while(frame == 0) { w = ExchangeSpiWord(PIXY_SYNC , DUMMY);
 3 if(lw == PIXY_FRAME_OBJ && w == PIXY_FRAME_OBJ) { frame = 1;
 5 obj_type = 0; a_color[c_obj].type = PIXY_FRAME_OBJ;
@@ -402,27 +417,49 @@ Betrachtet man nun die bis zum erkennen eines neuen Bildes gesendeten Daten als 
 19 }
 Um nicht ewig in dieser Schleife fest zu hängen, wenn kein Bild erkannt wird und einen Fehler auslösen zu können wird die gesamte Funktion der Bildauswertung nach 255 Versuchen verlassen.
 Die weiteren Werte eines Objekts werden der Reihe nach in einer Structur abgespeichert, hier ist nichts besonderes mehr zu beachten.
-16 Autor: Lucas Ullrich
+6.1.3. Herausforderungen und Lösungen
+6.2. Ultraschallsensor HC-SR04
+Der Ultrschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abstände zu messen. Die Messung geschieht durch das Aussenden von Ultraschallimpulsen, die Messgröße wird dabei als laufzeitabhängiger Impuls retourniert.
+18 Autor: Lucas Ullrich
 
 6. Sensoren
-6.1.3. Herausforderungen und Lösungen
-6.2. Ultraschall
-6.2.1. Technische Planung 6.2.2. Umsetzung
-6.2.2.1. Bestimmen der Flughöhe
-6.2.3. Herausforderungen und Lösungen
+
+Abbildung 6.4.: Ultraschallsensor HC-SR04
+6.2.1. Technische Planung
+Für die Steuerung des Hexacopter ist es notwendig die aktuelle Flughöhe zu wissen. Es ist mit einer bekannten Objektgröße und den von der Kamera vorliegenden Daten zwar möglich die aktuelle Flughöhe rechnerisch zu bestimmen, jedoch gestaltet sich dies sehr rechenaufwändig. Um die Höhe möglichst einfach messen zu können bietet sich daher eine vergleichsweise langsame Messung, wie jene mit einem Ultraschallsignal an. Bei einer Schallgeschwindigkeit von 343 m/s entstehen bei einer zu messenden Distanz von 2 m, Laufzeiten des Ultraschallsignals von ca. 12 ms (Distanz mal 2 da das Signal wieder zurückkehren muss).
+6.2.2. Umsetzung
+Abhängig von der mit dem Mikroprozessor ermittelten Laufzeit time_height lässt sich jederzeit die aktuelle Flughöhe bestimmen.
+v · t 343 m/s · time_height s(time_height) = =
+22
+Die Höhe wird dabei in der main-Routine durch den Aufruf folgender Funktionen regelmäßig bestimmt:
+1 void StartHeightMeasure(void) { TMR5L = 0;
+3 TMR5H = 0; Trigger = 0;
+5}
+7 void ReadHeight(void) { while(TMR5GIF == 0);
+9 TMR5GIF = 0; time_height = 0;
+11 ti me_h eigh t = TMR5H ; time_height <<= 8;
+13 ti me_h eigh t |= TMR5L ; TMR5L = 0;
+15 TMR5H = 0; a_frame[0].height = time_height;
+17 a_frame_dif [0]. dif_height = a_frame [1]. height - a_frame [0]. height ; Trigger = 1;
+19 }
 
 Autor: Lucas Ullrich
 
-17
+19
 
-7. Aktoren
+6.2. ULTRASCHALLSENSOR HC-SR04 In der ersten Funktion wird die Messung gestartet. Dazu wird ein Triggersignal an den Ultraschallsensor gesendet, dieser reagiert auf eine fallende Flanke. Zuvor wird darafu geachtet, dass die Register in denen die Zeit zurückgegeben wird auch wirklich leer (= 0) sind. In der zweiten Funktion folgt das Auslesen der vorhandenen Daten. Dazu werden die zwei 8-Bit Register in der 16-Bit Variable time_height abgespeichert. Zusätzlich wird die gemessene Höhe für die Auswertung in der a_f rame[0].height Variable abgespeichert und die Differenz zur vorhergehenden Messung ermittelt. Auf eine Berechnung der genauen Höhe in m wird zu gunsten der Verarbeitungszeit verzichtet, auf die spätere Auswertung der Flugdaten hat dies keinen Einfluss.
+6.2.3. Herausforderungen und Lösungen
+to be continued after lifetime measurements
+20 Autor: Lucas Ullrich
+
+7. Aktoren
 7. Aktoren
 7.1. Propeller, A E T und R
 7.1.1. Technische Planung 7.1.2. Umsetzung 7.1.3. Herausforderungen und Lösungen
 
 Autor: Lucas Ullrich
 
-19
+21
 
 8. Firmware
 8. Firmware
@@ -432,7 +469,7 @@ testtext mit eineem fehler.
 
 Autor: Lucas Ullrich
 
-21
+23
 
 8.2. NAVIGATION
 8.1.3. Tools
@@ -446,41 +483,95 @@ Autor: Lucas Ullrich
 8.4.1. Technische Planung 8.4.2. Umsetzung 8.4.3. Herausforderungen und Lösungen
 8.5. Systemausfall
 8.5.1. Technische Planung 8.5.2. Umsetzung 8.5.3. Herausforderungen und Lösungen
-22 Autor: Lucas Ullrich
+24 Autor: Lucas Ullrich
 
 9. Mechanik
+9. Mechanik
+9.1. Allgemeine technische Planung
+9.1.0.1. Allgemeine Informationen über 3D Drucken Die Technologie des 3D Druckens hat in den letzten Jahren immer mehr an Popularität gewonnen. Mit Hilfe des 3D Druckers kann man fast alle vorstellbaren Formen anfertigen. Es gibt verschiedenste Verfahren wie man ein Werkstück anfertigen kann: Laser Sintern, Stereolithographie, Drucken mit flüssigen Materialien, etc. In diesem Projekt wird nur die Variante des Druckens mit flüssigen Material verwendet. Diese ist kostengünstig bzw. genau genug für die Teile. Wie der Name schon sagt, wird Material in einem Druckkopf geschmolzen und dann Schicht für Schicht auf der Druckplatte aufgetragen. Der Druckkopf fährt nur in X und Y Richtung, die Höhe wird mit der Druckplatte selbst verfahren.
+Meist werden Drucker über einen Maschinencode gesteuert, dem sogenannten ,,G-Code". In diesem Code werden die Punkte (Koordinaten) definiert, die der Extruder (Druckkopf) abfahren muss. Die folgende Abbildung zeigt ein Beispiel eines Maschinencodes.
+
+Abbildung 9.1.: Maschinencode Erklärung
+
+G1 X, Y E F
+
+Tabelle 9.1.: Befehle G Code Kontrollierte Bewegung Koordinaten in horizontaler und vertikaler Richtung Angabe der Menge des Filaments, dass in den Extruder geschoben werden muss Geschwindigkeit, mit der das Material in den Extruder geschoben wird (mm/min)
+
+Je nachdem wie der Drucker aufgebaut ist, werden die Produkte genau oder nur grob angefertigt. Sehr genaue Teile kann man am besten in einem Drucker produzieren, der einen geschlossenen Druckraum bzw. eine beheizte Druckplatte hat. Besonders an dünnen Platten merkt man das. Wenn der Druckraum nach bzw. während des Druckvorgangs warm ist, kühlt das Werkstück an jeder Stelle fast gleich ab. Ist der Druckraum offen, kühlt das Werkstück in der Mitte schneller ab, kühles Material zieht sich zusammen, daher biegt sich das Material auf.
 
 Autor: Alexander Punz
 
-23
+25
+
+9.1. ALLGEMEINE TECHNISCHE PLANUNG
+Es kann vorkommen, dass ein Teil nur so gedruckt werden kann, wenn es nicht komplett auf der Druckplatte aufliegt zum Beispiel ein Steg, der ,,in der Luft" liegt oder eine Bohrung im Werkstück, die horizontal gedruckt werden muss. In solchen Fällen, druckt der Drucker unter diesem Steg Stützmaterial. Basierend auf diesem Stützmaterial, wird dann die gewünschte Form gedruckt. Das Stützmaterial ist so gefertigt, dass man es leicht von dieser abbrechen kann, ohne dass Rückstände zurück bleiben. 9.1.0.2. Materialeigenschaften 9.1.0.3. Von der Idee zur Anfertigung Die größte Hürde an der Realisierung einer Idee ist, eine CAD Zeichnung zu erstellen. In 3D CAD Programmen wie Creo, SolidWorks, etc. kann man ein Teil konstruieren und dann als STL (Standard Triangulation Language) File abspeichern. Dieses Format gibt dann nur mehr Informationen über die Oberfläche und Struktur an (siehe Abbildung9.2). Die Sehnenhöhe gibt an wie genau die Oberfläche gedruckt werden muss, die Winkelsteuerung gibt die Genauigkeit der Radien und Kanten des Teiles an.
+Abbildung 9.2.: Einstellung für STL File Mit diesem File kann man anschließend in Programmen wie Slic3r den gewünschten Maschinencode generieren lassen. In diesen Programmen gibt man die Lage des Werkstückes an bzw. in genaueren Einstellungen auch die Temperatur des Druckbettes, den Geschwindigkeiten und ähnliche Konfigurationen. Am häufigsten haben die Drucker eine USB Schnittstelle, bzw. verfügen über einen SD Karten Slot. Der Maschinencode wird auf diesen Speichermedien gespeichert und einfach auf den Drucker überspielt.
+26 Autor: Alexander Punz
 
 9. Mechanik
-
-9.1. ALLGEMEINE TECHNISCHE PLANUNG
-
-9.1. Allgemeine technische Planung
-9.1.0.1. Allgemeine Informationen über 3D Drucken 9.1.0.2. Materialeigenschaften 9.1.0.3. Von der Idee zur Anfertigung
 9.2. Halterung für Cupcakes
-9.2.1. Technische Planung 9.2.2. Umsetzung 9.2.3. Herausforderungen und Lösungen
-9.3. Rotorschutz
+9.2.1. Technische Planung
+Die Diplomarbeit hat sich speziell auf den Transport von Cupcakes präzisiert, um diesen sicher transportieren zu können, ist es notwendig eine Halterung zu konzipieren. Diese Halterung soll möglichst leicht und nicht zu kompliziert zu montieren sein. Der Akku wurde an der Unterseite des Hexacopters befestigt, daher war es nur mehr möglich die Halterung an der oberen Centerplate zu platzieren. Damit der Multicopter möglichst ausgewogen ist, muss sich das zu transportierende Objekt in der Mitte befinden. Die Idee war es daher, den Cupcake mit einer Halterung zu umranden, damit er nicht verrutschen kann. Die Geometrie der Platte bzw. die Größe des Objektes hat die Befestigungsmöglichkeiten stark eingeschränkt (siehe Abbildung 9.3).
+Abbildung 9.3.: Position Cupcake Damit der Cupcake optimal gehalten wird, sollten Stützen entwickelt werden, die in den inneren Rillen der Centerplate befestigt werden. Diese Stützen liegen direkt an der Form des Desserts an, um es gegen Verrutschen zu sichern. Die Umsetzung der Planung wird in dem folgenden Punkt erklärt.
+
+Autor: Alexander Punz
+
+27
+
+9.2. HALTERUNG FÜR CUPCAKES
+9.2.2. Umsetzung
+Wie schon in der technischen Planung erwähnt wurde, sollte das Objekt von Stützen umrandet werden. Die inneren Ausnehmungen der oberen Centerplate haben sich optimal angeboten, da diese zu der Form des Cupcake reichen. Es wurden Stützen konstruiert, die in den Ausnehmungen fixiert werden können und sich direkt an das Dessert anpassen. Die folgenden Abbildungen zeigen die konstruierten Halterungsstutzen und ihre Fixiermöglichkeit.
+
+(a) Halterung Cupcake oben
+
+(b) Halterung Cupcake unten
+
+Abbildung 9.4.: Halterung Cupcake
+
+Die Stützen wurden so entworfen, dass sie sich dem Radius bzw. der Höhe der Form des Cupcake anpassen. Die Höhe der Halterung wurde so gewählt, dass etwa die Hälfte der Cupcakeform frei liegt. Das soll vermeiden, dass man sich die Finger an der Creme schmutzig machen muss.
+Die Halterung wird mittels Sechskantmutter bzw. Zylinderkopfschrauben festgeschraubt. Aufgrund dessen, dass die Muttern zwischen den zwei Centerplates befestigt werden müssen, wurden die roten Mutternhalter konstruiert. Diese sollen verhindern, dass sich die Muttern beim Festschrauben der Schrauben mitdrehen. Durch diese Halterungen muss man die Muttern nicht mit den Fingern oder einem Gabelschlüssel festhalten. Da der Platz sehr begrenzt ist, überlappen sich die zwei Schrauben bzw. die Muttern, aufgrund dieses Problems wurden Höhenunterschiede zwischen den Schraubenköpfen bzw. der Sechskantmuttern eingeplant.
+
+28 Autor: Alexander Punz
+
+9. Mechanik
+9.2.3. Herausforderungen und Lösungen
+Die größte Herausforderung am Konstruieren war es, die Halterung exakt an die Form des Cupcakes anzupassen. Die Rundung in der Halterung sollte genau an die Kegelform des Cupcakes passen. Um dieses Problem zu lösen, wurde der exakte Mittelpunkt der Centerplate ermittelt. Von diesem Mittelpunkt aus, wurden dann alle Maße gemessen, die benötigt wurden. Der Durchmesserverlauf der Form wurde mit Winkelfunktionen errechnet und dann an die Halterung angepasst.
+Wie schon erwähnt, war der Platz für Befestigungsschrauben sehr eingeschränkt. Die großen Toleranzen des Druckers haben die Konstruktion sehr beeinflusst. Da manche Bohrungen nur sehr dünne Wände haben, brachen diese beim Drucken ein oder wurden nur sehr grob gefertigt. Die folgende Abbildung zeigt die Halterungen an dem Hexacopter befestigt.
+Abbildung 9.5.: Gedrucktes Halterungssystem Wie man an manchen Stellen der Stützen erkennen kann, sind die Wände leicht eigerissen, jedoch kann man dies nicht verhindern. Die Langlöcher der Centerplate sind nur so kurz, dass man die Schrauben nicht weiter nach hinten versetzen kann, um die Wände dicker machen zu können.
+
+Autor: Alexander Punz
+
+29
+
+9.3. Rotorschutz
 9.3.1. Technische Planung 9.3.2. Umsetzung 9.3.3. Herausforderungen und Lösungen 9.3.4. Implementierung
 9.4. Halterung Ultraschallsensor
-9.4.1. Technische Planung 9.4.2. Umsetzung 9.4.3. Implementierung
-9.5. Halterung PIXY cmucam5
+9.4.1. Technische Planung 9.4.2. Umsetzung 9.4.3. Herausforderungen und Lösungen
+9.5. Halterung PIXY CMU cam5
 9.5.1. Technische Planung
 9.5.1.1. Berechnungen
 9.5.2. Umsetzung 9.5.3. Implementierung 9.5.4. Testphase
 9.6. Führung für Testflüge
 9.6.1. Technische Planung 9.6.2. Umsetzung 9.6.3. Implementierung 9.6.4. Testphase
-294.7. Persönliche Erfahrungen
+9.7. Persönliche Erfahrungen
 
-Autor: Alexander Punz
+9.3. ROTORSCHUTZ
+
+30 Autor: Alexander Punz
 
 A. Anhang 1
 A. Anhang 1
 
 Autor: Alexander Punz
 
-25
+31
+
+Literaturverzeichnis
+Literaturverzeichnis
+[1] Naza-M. http://wiki.dji.com/en/index.php/Naza-M, Abruf: 2016-02-17 [2] RN171. http://www.microchip.com/wwwproducts/en/RN171, Abruf: 2016-02-17
+
+Autor: Alexander Punz
+
+33
 
 

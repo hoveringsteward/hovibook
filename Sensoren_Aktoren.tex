@@ -2,7 +2,7 @@
 \renewcommand{\kapitelautor}{Autor: Lucas Ullrich}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Pixy CMUcam5}
+\section{PIXY CMUcam5}
 Bei der PIXY CMUcam5 handelt es sich um ein Open Source Kameramodul, welches über eine Objekterkennung verfügt.
 Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkennen.
 
@@ -28,7 +28,7 @@ Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkenn
     Hier muss grundsätzlich zwischen zwei Messmethoden unterschieden werden:
     \begin{itemize}
       \item \textbf{Absolute Positionsmessung}\\
-      Hier wird die Postion von einem gleichbleibenden Punkt aus gemessen. Dabei ist ein konstanter Referenzpunkt wichtig.
+      Hier wird die Position von einem gleichbleibenden Punkt aus gemessen. Dabei ist ein konstanter Referenzpunkt wichtig.
       Verändert sich dieser oder kann die Distanz nicht genau gemessen werden ist die Messung unbrauchbar.
 
       Für eine absolute Positionsmessung bieten sich diverse Triangulationsverfahren an,
@@ -66,7 +66,7 @@ Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkenn
     Die SPI-Schnittstelle ist bei der Kamera besonders ausfallsicher. Hier wird ein Synchronisationsbyte gefordert, wird dieses nicht erkannt,
     \zB aufgrund eines Fehlers in der Datenübertragung, schickt die Kamera keine Daten.
 
-    \paragraph{Überprüfen der SPI-Schnitstelle}
+    \paragraph{Überprüfen der SPI-Schnittstelle}
     Um zu überprüfen ob die SPI-Schnittstelle auch korrekt arbeitet wird bei der ersten Inbetriebnahme der Output überprüft.
     Hierzu wird der Zustand der 3 Leitungen mit einem Oszilloskop betrachtet.
     \begin{itemize}
@@ -89,7 +89,7 @@ Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkenn
     Der Dateneingang des PIC, respektive der Ausgang der Kamera, zeigt eine deutliche Störung durch die Taktleitung an.
 
     \subsubsection{Erkennen und Auswerten eines Bildes}
-    Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung die ein neues Bild markiert.
+    Die Kamera schickt der Reihe nach die einzelnen Daten eines Objekts. Darunter ist auch eine Startbedingung welche ein neues Bild markiert.
     Mit den diversen Informationen zum Objekt ergeben sich folgende Daten:
     \begin{itemize}
       \item Neues Bild 0xAA55
@@ -142,7 +142,7 @@ while(frame == 0) {
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ultraschallsensor HC-SR04}
-Der Ultrschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abstände zu messen. Die Messung geschieht durch das Aussenden von Ultraschallimpulsen,
+Der Ultraschallsensor HC-SR04 ist ein für Arduino entwickeltes Modul um Abstände zu messen. Die Messung geschieht durch das Aussenden von Ultraschallimpulsen,
 die Messgröße wird dabei als laufzeitabhängiger Impuls retourniert.
 
 \begin{figure}[tbh]
@@ -190,15 +190,15 @@ void ReadHeight(void) {
 }
   \end{lstlisting}
 
-  In der ersten Funktion wird die Messung gestartet. Dazu wird ein Triggersignal an den Ultraschallsensor gesendet, dieser reagiert auf eine fallende Flanke.
-  Zuvor wird darafu geachtet, dass die Register in denen die Zeit zurückgegeben wird auch wirklich leer (= 0) sind.
+  In der ersten Funktion wird die Messung gestartet. Dazu wird ein Trigger-Signal an den Ultraschallsensor gesendet, dieser reagiert auf eine fallende Flanke.
+  Zuvor wird darauf geachtet, dass die Register in denen die Zeit zurückgegeben wird auch wirklich leer (= 0) sind.
   In der zweiten Funktion folgt das Auslesen der vorhandenen Daten. Dazu werden die zwei 8-Bit Register in der 16-Bit Variable $time\_height$ abgespeichert.
   Zusätzlich wird die gemessene Höhe für die Auswertung in der $a\_frame[0].height$ Variable abgespeichert und die Differenz zur vorhergehenden Messung ermittelt.
 
-  Auf eine Berechnung der genauen Höhe in m wird zu gunsten der Verarbeitungszeit verzichtet, auf die spätere Auswertung der Flugdaten hat dies keinen Einfluss.
+  Auf eine Berechnung der genauen Höhe in m wird zu Gunsten der Verarbeitungszeit verzichtet, auf die spätere Auswertung der Flugdaten hat dies keinen Einfluss.
 
   \subsection{Herausforderungen und Lösungen}
-  \textcolor{red}{to be continued after lifetime measurements}
+  \textcolor{red}{to be continued after realtime measurements}
 
 \chapter{Aktoren}
 \renewcommand{\kapitelautor}{Autor: Lucas Ullrich}
