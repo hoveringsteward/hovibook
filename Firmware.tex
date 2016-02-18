@@ -20,9 +20,71 @@
   \subsection{Technische Planung}
 
   \subsection{Umsetzung}
+
+    \subsubsection{Vergleichen der Frames}
+    Für den Vergleich des aktuellen mit dem letzten Frame, werden zwei Strukturen verwendet, die über folgende Mitglieder verfügt.
+    num: num ist die ID des ColorCodes
+      unsigned int num;
+      num
+      // colorcode id
+      unsigned int pos\_x; // X center of object
+      unsigned int pos\_y; // Y center of object
+      unsigned int height; // height of hex-rotor
+      int angle; // rotation
+
+
+
     \subsubsection{Aileron, Elevator und Rudder anhand der Kameradaten}
+    Durch die Pixy CMUcam5 kann die Position festgestellt werden. Gegebenenfalls werden die Flugparameter ausgebessert.
+
+      \begin{itemize}
+
+        \item \textbf{Überprüfen von Aileron}\\
+
+
+
+
+        \item \textbf{Überprüfen von Elevator}\\
+
+        Position der Farbobjekte (CHECK AILERON \& ELEVATOR)
+        Wenn ein Farbobjekt nicht im gewünschten Bereicht plaziert ist, muss der Hexacopter weiter nach links oder weiter nach rechts fliegen.
+
+        \item \textbf{Überprüfen von Rudder}\\
+
+        Rotation der Farbojekte (CHECK RUDDER)
+        Wenn der Hexacopter über einem Farbobjekt fliegt, soll er kontrollieren, ob der 2-Farbige Code die richtige Rotation hat und sich im richtigen Bereich des Bildschirmes befindet. Wenn diese Informationen richtig sind, darf der Copter zum nächsten Farbobjekt fliegen.
+        Durch dieses Sytem könne die genauen Wege vorgegeben werden und können sich durch das gesamte Restaurant verteilen. Durch die rotation der Codes können auch Kurven eingebaut werden.
+
+
+
+        Richtung (CHECK RUDDER)
+        Durch die Rotation der Colorcodes, kann der Hexacopter bestimmen, ob er den richtigen Weg und in die richtige Richtung fliegt, wenn er am Weg zurück zur Base ist, muss er den umgekehrten Colorcode verwenden. (Rotation 180Grad)
+
+
+
+
+
+      \end{itemize}
+
+
+
+
+
+
+
+
 
     \subsubsection{Throttle anhand des Ultraschallsensors}
+
+    Starten und landen auf Landeplattformen (CHECK THROTTLE)
+    Der Hexacopter startet und landet auf den mit ebenfalls mit Colorcodes gekennzeichneten Landeplattformen.
+    Bei einem Fehler, besteht auch das Landen auf einem beliebigen Fleck
+
+    Höhe korrigieren (CHECK THROTTLE)
+    Höhenunterschied zwischen Tisch und Boden
+
+    \subsubsection{Speichern der alten Daten}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Objekterkennung}
