@@ -23,14 +23,19 @@
 
     \subsubsection{Vergleichen der Frames}
     Für den Vergleich des aktuellen mit dem letzten Frame, werden zwei Strukturen verwendet, die über folgende Mitglieder verfügt.
-    num: num ist die ID des ColorCodes
-      unsigned int num;
-      num
-      // colorcode id
-      unsigned int pos\_x; // X center of object
-      unsigned int pos\_y; // Y center of object
-      unsigned int height; // height of hex-rotor
-      int angle; // rotation
+    \begin{itemize}
+    \item \textbf{num}\\
+    Num ist die ID des getrackten Colorcodes, er besteht aus einer zweistelligen Zahl.
+    \item \textbf{pos\_x}\\
+    Pos\_x ist die X-Position des Colorcodes. Der Wert bezieht sich auf das Zentrum des Objektes.
+    \item \textbf{pos\_y}\\
+    Pos\_y ist die Y-Position des Colorcodes. Der Wert bezieht sich auf das Zentrum des Objektes.
+    \item \textbf{height}\\
+    Height ist die, vom Ultraschall übergebene Höhe.
+    \item \textbf{angle}\\
+    Angle ist die Rotation des Colorcodes. Da er zweifarbig ist, kann die Pixy CMUcam5 die Rotation des Objektes feststellen.
+    \end{itemize}
+
 
 
 
