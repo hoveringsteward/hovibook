@@ -24,27 +24,44 @@
     \subsubsection{Vergleichen der Frames}
     Für den Vergleich des aktuellen mit dem letzten Frame, werden zwei Strukturen verwendet, die über folgende Mitglieder verfügt.
     \begin{itemize}
-    \item \textbf{num}\\
-    Num ist die ID des getrackten Colorcodes, er besteht aus einer zweistelligen Zahl.
-    \item \textbf{pos\_x}\\
-    Pos\_x ist die X-Position des Colorcodes. Der Wert bezieht sich auf das Zentrum des Objektes.
-    \item \textbf{pos\_y}\\
-    Pos\_y ist die Y-Position des Colorcodes. Der Wert bezieht sich auf das Zentrum des Objektes.
-    \item \textbf{height}\\
-    Height ist die, vom Ultraschall übergebene Höhe.
-    \item \textbf{angle}\\
-    Angle ist die Rotation des Colorcodes. Da er zweifarbig ist, kann die Pixy CMUcam5 die Rotation des Objektes feststellen.
+      \item \textbf{num}\\
+      Num ist die ID des getrackten Colorcodes, er besteht aus einer zweistelligen Zahl.
+      \item \textbf{pos\_x}\\
+      Pos\_x ist die X-Position des Colorcodes. Der Wert bezieht sich auf das Zentrum des Objektes.
+      \item \textbf{pos\_y}\\
+      Pos\_y ist die Y-Position des Colorcodes. Der Wert bezieht sich auf das Zentrum des Objektes.
+      \item \textbf{height}\\
+      Height ist die, vom Ultraschall übergebene Höhe.
+      \item \textbf{angle}\\
+      Angle ist die Rotation des Colorcodes. Da er zweifarbig ist, kann die Pixy CMUcam5 die Rotation des Objektes feststellen.
     \end{itemize}
 
-
-
+    Zuerst wird die ID des Colorcodes verglichen, um herauszufinden, ob das Farbobjekt das selbe wie im letzten Frame ist.
+    Sollte dies der Fall sein, werden die Koordinaten x und y und die Rotation mit den Werten der älteren Struktur verglichen und gespeichert.
+    Diese werden bei den folgenden Funktionen verwendet, um zu überprüfen, ob der Hexacopter die richtige Geschwindigkeit hat.
 
     \subsubsection{Aileron, Elevator und Rudder anhand der Kameradaten}
-    Durch die Pixy CMUcam5 kann die Position festgestellt werden. Gegebenenfalls werden die Flugparameter ausgebessert.
+    Durch die Pixy CMUcam5 kann die Position des Hexacopters, relativ zu einem Colorcode, festgestellt werden. Gegebenenfalls werden die Flugparameter verändert.
+
+    Die Pixy CMUcam5 XXXXXX % IRGENDWAS MIT X diese länge, y diese länge; %
+
+
 
       \begin{itemize}
 
         \item \textbf{Überprüfen von Aileron}\\
+        Die Überprüfung von Aileron bezieht sich auf die Beschleunigung nach Links und Rechts, was der x-Koordinate entspricht.
+
+        Ziel der Funktion ist es, den Farbcode in die Mitte des Frames zu bekommen. Der Idealzustand befidnet sich zwischen 150 und 170.
+        Sollte dieser Zustand erreicht werden, bleibt der Wert von Aileron unverändert und der Hexacopter fliegt weiterhin mit dieser Beschleunigung an der
+        x-Koordinate.
+        Sollte dies nicht der Fall sein, muss der Wert auf einige Komponenten XXXXX überprüft werden.
+        Wenn der Farbcode zu weit auf der rechten Seite liegt, das bedeutet, wenn der Wert des Mittelpunktes vom Farbobjekt höher als 170 ist,
+        muss der Hexacopter nach rechts fliegen, um seine Position zu korrigieren.
+        Dabei muss zuerst verglichen werden, ob sich der Hexacopter in die richtige Richtung bewegt. Sollte er in die falsche Richtung
+        fliegen, wird der Aileron-Flugparameter gesenkt, was die Beschleunigung nach Rechts vorraussetzt.
+        Sollte die Drohne bereits nach Rechts fliegen, wird je nach Geschwindigkeit
+
 
 
 
