@@ -80,13 +80,31 @@ weitergeleitet. Der Flightcontroller NAZA-M lite wird an die A, E, R und T Pins 
     der Ultraschallsensor sowie die Möglichkeit auf einen manuellen Flug zu wechseln.
 
     \subsubsection{Umsetzung}
+    Für die Umsetzung wurden die einzelnen Komponenten entsprechend ihrer Funktion im Schalplan verbunden und aus diesem ein Platinen-Layout erstellt.
+    Das Platinen-Layout wurde schließlich mit einem Fräsplotter auf das Rohmaterial übertragen.
 
+    \begin{figure}[tbh]
+      \begin{centering}
+        \subfigure[Oberseite]{\includegraphics[width = 0.49\textwidth]{Bilder/HP_top}}
+        \subfigure[Unterseite]{\includegraphics[width = 0.49\textwidth]{Bilder/HP_bot}}
+      \par\end{centering}
+      \caption{Die bestückte Hauptplatine}
+      \label{Hauptplatine}
+    \end{figure}
 
     \subsubsection{Herausforderungen und Lösungen}
+    Eine Herausforderung stellte die geringe Deckkraft des schwarzen Toners beim ätzen der Platine dar. Durch zu wenig Toner auf der Belichtungsvorlage sind
+    angeätzte Masseflächen entstanden. Um dennoch eine ordentliche Platine zu haben wurde diese schließlich gefräst. Dies hat auch viel Arbeit beim Bohren der
+    Löcher erspart.
 
-  \subsection{WLAN}
+  \subsection{WLAN-Modul}
+  Das WLAN-Modul dient als Schnittstelle zwischen Hauptplatine und Server. Auf dieser Platine befinden sich das WLAN-Modul RN171 sowie ein Spannungsregler und Level-Shifter
+  um eine Kompatibilität mit den anderen Komponenten zu gewährleisten.
 
     \subsubsection{Technische Planung}
+    In der Planung war die Versorungsspannung des WLAN-Modul das Hauptaugenmerk. Für den Betrieb sind $\SI{3.3}{\volt}$ notwendig, eine $\SI{5}{\volt}$ Toleranz ist nicht gegeben.
+    Aufgrund der fehlenden Toleranz müssen alle Leitungen die zur Kommunikation dienen entweder auf $\SI{5}{\volt}$ angehoben oder auf $\SI{3.3}{\volt}$ abgesenkt werden,
+    andernfalls kann es zu Datenverlust oder sogar einer Beschädigung eines Moduls kommen.
 
     \subsubsection{Umsetzung}
 
