@@ -73,6 +73,7 @@
 \usepackage{xcolor}
 
 %Für Bilddarstellung
+
 \usepackage{float}
 
 %Einheitendarstellung
@@ -81,6 +82,11 @@
   locale = DE ,
   per-mode = symbol
 }
+
+%%%%%%%%%%% GLOSSAR teil 1/2 - muss getestet werden
+\usepackage[toc,acronym]{glossaries}
+\makeglossaries
+\input{Glossar}
 
 \makeatother
 
@@ -391,14 +397,10 @@ EVO-tech GmbH
 \bibliographystyle{plaindin}
 \bibliography{diplom}
 
-%%%%%%%%%%% GLOSSAR teil 1/2 - muss getestet werden
-\usepackage[toc,acronym]{glossaries}
-\makeglossaries
-\input{Glossar.tex}
 
 %%%%%%%%%%%%% GLOSSAR teil 2/2 - muss getestet werden
-\printglossary[type=\acronymtype]
-\printglossary
+%\printglossary[type=\acronymtype]
+\printglossaries
 
 
 \end{document}
