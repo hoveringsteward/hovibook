@@ -1,8 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BEISPIEL
 
 % im Dokument: alles mit \gls{xxx} kann man anklicken :3
-%
-%
 
 \newglossaryentry{partnership}{
 	name=Partnerschaft,
@@ -38,8 +36,24 @@
 
 \newglossaryentry{gls_gcm}{
 	name=Galois/Counter Mode,
-	description={Standard-Betriebsmodus für die Verschlüsselung von \glspl{link} mit \acrshort{aes}},
+	description={Standard-Betriebsmodus für die Verschlüsselung von \glspl{link} mit \acrshort{aes}}, %%%% glspl: Link zu Thema "Link" :b (bloedes bsp)
 }
 \newacronym[see={[Glossar:]{gls_gcm}}]{gcm}{GCM}{Galois/Counter Mode\glsadd{gls_gcm}}
 
 %%%%%%%%%%%%%% Unsere Glossareinträge (evtl mit Akronym)
+
+\newglossaryentry{Mitglied}{
+	name=Mitglied,
+  plural=Mitglieder,
+	description={Mitglieder (eng. members) sind Variablen in einer Struktur}
+}
+
+
+%%% im dokument \glslink{Struktur}{Strukturen} muss getestet werden
+
+\newglossaryentry{Struktur}{
+	name=Struktur,
+  plural=Strukturen,
+	description={Eine Struktur (eng. struct) ist eine Speichermethode von Daten. Sie bietet die Möglichkeit einen neuen Datentypen zu erstellen.
+  Die einzelnen Variablen/Mitglieder können, anders als bei einem Array, von verschiedenen Datentypen sein. \cite{Structs} }
+}
