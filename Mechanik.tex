@@ -147,6 +147,7 @@
  			\end{align}
 
 	Konstruiert wurde die Halterung mit einem Winkel von 15° um Ungenauigkeiten des Druckers besser kompensieren zu können.
+
 	In der folgenden Abbildung kann man erkennen, dass manche Wände bei den Bohrungen zu dünn sind zu drucken, es entstehen dadurch Löcher.
 	Dieses Problem könnte man nur lösen, wenn man die Schrauben weiter nach außen legen würde, jedoch ist das in diesem Fall nicht möglich, da die Ausnehmungen zu kurz sind.
 
@@ -163,7 +164,70 @@
 
 	\subsection{Technische Planung}
 
+	In dem gewählten Bausatz des Hexacopters ist kein Rotorschutz vorhanden.
+	Da der Hexacopter direkt zu den Gästen fliegen wird, ist es nicht umgänglich, den Kontakt mit den Propellern zu verhindern.
+	Diese können durch die hohen Drehzahlen und die Kraft der Motoren erhebliche Verletzungen zuführen.
+	Es gibt diverse Vorrichtungen für Multicopter zu kaufen, die nur die Rotorblätter schützen, jedoch keine, die auch das Eingreifen einer Hand verhindern.
+
+	Der Rotor-, oder auch Propellerschutz genannt, soll wie ein Ring um die Rotorblätter liegen und auch auf der Ober,- und Unterseite Schutz vor Verletzungen bieten.
+	Zu beachten ist jedoch auch, dass sechs Schutzvorrichtungen benötigt werden, daher sollten diese so leicht wie möglich sein, um das maximale Abfluggewicht nicht zu überschreiten.
+
 	\subsection{Umsetzung}
+
+	Die folgenden Abbildungen zeigen den konstruierten Propellerschutz, an dem Hexacopter montiert.
+
+			\begin{figure}[tbh]
+			\begin{centering}
+			\includegraphics[width = 0.8\textwidth]{Bilder/propellerschutz_gesamt_oben}
+			\par\end{centering}
+			\caption{Propellerschutz oben}
+			\label{propellerschutz_gesamt_oben}
+			\end{figure}
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.8\textwidth]{Bilder/propellerschutz_gesamt_unten}
+			\par\end{centering}
+			\caption{Propellerschutz unten}
+			\label{propellerschutz_gesamt_unten}
+			\end{figure}
+
+	Wie geplant, umrandet der Ring das komplette Rotorblatt, im Falle eines Absturzes kann der Propeller nicht den Boden berühren und wird somit nicht beschädigt.
+	Auf der Oberseite und Unterseite ist ein Gitter vorgesehen, welches Verletzungen an Personen verhindert.
+	Das Gitter an der Oberseite ist etwas feiner gegliedert als an der Unterseite, da man den Cupcake von der oberen Centerplate entnehmen muss.
+	An der Unterseite ist das Gitter nur gestreift konstruiert, da die Luftströmung nicht stark beeinflusst werden darf und die größere Verletzungsgefahr an der Oberseite besteht.
+
+	Der komplette Rotorschutz wird einerseits mit zwei Schrauben am Hexacopter befestigt (siehe Abbildung\ref{propellerschutz_gesamt_oben}) und andererseits von einer Stütze (siehe Abbildung\ref{propellerschutz_gesamt_unten},
+	\textcolor{blue}{blauer Balken}) an der Unterseite gehalten. Die Stütze wird direkt an dem Motor angeschraubt, samt dem Arm des Hexacopters.
+	Da die Schrauben der Centerplate und des Motors zu kurz sind, werden passende Zylinderkopfschrauben verwendet.
+	Besonders bei dem Motor ist es wichtig, dass diese nicht zu lang sind, da sich der Motor nicht mehr bewegen könnte.
+
+	Durch die Gewichtsbegrenzung \bzw der Form des Propellerschutzes, bot es sich an, diesen in einem 3D Drucker anzufertigen.
+	Dazu wurde der Ring in zwei Hälften unterteilt, eine Ober,- und eine Unterseite.
+	Der Ring hat einen ungefähren Innendurchmesser von 270 mm, das Druckbett eine maximale Abmessung von 270x210 mm.
+	Beide Hälften mussten noch in weitere, für den Drucker passende Teile unterteilt werden.
+	Die obere Hälfte wurde noch einmal in der Mitte geteilt, die Unterseite musste in vier Teile unterteilt werden (siehe folgende Abbildung \ref{propellerschutz_mitte_unterteilung}).
+
+			\begin{figure}[tbh]
+			\begin{centering}
+			\includegraphics[width = 0.7\textwidth]{Bilder/propellerschutz_mitte_unterteilung}
+			\par\end{centering}
+			\caption{Propellerschutz Unterteilung}
+			\label{propellerschutz_mitte_unterteilung}
+			\end{figure}
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.45\textwidth]{Bilder/propellerschutz_klebestellen}
+			\par\end{centering}
+			\caption{Propellerschutz Klebestellen}
+			\label{propellerschutz_klebestellen}
+			\end{figure}
+
+	Die einzelnen Hälften  werden mit Sekundenkleber zusammengefügt, die Klebestellen wurden daher mit Nuten versehen,
+	um eine größere Klebefläche zu gewährleisten (siehe Abbildung\ref{propellerschutz_klebestellen}).
+	Die geklebten Hälften werden dann mit Durchgangsschrauben und Sechskantmutter miteinander verschraubt (siehe Abbildung\ref{propellerschutz_mitte_unterteilung}),
+	der kleine Absatz an der unteren Hälfte wird extra angefertigt da der Drucker kein Stützmaterial drucken müsste.
 
 	\subsection{Herausforderungen und Lösungen}
 
