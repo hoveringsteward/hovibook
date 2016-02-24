@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Allgemein}
 Im folgenden Kapitel wird beschrieben, mit welchen Mitteln und mit welcher Effektivität
-das Projekt Hovering Steward vermarktet wird. Unter Anderem werden diverse Marktanalysen
+das Projekt Hovering Steward vermarktet worden ist. Unter Anderem werden diverse Marktanalysen
 aber auch Marketing-Strategien und deren Anwendung erläutert.
   \subsection{Marktanalyse}
 
@@ -72,7 +72,54 @@ behandelt.
     \subsubsection{Backend}
 
     \subsubsection{SEO}
+    Der Blog war unsere wichtigste Schnittstelle nach Außen, weswegen er im Internet leicht zu finden sein musste. Suchmaschinen wie Google oder Bing nutzen
+    sogenannte Robots, kleine Programme die selbstständig das World Wide Web durchstöbern, um Websiten zu inspizieren und zu bewerten. Je besser die Bewertung,
+    desto weiter oben lässt sich die Website in der Suchmaschine auffinden.
+    Die Bewertung hängt von einer Vielzahl von Kriterien ab, von denen folgende bei der entwicklung des Blogs beachtet wurden:
+    \begin{itemize}
+      \item Aufbau der Seite
+        Die Grundstruktur eines HTML Dokuments besteht aus folgenden Tags:
+        (BILD VON HTML BASIC STRUCTURE)
+        Im <head> Bereich werden zum einen <meta> Tags angegeben, in denen allgemeine Informationen zur Website, wie Autor oder Keywords und Beschreibung gespeichert werden.
+        Letztere zwei sind besonders wichtig, da sie dem Robot mitteilen, um was es auf der Seite geht. Der Robot achtet hierbei auch darauf, dass die Beschreibung nicht
+        länger als 155 Zeichen lang ist und die Keywords eindeutig gewählt werden.
 
+        Im <body>, also im eigentlichen Inhalt der Website legt der Robot zum einen sehr viel Wert Struktur. Beispielsweise muss die Verschachtelung der Tags stimmen, oder der <h1> Tag darf nur einmal pro Seite
+        vorkommen. Zum anderen werden Inhalt und Code in Relation gesetzt. Wenn der Aufbau des HTML Dokuments riesig ist, in jedem Absatz jedoch nur ein Satz steht kennt sich der Robot nicht aus.
+
+      \item Responsive Design
+        Das Smartphone ist mittlerweile ein ebenso beliebtes Gerät zum Surfen im Internet, wie der Computer. Damit auf dem kleinen Display alles gut lesbar muss die Website speziell
+        gestaltet werden. Frameworks wie Bootsrap helfen bei diesem Vorhaben, indem mithilfe von vodefinierten CSS-Klassen die Elemente der Website so gestaltet werden, dass diese mit der
+        Bilschirmgröße mitwachsen, sich verschieben oder ausgeblendet werden.
+
+      \item Interne und externe Links
+        Bei Links werden sowohl Links, die auf die Website verweisen, als auch Links, die auf andere Seiten zeigen bewertet.
+        Zeigen sehr viele externe Links auf eine Seite, interpretiert der Robot diese als geläufig und sie erhält eine höhere Wertung. In unserem Fall war die Kombination mit anderen sozialen
+        Medien sehr hilfreich, da durch Veröffentlichungen auf diesen automatisch Links auf unseren Blog generiert werden.
+        Links, die von der eigenen Seite auf andere verweisen stellen jedoch einen Nachteil dar, da der Robot dem Link folgen könnte, statt die eigene Seite weiter zu inspizieren. Möchte man dies
+        verhindern, kann dem <a> Tag das Attribut rel="nofollow" hinzugefügt werden, um dem Robot zu sagen, dass er diesem Link nicht folgen soll.
+
+      \item Sitemap
+      	Die Sitemap ist ein Inhaltsverzeichnis der Website, z.B. in Form einer XML Datei. Die Sitemap hilft dem Robot, wenn er erst einmal auf einer Seite gelandet ist, zugehörige Seiten
+        zu finden. Dadurch, dass in der Sitemap die zugehörigen Unterseiten einer Seite mittels URL angegeben werden, hat dies den selben Vorteil wie eine große Anzahl externer Links, die auf diese
+        Unterseiten verweisen, nämlich dass Google diese schneller findet. Tools wie xml-sitemaps.com bieten an, eine Sitemap für die angegebene URL zu generieren. Hat der Robot die Seite vollständig
+        untersucht, muss die Sitemap im Domain Root-Verzeichnis abgelegt werden. Zuletzt kann die URL zu dieser Sitemap bei Google registriert werden, um Google anzuweisen einen Robot über die Seite
+        laufen zu lassen. Nach einigen Tagen sind die Ergebnisse direkt in der Google Suche sichtbar.
+
+      \item Browserkompatibilität
+        Nicht jeder Browser stellt jede Seite gleich dar. Die Tags werden unterschiedlich, oder sogar garnicht verstanden. Wird dies nicht beachtet, wirkt sich das auf die Nutzerfreundlichkeit,
+        und damit auch auf die Bewertung der Website aus. Um dies zu verhindern gibt es Tools wie zum Beispiel caniuse.com in denen genau verzeichnet ist, welcher Tag, oder welche CSS-Eigenschaft
+        von welchem Browser, beziehungsweise welcher Browserversion unterstützt wird.
+
+      \item Ladezeit
+        Der Robot bewertet ebenfalls die Ladezeit einer Website. Sie ergibt sich aus der Anzahl an Bildern, Videos oder eingebundenen Bibliotheken oder Schriftarten auf der Website.
+        Speziell im Blog, war früh klar, dass viele Bilder geladen werden müssen. Den Upload auf eine niedrige Dateigröße einzuschränken hat zu Beginn nicht ausgereicht.
+        Eine Javascript Bibliothek names yoxview hat es allerdings ermöglicht, die Bilder erst dann zu laden, wenn ein Nutzer auf einen Thumbnail klickt. Die Größe der Thumbnails betrugen bloß
+        ein paar Kilobyte, wodurch die Ladezeit der Website bedeutend eingeschränkt werden konnte.
+
+      \item Barrierefreiheit
+
+    \end{itemize}
   \subsection{Implementierung}
 
     \subsubsection{Code-Beispiele}
