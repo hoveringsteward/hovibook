@@ -52,7 +52,7 @@
 		\subsubsection{Von der Idee zur Anfertigung}
 
 		Die größte Hürde an der Realisierung einer Idee ist, eine CAD Zeichnung zu erstellen. In 3D CAD Programmen wie Creo, SolidWorks, etc. kann man ein Teil konstruieren und dann als STL (Standard Triangulation Language) File abspeichern.
-		Dieses Format gibt dann nur mehr Informationen über die Oberfläche und Struktur an (siehe Abbildung\ref{stl_file_optionen}).
+		Dieses Format gibt dann nur mehr Informationen über die Oberfläche und Struktur an (siehe Abbildung \ref{stl_file_optionen}).
 		Die Sehnenhöhe gibt an wie genau die Oberfläche gedruckt werden muss, die Winkelsteuerung gibt die Genauigkeit der Radien und Kanten des Teiles an.
 
 
@@ -147,6 +147,7 @@
  			\end{align}
 
 	Konstruiert wurde die Halterung mit einem Winkel von 15° um Ungenauigkeiten des Druckers besser kompensieren zu können.
+
 	In der folgenden Abbildung kann man erkennen, dass manche Wände bei den Bohrungen zu dünn sind zu drucken, es entstehen dadurch Löcher.
 	Dieses Problem könnte man nur lösen, wenn man die Schrauben weiter nach außen legen würde, jedoch ist das in diesem Fall nicht möglich, da die Ausnehmungen zu kurz sind.
 
@@ -163,11 +164,98 @@
 
 	\subsection{Technische Planung}
 
+	In dem gewählten Bausatz des Hexacopters ist kein Rotorschutz vorhanden.
+	Da der Hexacopter direkt zu den Gästen fliegen wird, ist es nicht umgänglich, den Kontakt mit den Propellern zu verhindern.
+	Diese können durch die hohen Drehzahlen und die Kraft der Motoren erhebliche Verletzungen zuführen.
+	Es gibt diverse Vorrichtungen für Multicopter zu kaufen, die nur die Rotorblätter schützen, jedoch keine, die auch das Eingreifen einer Hand verhindern.
+
+	Der Rotor-, oder auch Propellerschutz genannt, soll wie ein Ring um die Rotorblätter liegen und auch auf der Ober,- und Unterseite Schutz vor Verletzungen bieten.
+	Zu beachten ist jedoch auch, dass sechs Schutzvorrichtungen benötigt werden, daher sollten diese so leicht wie möglich sein, um das maximale Abfluggewicht nicht zu überschreiten.
+
 	\subsection{Umsetzung}
+
+	Die folgenden Abbildungen zeigen den konstruierten Propellerschutz, an dem Hexacopter montiert.
+
+			\begin{figure}[tbh]
+			\begin{centering}
+			\includegraphics[width = 0.8\textwidth]{Bilder/propellerschutz_gesamt_oben}
+			\par\end{centering}
+			\caption{Propellerschutz oben}
+			\label{propellerschutz_gesamt_oben}
+			\end{figure}
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.8\textwidth]{Bilder/propellerschutz_gesamt_unten}
+			\par\end{centering}
+			\caption{Propellerschutz unten}
+			\label{propellerschutz_gesamt_unten}
+			\end{figure}
+
+	Wie geplant, umrandet der Ring das komplette Rotorblatt, im Falle eines Absturzes kann der Propeller nicht den Boden berühren und wird somit nicht beschädigt.
+	Auf der Oberseite und Unterseite ist ein Gitter vorgesehen, welches Verletzungen an Personen verhindert.
+	Das Gitter an der Oberseite ist etwas feiner gegliedert als an der Unterseite, da man den Cupcake von der oberen Centerplate entnehmen muss.
+	An der Unterseite ist das Gitter nur gestreift konstruiert, da die Luftströmung nicht stark beeinflusst werden darf und die größere Verletzungsgefahr an der Oberseite besteht.
+
+	Der komplette Rotorschutz wird einerseits mit zwei Schrauben am Hexacopter befestigt (siehe Abbildung \ref{propellerschutz_gesamt_oben}) und andererseits von einer Stütze (siehe Abbildung  \ref{propellerschutz_gesamt_unten},
+	\textcolor{blue}{blauer Balken}) an der Unterseite gehalten. Die Stütze wird direkt an dem Motor angeschraubt, samt dem Arm des Hexacopters.
+	Da die Schrauben der Centerplate und des Motors zu kurz sind, werden passende Zylinderkopfschrauben verwendet.
+	Besonders bei dem Motor ist es wichtig, dass diese nicht zu lang sind, da sich der Motor nicht mehr bewegen könnte.
+
+			\newpage
+
+	Durch die Gewichtsbegrenzung \bzw der Form des Propellerschutzes, bot es sich an, diesen in einem 3D Drucker anzufertigen.
+	Dazu wurde der Ring in zwei Hälften unterteilt, eine Ober,- und eine Unterseite.
+	Der Ring hat einen ungefähren Innendurchmesser von 270 mm, das Druckbett eine maximale Abmessung von 270x210 mm.
+	Beide Hälften mussten noch in weitere, für den Drucker passende Teile unterteilt werden.
+	Die obere Hälfte wurde noch einmal in der Mitte geteilt, die Unterseite musste in vier Teile unterteilt werden (siehe folgende Abbildung \ref{propellerschutz_mitte_unterteilung}).
+
+			\begin{figure}[tbh]
+			\begin{centering}
+			\includegraphics[width = 0.7\textwidth]{Bilder/propellerschutz_mitte_unterteilung}
+			\par\end{centering}
+			\caption{Propellerschutz Unterteilung}
+			\label{propellerschutz_mitte_unterteilung}
+			\end{figure}
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.45\textwidth]{Bilder/propellerschutz_klebestellen}
+			\par\end{centering}
+			\caption{Propellerschutz Klebestellen}
+			\label{propellerschutz_klebestellen}
+			\end{figure}
+
+	Die einzelnen Hälften  werden mit Sekundenkleber zusammengefügt, die Klebestellen wurden daher mit Nuten versehen,
+	um eine größere Klebefläche zu gewährleisten (siehe Abbildung \ref{propellerschutz_klebestellen}).
+	Die geklebten Hälften werden dann mit Durchgangsschrauben und Sechskantmutter miteinander verschraubt (siehe Abbildung  \ref{propellerschutz_mitte_unterteilung}),
+	der kleine Absatz an der unteren Hälfte wird extra angefertigt da der Drucker kein Stützmaterial drucken müsste.
+
+			%\newpage
 
 	\subsection{Herausforderungen und Lösungen}
 
+	Eines der größten Probleme war es, den Rotorschutz so zu konstruieren, dass er stabil, aber auch sehr leicht ist.
+	Im Falle eines Absturzes, würden hohe Kräfte auf den Propellerschutz wirken, daher muss dieser sehr robust gefertigt sein.
+	Der Vorteil von ABS \bzw 3D Druckteilen ist, dass diese sehr elastisch sind, nicht wie Styropor zum Beispiel, es ist daher nicht notwendig den Ring dickwandig zu konstruieren.
+ 	Durch diesen Vorteil kann man einiges an Gewicht einsparen, das Problem besteht aber trotzdem noch darin, dass der Ring enorme Dimensionen hat.
+	Eine komplette Zusammenstellung (Ring, Stütze und Schrauben) hat ein Gewicht von etwa 90 g.
+	Auf sechs Propeller aufgerechnet mehr als ein halbes Kilogramm, der Hexacopter kann das zwar noch tragen, jedoch schränkt das die hardwaremäßige Erweiterung stark ein.
+
+	Eine weitere Herausforderung war es, den Ring anzufertigen. Wie schon in dem oberen Punkt erklärt wurde, musste der Ring in sieben Teile unterteilt werden.
+	Die Herausforderung lag darin, die Stücke so zu gliedern, damit sie im 3D Drucker fertigbar sind und nicht zu viel Druckzeit auf sich nehmen.
+	Die Druckzeit wurde zwar schon optimiert durch die Gliederung, jedoch braucht es trotzdem noch etwa 14 Stunden alle Teile für einen Rotorschutz zu drucken.
+
 	\subsection{Implementierung}
+
+Die einzelnen Teile wurden wie schon erwähnt, miteinander verklebt. Bevor diese zusammengefügt wurden, musste sichergestellt werden, dass die Nuten exakt ineinander passen.
+Würde dies nicht gewährleistet sein, würden die obere und untere Hälfte des Propellerschutzes nicht mehr zusammenpassen.
+Die Toleranzen des Druckers, besonders bei solchen Stellen sind so groß, dass man meistens mit Feilen die Nuten nachbessern muss.
+Besonders beim Verkleben der Teile ist viel Geduld nötig, da auch der Sekundenkleber nicht sofort komplett trocken ist,
+es war ebenso wichtig, den richtigen Untergrund zu wählen, eine Holzplatte eignete sich am besten, da keine Rückstände blieben.
+
+Die beiden Hälften wurden dann miteinander verschraubt, samt der Stütze.
+Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Centerplate und dem Arm des Hexacopters befestigt werden.
 
 \section{Halterung Ultraschallsensor}
 
@@ -181,9 +269,9 @@
 
 	\subsection{Technische Planung}
 
-		\subsubsection{Berechnungen}
-
 	\subsection{Umsetzung}
+
+			\subsubsection{Berechnungen}
 
 	\subsection{Implementierung}
 
