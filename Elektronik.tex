@@ -103,10 +103,23 @@ weitergeleitet. Der Flightcontroller NAZA-M lite wird an die A, E, R und T Pins 
   um eine Kompatibilität mit den anderen Komponenten zu gewährleisten.
 
     \subsubsection{Technische Planung}
-    In der Planung war die Versorungsspannung des WLAN-Modul das Hauptaugenmerk. Für den Betrieb sind $\SI{3.3}{\volt}$ notwendig, eine $\SI{5}{\volt}$ Toleranz ist nicht gegeben.
+    In der Planung war die Versorgungsspannung des WLAN-Modul das Hauptaugenmerk. Für den Betrieb sind $\SI{3.3}{\volt}$ notwendig, eine $\SI{5}{\volt}$ Toleranz ist nicht gegeben.
     Aufgrund der fehlenden Toleranz müssen alle Leitungen die zur Kommunikation dienen entweder auf $\SI{5}{\volt}$ angehoben oder auf $\SI{3.3}{\volt}$ abgesenkt werden,
     andernfalls kann es zu Datenverlust oder sogar einer Beschädigung eines Moduls kommen.
 
     \subsubsection{Umsetzung}
+    Auch für diese Platine wurde ein Schaltplan und Layout erstellt. Anschließend wurde das Layout wieder mit einem Fräsplotter auf das Rohmaterial übertragen.
+
+    \begin{figure}[tbh]
+      \begin{centering}
+        %\subfigure[Oberseite]{\includegraphics[width = 0.49\textwidth]{Bilder/WLAN_top}}
+        \subfigure[Unterseite]{\includegraphics[width = 0.49\textwidth]{Bilder/WLAN_bot}}
+      \par\end{centering}
+      \caption{Die bestückte WLAN-Platine}
+      \label{WLAN-Platine}
+    \end{figure}
 
     \subsubsection{Herausforderungen und Lösungen}
+    Um eine funktionierende Kommunikation sicher stellen zu können, wurden mehrere Level-Shifter in Richtung des Mikroprozessors sowie Spannungsteiler in Richtung des WLAN-Moduls
+    integriert. Diese Maßnahmen sorgen dafür, dass weder das WLAN-Modul beschädigt wird, noch Daten verloren gehen.
+    Bei der Platinen-Fertigung wurde aufgrund der schlechten Deckkraft abermals auf den Fräsplotter zurückgegriffen.
