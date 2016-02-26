@@ -257,25 +257,139 @@ es war ebenso wichtig, den richtigen Untergrund zu wählen, eine Holzplatte eign
 Die beiden Hälften wurden dann miteinander verschraubt, samt der Stütze.
 Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Centerplate und dem Arm des Hexacopters befestigt werden.
 
+		\newpage
+
 \section{Halterung Ultraschallsensor}
 
 	\subsection{Technische Planung}
 
+	Die Höhe des Hexacopters wird mittels eines Ultraschallsensors gesteuert, dieser misst den Abstand von dem Boden aus.
+	Damit der Sensor genaue Werte messen kann, muss er fest auf dem Multicopter befestigt werden.
+	Um das gewährleisten zu können, musste eine Halterung entworfen werden, die den Ultraschallsensor optimal mit dem Hexacopter verbindet.
+	Die Anforderungen an die Halterung begrenzen sich auf ein geringes Gewicht \bzw eine einfache Montagemöglichkeit.
+	Der Sensor hat auf jeder Ecke eine kleine Bohrung von 1.5 mm vorgesehen, das erschwert die Befestigungsmöglichkeit des Sensors an der Halterung, da es keine gängigen Schrauben in dieser Größe gibt.
+
 	\subsection{Umsetzung}
 
+	Die folgende Abbildung (Abbildung \ref{halterung_ultraschall}) zeigt die CAD Konstruktion und die gefertigte (Abbildung \ref{halterung_ultraschall_fertig}) Ultraschallsensorhalterung.
+
+			\begin{figure}[H]
+				\begin{centering}
+					\subfigure[CAD Konstruktion Ultraschallsensorhalterung\label{halterung_ultraschall}]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_ultraschall}}
+					\subfigure[Gefertigte Ultraschallsensorhalterung\label{halterung_ultraschall_fertig}]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_ultraschall_fertig}}
+				\par\end{centering}
+				\caption{Ultraschallsensorhalterung}
+				\label{Halterung_Ultraschallsensor}
+			\end{figure}
+
+	Das Gewicht spielte, analog zu den anderen Konstruktionen, eine wichtige Rolle.
+	Materialien wie Stahl oder Aluminium wären selbst bei diesem kleinen Teil (51x46x10 mm) zu schwer geworden.
+	Um das zu verhindern wurde diese Haltevorrichtung, wie auch der Propellerschutz, in einem 3D Drucker angefertigt.
+	Das Teil wiegt durch die Fertigungsmethode etwa 5.5 g, das entspricht etwa dem Gewicht einer 20 Cent Münze.
+
+	Die Halterung wird an der unteren Centerplate befestigt, da wie schon erwähnt, der Sensor von dem Boden aus misst.
+	Die Befestigungsmethode ist selbst entwickelt worden, dabei handelt es sich um ein spezielles Klammersystem, welches an einer Strebe der Platte montiert werden kann (siehe Abbildung \ref{halterung_ultraschall_fertig}).
+	Die Klammer besteht aus drei Stegen, auf denen jeweils ein Anschlag vorgesehen wurde.
+	Die Form der Anschläge ist  exakt an die Centerplate angepasst, damit sich die Halterung so geringfügig wie möglich bewegen lässt.
+
+			\newpage
+
+	Die ideale Stärke der Stege wurde durch Versuche ermittelt, es wurde dabei das Klammersystem mit unterschiedlichen Dicken gefertigt und an dem Hexacopter getestet.
+	Die optimale Stärke war deshalb wichtig, da das System nicht funktionieren würde, wenn diese falsch dimensioniert werden würde.
+	Die Elastizität des Materials \bzw die gewählte Dicke der Stege ermöglicht es, diese soweit auseinanderziehen zu lassen, dass die Anschläge einfach über die Platte geschoben werden können.
+	Aufgrund dieser Eigenschaften verformen sich diese auch wieder komplett zurück und fixieren somit die Halterung.
+
+	Damit der Sensor nicht nach unten kippen kann, wurde eine Nut in die Haltevorrichtung vorgesehen.
+	Droht die Halterung nach unten zu kippen, verkeilt sich diese mit der Centerplate und kann nicht mehr weitersinken.
+	Die Nut ist so groß dimensioniert worden, dass sie leicht auf die Platte geschoben werden aber sich nur minimal bewegen lässt.
+
+	Der zweite Teil der Halterung wurde so konstruiert, dass die vier Ecken der Sensorplatine gleichmäßig aufliegen können.
+	Auf dem Ultraschallsensor selbst befinden sich jedoch vier Anschlussstifte, die es nicht ermöglichen, die Platine direkt auf der „Gabel“ zu befestigen.
+	Um Kabel trotzdem problemlos anschließen zu können, wurde der Sensor mittels vier Stutzen 5 mm höher gelegt.
+
+	Geplant wurde, dass der Sensor an den Stutzen mit vier Blechschrauben befestigt wird, die Durchmesser der Bohrungen sind aber so klein, dass keine gängigen Schraubendurchmesser verwendet werden können.
+	Die geeigneten Schrauben werden nur in ausgewählten Geschäften verkauft, um einen viel höheren Preis \bzw längeren Lieferzeiten, als bei normalen Schrauben.
+	Um den Sensor trotzdem befestigen zu können, wurden Kupferdrähte zur Fixierung verwendet.
+	Da nur das Gewicht des Ultraschallsensors an den Drähten zieht, geben diese selbst bei heftigen Flugmanövern nur minimal nach.
+
 	\subsection{Herausforderungen und Lösungen}
+
+	Das Klammersystem hat die meiste Zeit auf sich genommen.
+	Die erste Version der Halterung hat gezeigt, dass die angenommenen Dimensionen nicht umgesetzt werden konnten.
+	Das Problem lag darin, dass die Halterung nicht hochkant, sondern vertikal gedruckt werden musste.
+	Damit die Haltevorrichtung gedruckt werden kann, hat der Drucker Stützmaterial in die Nut gedruckt.
+	Dieses Stützmaterial kann jedoch nicht restlos entfernt werden, daher musste die Höhe des Spaltes vergrößert werden.
+	Es brauchte drei verschiedene Versionen der Ultraschallsensorhalterung, bis alle Parameter ideal gepasst haben, das kostete natürlich Zeit, da jedes Mal ein neues Teil gedruckt werden musste.
+
+			\newpage
 
 \section{Halterung PIXY CMU cam5}
 
 	\subsection{Technische Planung}
 
+	Der Hexacopter soll dem Gast sein gewünschtes Dessert bringen, der Weg zu dem Gast wird über Farbcodes am Boden vorgegeben.
+	Um dem Farbcode folgen zu können, wird eine PIXY CMU cam5 verwendet (genaueres siehe Kapitel Sensoren).
+
+	Die Halterung soll so konstruiert werden, dass die Kamera während des Fluges nicht wackelt, das verhindert ungenaue \bzw falsche Messwerte.
+	Besonders zu beachten ist, dass die PIXY Cam immer in die Flugrichtung ausgerichtet sein muss.
+	Der Flightcontroller gibt dem Hexacopter eine fixe Orientierung vor, würde die Kamera nicht in diese Richtung messen, könnte es zu Fehlmessung kommen und den Multicopter falsch navigieren.
+
 	\subsection{Umsetzung}
 
-			\subsubsection{Berechnungen}
+	In den folgenden Abbildungen wird einerseits die konstruierte Halterung Abbildung \ref{halterung_pixy_creo})
+	und andererseits die Gefertigte  mit der PIXY CMU cam5 (Abbildung \ref{halterung_pixy}).
 
-	\subsection{Implementierung}
+			\begin{figure}[H]
+				\begin{centering}
+					\subfigure[CAD Konstruktion PIXY Cam Halterung\label{halterung_pixy_creo}]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_pixy_creo}}
+					\subfigure[Gefertigte PIXY Cam Halterung\labelhalterung_pixy}]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_pixy}}
+				\par\end{centering}
+				\caption{Halterung PIXY Cam}
+				\label{Halterung_PIXY}
+			\end{figure}
 
-	\subsection{Testphase}
+	Aus Gewichtsgründen wurde die Halterung in einem 3D Drucker angefertigt.
+	Diese wiegt etwa 5.2 g, ist also etwas leichter als die Ultraschallsensorhalterung.
+	Um den Hexacopter, selbst bei so geringen Massen besser ausgleichen zu können, wurden beide Befestigungsmöglichkeiten gegenüber voneinander platziert.
+	Da die PIXY Cam Halterung auf der unteren Centerplate platziert wird, konnte wieder das eigens entwickelte Klammersystem verwendet werden.
+	Das garantiert auch in diesem Fall eine gute Passgenauigkeit, um den Sensor optimal zu fixieren.
+
+	Die Kamera hat an der unteren Leiste der Platine zwei Bohrungen vorgesehen, diese wurden genutzt um den Sensor mit der Halterung zu verbinden.
+	Es bot sich nicht viel Platz auf der Platine an, um den Sensor fest genug zu fixieren, jedoch reichte der untere Streifen ausreichend aus.
+
+	Wie schon in der technischen Planung erwähnt wurde, spielt die exakte Position der PIXY Cam eine wichtige Rolle.
+	Die Vorgangsweise zur Ermittlung der Ausrichtung wird mit der folgenden Abbildung erklärt.
+
+			\begin{figure}[tbh]
+			\begin{centering}
+			\includegraphics[width = 0.6\textwidth]{Bilder/winkel_pixy}
+			\par\end{centering}
+			\caption{Messung des Winkel}
+			\label{winkel_pixy}
+			\end{figure}
+
+	Der Flightcontroller wurde so eingebaut, dass ein \textcolor{grey}{Arm} des Hexacopters zur Kontrolle in die Flugrichtung steht.
+	Die \textcolor{red}{Halterung} wurde genau in der Mitte der Strebe platziert, daher konnte eine Konstruktionslinie vom Mittelpunkt der Platte aus, gesetzt werden.
+	Der Winkel konnte gemessen werden, indem die zweite Konstruktionslinie entlang der Mitte des \textcolor{grey}{Arm} gesetzt wurde.
+	Die Schräge ist deshalb notwendig, da der Platz auf der Platine des Sensors so begrenzt ist, dass nur die Fläche der unteren Leiste aufliegen kann.
+
+	\subsection{Herausforderungen und Lösungen}
+
+	Der begrenzte Platz zum Montieren der PIXY Cam an der Halterung war die größte Herausforderung.
+	Das  Problem war, dass sich auf der Platine eine Kabelbuchse befindet, diese ist genau auf der Ecke des Streifens vorgesehen (siehe Abbildung \ref{pixy_back}), orange markierter Bereich).
+
+			\begin{figure}[tbh]
+			\begin{centering}
+			\includegraphics[width = 0.5\textwidth]{Bilder/pixy_back}
+			\par\end{centering}
+			\caption{PIXY Cam Hinterseite}
+			\label{pixy_back}
+			\end{figure}
+
+	In den Konstruktionen wurde dieses Problem nicht behandelt, erst bei dem ersten Test hat sich gezeigt, dass die Halterung nicht komplett passt.
+	Um nicht noch eine neue Version drucken und Zeit verlieren zu müssen, wurde die Kante an der linken Bohrung (siehe Abbildung \ref{halterung_pixy_creo}) passgenau mit einer Feile abgerundet.
+
+	\subsection{Berechnungen}
 
 \section{Führung für Testflüge}
 
