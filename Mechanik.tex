@@ -41,8 +41,6 @@
 		Besonders an dünnen Platten merkt man das. Wenn der Druckraum nach \bzw während des Druckvorgangs warm ist, kühlt das Werkstück an jeder Stelle fast gleich ab.
 		Ist der Druckraum offen, kühlt das Werkstück in der Mitte schneller ab, kühles Material zieht sich zusammen, daher biegt sich das Material auf.
 
-			\newpage
-
 		Es kann vorkommen, dass ein Teil nur so gedruckt werden kann, wenn es nicht komplett auf der Druckplatte aufliegt zum Beispiel ein Steg, der „in der Luft“ liegt oder eine Bohrung im Werkstück, die horizontal gedruckt werden muss.
 		In solchen Fällen, druckt der Drucker unter diesem Steg Stützmaterial. Basierend auf diesem Stützmaterial, wird dann die gewünschte Form gedruckt.
 		Das Stützmaterial ist so gefertigt, dass man es leicht von dieser abbrechen kann, ohne dass Rückstände zurück bleiben.
@@ -70,6 +68,8 @@
 		Am häufigsten haben die Drucker eine USB Schnittstelle, \bzw verfügen über einen SD Karten Slot.
 		Der Maschinencode wird auf diesen Speichermedien gespeichert und einfach auf den Drucker überspielt.
 
+				\newpage
+
 
 \section{Halterung für Cupcakes}
 
@@ -91,8 +91,6 @@
 			\caption{Position Cupcake}
 			\label{platte_cupcake}
 			\end{figure}
-
-			\newpage
 
 	\subsection{Umsetzung}
 
@@ -126,8 +124,6 @@
 	Um dieses Problem zu beheben, wurden Höhenunterschiede zwischen den Schrauben eingeplant.
 	Das macht die Halterungsstutzen kompakter und verhindert Kollisionen.
 
-		\newpage
-
 	\subsection{Herausforderungen und Lösungen}
 
 	Die größte Herausforderung beim Konstruieren war es, die Halterung an die Form des Cupcakes anzupassen.
@@ -159,6 +155,8 @@
 			\caption{Gedrucktes Halterungssystem}
 			\label{halterung_cupcake_fertig_hinweis}
 			\end{figure}
+
+			\newpage
 
 \section{Rotorschutz}
 
@@ -202,8 +200,6 @@
 	Da die Schrauben der Centerplate und des Motors zu kurz sind, werden passende Zylinderkopfschrauben verwendet.
 	Besonders bei dem Motor ist es wichtig, dass diese nicht zu lang sind, da sich der Motor nicht mehr bewegen könnte.
 
-			\newpage
-
 	Durch die Gewichtsbegrenzung \bzw der Form des Propellerschutzes, bot es sich an, diesen in einem 3D Drucker anzufertigen.
 	Dazu wurde der Ring in zwei Hälften unterteilt, eine Ober,- und eine Unterseite.
 	Der Ring hat einen ungefähren Innendurchmesser von 270 mm, das Druckbett eine maximale Abmessung von 270x210 mm.
@@ -231,8 +227,6 @@
 	Die geklebten Hälften werden dann mit Durchgangsschrauben und Sechskantmutter miteinander verschraubt (siehe Abbildung  \ref{propellerschutz_mitte_unterteilung}),
 	der kleine Absatz an der unteren Hälfte wird extra angefertigt da der Drucker kein Stützmaterial drucken müsste.
 
-			%\newpage
-
 	\subsection{Herausforderungen und Lösungen}
 
 	Eines der größten Probleme war es, den Rotorschutz so zu konstruieren, dass er stabil, aber auch sehr leicht ist.
@@ -257,7 +251,7 @@ es war ebenso wichtig, den richtigen Untergrund zu wählen, eine Holzplatte eign
 Die beiden Hälften wurden dann miteinander verschraubt, samt der Stütze.
 Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Centerplate und dem Arm des Hexacopters befestigt werden.
 
-		\newpage
+			\newpage
 
 \section{Halterung Ultraschallsensor}
 
@@ -291,8 +285,6 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 	Die Befestigungsmethode ist selbst entwickelt worden, dabei handelt es sich um ein spezielles Klammersystem, welches an einer Strebe der Platte montiert werden kann (siehe Abbildung \ref{halterung_ultraschall_fertig}).
 	Die Klammer besteht aus drei Stegen, auf denen jeweils ein Anschlag vorgesehen wurde.
 	Die Form der Anschläge ist  exakt an die Centerplate angepasst, damit sich die Halterung so geringfügig wie möglich bewegen lässt.
-
-			\newpage
 
 	Die ideale Stärke der Stege wurde durch Versuche ermittelt, es wurde dabei das Klammersystem mit unterschiedlichen Dicken gefertigt und an dem Hexacopter getestet.
 	Die optimale Stärke war deshalb wichtig, da das System nicht funktionieren würde, wenn diese falsch dimensioniert werden würde.
@@ -354,8 +346,6 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 	Da die PIXY Cam Halterung auf der unteren Centerplate platziert wird, konnte wieder das eigens entwickelte Klammersystem verwendet werden.
 	Das garantiert auch in diesem Fall eine gute Passgenauigkeit, um den Sensor optimal zu fixieren.
 
-			\newpage
-
 	Die Kamera hat an der unteren Leiste der Platine zwei Bohrungen vorgesehen, diese wurden genutzt um den Sensor mit der Halterung zu verbinden.
 	Es bot sich nicht viel Platz auf der Platine an, um den Sensor fest genug zu fixieren, jedoch reichte der untere Streifen ausreichend aus.
 
@@ -375,8 +365,6 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 	Der Winkel konnte gemessen werden, indem die zweite Konstruktionslinie entlang der Mitte des Arm gesetzt wurde.
 	Die Schräge ist deshalb notwendig, da der Platz auf der Platine des Sensors so begrenzt ist, dass nur die Fläche der unteren Leiste aufliegen kann.
 
-			\newpage
-
 	\subsection{Herausforderungen und Lösungen}
 
 	Der begrenzte Platz zum Montieren der PIXY Cam an der Halterung war die größte Herausforderung.
@@ -394,6 +382,8 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 	Um nicht noch eine neue Version drucken und Zeit verlieren zu müssen, wurde die Kante an der linken Bohrung (siehe Abbildung \ref{halterung_pixy_creo}) passgenau mit einer Feile abgerundet.
 
 	\subsection{Berechnungen}
+
+			\newpage
 
 \section{Führung für Testflüge}
 
@@ -438,5 +428,7 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 	Es musste manuell mit der Fernsteuerung entgegen dieses Neigens gesteuert werden, damit der Multicopter abheben konnte.
 	Nach etwa 5 cm hatte sich der Copter so ausgeglichen, dass nicht mehr entgegen gesteuert werden musste.
 	Die Gleitbuchsen haben sich trotzdem sehr bewährt, da der Multicopter, auch wenn er kein Gas mehr gab, nur auf dem Landesgestell landete und so keine Teile beschädigt wurden.
+
+			\newpage
 
 \section{Persönliche Erfahrungen}
