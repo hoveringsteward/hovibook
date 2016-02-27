@@ -339,10 +339,10 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 	In den folgenden Abbildungen wird einerseits die konstruierte Halterung Abbildung \ref{halterung_pixy_creo})
 	und andererseits die Gefertigte  mit der PIXY CMU cam5 (Abbildung \ref{halterung_pixy}).
 
-			\begin{figure}[H]
+			\begin{figure}[thb]
 				\begin{centering}
-					\subfigure[CAD Konstruktion PIXY Cam Halterung\label{halterung_pixy_creo}]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_pixy_creo}}
-					\subfigure[Gefertigte PIXY Cam Halterung\labelhalterung_pixy}]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_pixy}}
+					\subfigure[CAD Konstruktion PIXY Cam Halterung\label{halterung_pixy_creo}]{\includegraphics[width = 0.3\textwidth]{Bilder/halterung_pixy_creo}}
+					\subfigure[Gefertigte PIXY Cam Halterung\label{halterung_pixy}]{\includegraphics[width = 0.4\textwidth]{Bilder/halterung_pixy}}
 				\par\end{centering}
 				\caption{Halterung PIXY Cam}
 				\label{Halterung_PIXY}
@@ -354,6 +354,8 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 	Da die PIXY Cam Halterung auf der unteren Centerplate platziert wird, konnte wieder das eigens entwickelte Klammersystem verwendet werden.
 	Das garantiert auch in diesem Fall eine gute Passgenauigkeit, um den Sensor optimal zu fixieren.
 
+			\newpage
+
 	Die Kamera hat an der unteren Leiste der Platine zwei Bohrungen vorgesehen, diese wurden genutzt um den Sensor mit der Halterung zu verbinden.
 	Es bot sich nicht viel Platz auf der Platine an, um den Sensor fest genug zu fixieren, jedoch reichte der untere Streifen ausreichend aus.
 
@@ -362,21 +364,23 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 			\begin{figure}[tbh]
 			\begin{centering}
-			\includegraphics[width = 0.6\textwidth]{Bilder/winkel_pixy}
+			\includegraphics[width = 0.8\textwidth]{Bilder/winkel_pixy}
 			\par\end{centering}
 			\caption{Messung des Winkel}
 			\label{winkel_pixy}
 			\end{figure}
 
-	Der Flightcontroller wurde so eingebaut, dass ein \textcolor{grey}{Arm} des Hexacopters zur Kontrolle in die Flugrichtung steht.
+	Der Flightcontroller wurde so eingebaut, dass ein Arm des Hexacopters zur Kontrolle in die Flugrichtung steht.
 	Die \textcolor{red}{Halterung} wurde genau in der Mitte der Strebe platziert, daher konnte eine Konstruktionslinie vom Mittelpunkt der Platte aus, gesetzt werden.
-	Der Winkel konnte gemessen werden, indem die zweite Konstruktionslinie entlang der Mitte des \textcolor{grey}{Arm} gesetzt wurde.
+	Der Winkel konnte gemessen werden, indem die zweite Konstruktionslinie entlang der Mitte des Arm gesetzt wurde.
 	Die Schräge ist deshalb notwendig, da der Platz auf der Platine des Sensors so begrenzt ist, dass nur die Fläche der unteren Leiste aufliegen kann.
+
+			\newpage
 
 	\subsection{Herausforderungen und Lösungen}
 
 	Der begrenzte Platz zum Montieren der PIXY Cam an der Halterung war die größte Herausforderung.
-	Das  Problem war, dass sich auf der Platine eine Kabelbuchse befindet, diese ist genau auf der Ecke des Streifens vorgesehen (siehe Abbildung \ref{pixy_back}), orange markierter Bereich).
+	Das  Problem war, dass sich auf der Platine eine Kabelbuchse befindet, diese ist genau auf der Ecke des Streifens vorgesehen (siehe Abbildung \ref{pixy_back}, orange markierter Bereich).
 
 			\begin{figure}[tbh]
 			\begin{centering}
@@ -395,10 +399,44 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 	\subsection{Technische Planung}
 
+	Im Laufe des Projektes hat es sich bestätigt, dass es manchmal passieren kann, dass die Funkverbindung zwischen der Fernbedienung und dem Flugobjekt abbrechen kann.
+	Ist jedoch keine Sicherung in der Firmware des Copters vorgesehen, fliegt dieser unkontrollierbar und stürzt ab.
+
+	In diesem Projekt ist das Problem aufgetreten während eines Testfluges zur Testung der Höhenbestimmung durch den Ultraschallsensor.
+	Damit dies nicht mehr vorkam, müsste eine Hardwaremäßige Vorrichtung entwickelt werden, die im Falle eines unvorhergesehenen Funkabbruches den Hexacopter sicher auf den Boden sinken lässt.
+
 	\subsection{Umsetzung}
 
-	\subsection{Implementierung}
+	Die folgende Abbildung zeigt die konstruierte (Abbildung \ref{gleitbuchse_creo}) und die gefertigte Gleitbuchse (Abbildung \ref{gleitbuchse_gefertigt}).
 
-	\subsection{Testphase}
+			\begin{figure}[tbh]
+				\begin{centering}
+					\subfigure[CAD Konstruktion Gleitbuchse\label{gleitbuchse_creo}]{\includegraphics[width = 0.3\textwidth]{Bilder/gleitbuchse_creo}}
+					\subfigure[Gefertigte Gleitbuchse\label{gleitbuchse_gefertigt}]{\includegraphics[width = 0.4\textwidth]{Bilder/gleitbuchse_gefertigt}}
+				\par\end{centering}
+				\caption{Gleitbuchse}
+				\label{Gleitbuchse}
+			\end{figure}
+
+	Prinzipiell werden zwei Gleitbuchsen gegenüberliegend am Hexacopter montiert, der Copter wird dann auf zwei langen Stangen aufgefädelt und kann sich dadurch nur mehr nach oben und unten bewegen.
+	Das soll verhindern, dass der Hexacopter nicht nach links, rechts, vorne oder hinten abdriften kann.
+	Beide Buchsen verwenden das spezielle Klammersystem um sie leicht und fest montieren zu können, wie auch die Halterungen für den Ultraschallsensor und die PIXY Cam, werden die Führungen auf die Platte geklippt.
+	Die Führungen wurden diesmal auf beide Centerplates befestigt, das bedeutet die obere Klammer musste an die Centerplate angepasst werden.
+	Die Centerplates haben komplett verschiedene Ausnehmungen vorgesehen, das erschwerte die Anpassung des Klammersystems um ein Vielfaches.
+	Um diese Herausforderung trotzdem lösen zu können, wurden die Platten in Creo ausgemessen und dann auf die Halterungen übertragen.
+		 
+	Gefertigt wurden beide Teile in dem 3D Drucker der Schule, da die Form der Gleitbuchsen händisch sehr aufwändig zu fertigen werden würden, \bzw es wird sehr viel Gewicht durch diese Fertigungsmethode eingespart.
+	Zu beachten war beim Konstruieren wiederum, dass der Drucker grobe Toleranzen hat und diese miteingerechnet werden mussten.
+
+	Die Bohrungen wurden so groß dimensioniert, dass der Hexacopter leicht auf und ab fliegen kann, ohne zu stark zu verkanten.
+	Die Phasen bei den Bohrungen oben und unten, lassen den Copter leichter auffädeln, da die Stangen leichter in die Bohrungen führen.
+
+	\subsection{Herausforderungen und Lösungen}
+
+	Das Verkanten zwischen den Buchsen und Stangen war besonders während des Startes ein Problem.
+	Der Hexacopter hob zu Beginn etwas  schief ab, das kann man auch nicht mit sehr großen Bohrungen verhindern.
+	Es musste manuell mit der Fernsteuerung entgegen dieses Neigens gesteuert werden, damit der Multicopter abheben konnte.
+	Nach etwa 5 cm hatte sich der Copter so ausgeglichen, dass nicht mehr entgegen gesteuert werden musste.
+	Die Gleitbuchsen haben sich trotzdem sehr bewährt, da der Multicopter, auch wenn er kein Gas mehr gab, nur auf dem Landesgestell landete und so keine Teile beschädigt wurden.
 
 \section{Persönliche Erfahrungen}
