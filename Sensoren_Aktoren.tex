@@ -137,9 +137,20 @@ while(frame == 0) {
     Um nicht ewig in dieser Schleife fest zu hängen, wenn kein Bild erkannt wird und einen Fehler auslösen zu können wird die gesamte Funktion der Bildauswertung
     nach 255 Versuchen verlassen.
 
-    Die weiteren Werte eines Objekts werden der Reihe nach in einer Structur abgespeichert, hier ist nichts Besonderes mehr zu beachten.
+    Die weiteren Werte eines Objekts werden der Reihe nach in einer \gls{Struktur} abgespeichert, hier ist nichts Besonderes mehr zu beachten.
 
   \subsection{Herausforderungen und Lösungen}
+  Besonders das Beispielprogramm\cite{PIXY_Porting_Examplecode} für eine Bildauswertung stellte einige Herausforderungen dar. Hier sind unterschiedliche Codeschnippsel in einem
+  großen Beispiel zusammengefasst. Das ist besonders bei durch die ähnlichen Funktionen des Codes schwer auseinander zu halten. So steht eine Funktion für die Erkennung eines
+  neuen Bildes, diese zählt aber nur Bilder pro Sekunde, eine andere ist dann für die gesamte Auswertung und sucht dafür erneut nach einem Bild.
+
+  Diese Zusammenhänge konnten durch einige Überlegungen erkannt werden und darauffolgend die eigene Firmware geschrieben werden.
+
+  Ein weiteres Problem stellt die Empfindlichkeit der Kamera bei wechselnden Lichtverhältnissen dar. Da diese über die Farbsignatur eines Objektes arbeitet werden bereits
+  sehr kleine Differenzen unterschieden um verschiedene Objekte erkennen zu können \bzw keine Störungen durch den Hintergrund zu erhalten. Dies wird jedoch ebenso in der
+  anderen Richtung zu einem Problem. Wechselt das Licht ein wenig kann ein Farbcode oft nicht mehr zuverlässig erkannt werden und die Kamera muss über einen Computer nachkalibriert
+  werden. Eine mögliche Lösung ist das konstante Beleuchten der Farbcodes mit einer sehr bestimmten Leuchtstärke, hier kann es leicht zu Überbelichtungen kommen, besonders bei
+  dunklen Verhältnissen, als auch die Umrüstung auf einen \gls{Infrarot}-Kit. Bei einem Infrarot-Kit fällt jedoch die Individualität jedes einzelnen Markers weg.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ultraschallsensor HC-SR04}
@@ -202,7 +213,7 @@ void ReadHeight(void) {
   \textcolor{red}{to be continued after realtime measurements}
 
 \chapter{Aktoren}
-\renewcommand{\kapitelautor}{Autor: Lucas Ullrich}
+\renewcommand{\kapitelautor}{Autor: Christina Bornberg, Lucas Ullrich}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Propeller, A E R und T}
