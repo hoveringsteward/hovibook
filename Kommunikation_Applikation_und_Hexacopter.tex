@@ -28,7 +28,7 @@ Seitens des Hexacopters wird ein zusätzliches Modul benötigt, dieses muss übe
   Bei der Umsetzung stand für die anfänglichen Tests ein Evaluation-Kit zur Verfügung. Dieses kann ohne weitere Hardware direkt über ein USB-Kabel mit einem PC verbunden werden.
   So ist es möglich die nötigen Konfigurationen des Moduls auszutesten bevor dieses in der Hardware implementiert wird.
 
-  \begin{figure}[tbh]
+  \begin{figure}[H]
     \begin{centering}
       \includegraphics[width = 0.6\textwidth]{Bilder/RN171_EK}
     \par\end{centering}
@@ -36,7 +36,50 @@ Seitens des Hexacopters wird ein zusätzliches Modul benötigt, dieses muss übe
     \label{RN171_EK}
   \end{figure}
 
+  Um das WLAN-Modul so einzustellen, dass es sich Pin-gesteuert mit einem Host verbindet sind einige Schritte notwendig:
+  \begin{itemize}
+    \item \textbf{\$\$\$}\\
+    Öffnet den Commandmode, nun können die Einstellungen vorgenommen werden
+    \item \textbf{set wlan ssid <network\_name>}\\
+    Deklariert den Netzwerknamen
+    \item \textbf{set wlan phrase <network\_passphrase>}\\
+    Deklariert das Passwort mit dem das Netzwerk gesichert ist
+    \item \textbf{set ip host <host\_ip-address>}\\
+    Deklariert die IP-Adresse des Empfängers
+    \item \textbf{set ip remote <host\_portnumber>}\\
+    Deklariert den Port auf dem der Empfänger die Daten empfangen soll
+    \item \textbf{set sys iofunc 0x70}\\
+    Durch diese Einstellung kann das WLAN-Modul über die Pins gesteuert werden
+    \item \textbf{set wlan join 1}\\
+    Stellt das WLAN-Modul auf automatisches Verbinden mit dem angegebenen Netzwerk ein
+    \item \textbf{set ip protocol 4}\\
+    Stellt das WLAN-Modul auf eine TCP/IP-Verbindung ein bei der nur Daten vom gespeicherten Host akzeptiert werden
+    \item \textbf{set uart baud <desired-baudrate>}\\
+    Stellt die Baudrate des WLAN-Moduls ein, Standard ist 9600
+    \item \textbf{save}\\
+    Speichert die Parameter in den Standardeinstellungen die nach einem Neustart geladen werden
+    \item \textbf{reboot}\\
+    Erzeugt einen Neustart bei dem die Standardeinstellungen geladen werden
+  \end{itemize}
+
   \subsection{Herausforderungen und Lösungen}
+  Eine Herausforderung stellte die Frage dar wie genau die Verbindung hergstellt wird. Das Datenblatt des WLAN-Moduls mit über 100 Seiten bietet viele potentielle Möglichkeiten.
+  Die erste Wahl fiel auf das Auslesen einer Website, auf den ersten Anblick funktionierte das auch, jedoch musste festgestellt werden, dass unabhängig von der Website sehr ähnliche
+  Daten verarbeitet werden, jedoch nicht der eigentliche Inhalt der Website sondern Providerinformationen.
+
+  Die zweite Wahl fiel auf eine TCP/IP Verbindung, lediglich die genaue Umsetzung dieser ließ viele Möglichkeiten offen. Einerseits besteht die Möglichkeit eine Verbindung direkt
+  über die Eingabe "open" im Commandmode zu öffnen, andererseits jedoch auch über die Pins als auch automatische Timeouts.
+
+  Aufgrund der Einfachheit und vollen Kontrolle viel die Wahl auf die Ansteuerung über die Pins.
+  Dazu stehen 3 unterschiedliche Pins zur Verfügung:
+  \begin{itemize}
+    \item \textbf{Associated}\\
+    Mit einem Netzwerk verbunden
+    \item \textbf{Open TCP connection}\\
+    Die Verbidnung zum Host herstellen
+    \item \textbf{Connected}\\
+    Die Verbindung zum Host ist hergestellt
+  \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Schnittstelle Applikation}
