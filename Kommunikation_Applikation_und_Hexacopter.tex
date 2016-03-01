@@ -61,6 +61,8 @@ Seitens des Hexacopters wird ein zusätzliches Modul benötigt, dieses muss übe
     \item \textbf{reboot}\\
     Erzeugt einen Neustart bei dem die Standardeinstellungen geladen werden
   \end{itemize}
+  Nachdem das WLAN-Modul auf die nötigen Parameter eingestellt ist, kann es direkt mit dem Mirkocontroller verbunden werden, die Verbidnung kann über einzelne Pins kontrolliert
+  werden.
 
   \subsection{Herausforderungen und Lösungen}
   Eine Herausforderung stellte die Frage dar wie genau die Verbindung hergstellt wird. Das Datenblatt des WLAN-Moduls mit über 100 Seiten bietet viele potentielle Möglichkeiten.
@@ -80,6 +82,7 @@ Seitens des Hexacopters wird ein zusätzliches Modul benötigt, dieses muss übe
     \item \textbf{Connected}\\
     Die Verbindung zum Host ist hergestellt
   \end{itemize}
+  Die Statusinformationen Associated als auch Connected werden von dem WLAN-Modul geliefert, die Anweisung eine Verbindung herzustellen von dem Mirkocontroller.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Schnittstelle Applikation}
