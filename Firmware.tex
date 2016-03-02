@@ -12,33 +12,36 @@
 
     \begin{itemize}
       \item \textbf{yEd - Graph Editor}\\
-      Zum erstellen der benötigten Flussdiagramme wurde eine Desktop Anwendung namens yEd verwendet.  
+      Zum erstellen der benötigten Flussdiagramme wurde eine Desktop Anwendung namens yEd verwendet.
       \item \textbf{GitHub}\\
       Zur Versionsverwaltung des Codes wurde die digitale Ablage GitHub verwendet. Durch diese ist eine gemeinsame Programmierung möglich.
       \item \textbf{MPLAB}\\
-      MPLAB ist eine Integrierte Entwicklungsumgebung von Microchip. In dieser wurde der Mikrocontroller programmiert und anschließend compiliert.
-      Weiters hat die Entwicklungsumgebung eine Git Funktion, wodurch die Daten ohne zusätzliches Tool vom Server herunter- beziehungsweise hinaufgeladen werden können. 
+      MPLAB ist eine Integrierte Entwicklungsumgebung von Microchip. In dieser wurde der Mikrocontroller programmiert und anschließend das C-Programm in Assembler compiliert.
+      Weiters hat die Entwicklungsumgebung eine Git Funktion, wodurch die Daten ohne zusätzliches Tool vom Server herunter- beziehungsweise hinaufgeladen werden können.
     \end{itemize}
 
 
   \subsection{Positionierungssystem - evtl an anderen Ort}
 
     \subsubsection{Anwendung}
-    Indoor Positionierungssysteme werden derzeit vor allem zum Objekterkennung, im Umweltmonitoring, über das Detektieren von Bränden in Gebäuden, bis hin zum Einsatz in der Logistik verwendet. Da es sehr viele unterschiedliche Anwendungsgebiete gibt, werden unterschiedliche Methoden verwendet. 
+    Indoor Positionierungssysteme werden derzeit vor allem zum Objekterkennung, im Umweltmonitoring, über das Detektieren von Bränden in Gebäuden,
+    bis hin zum Einsatz in der Logistik verwendet. Da es sehr viele unterschiedliche Anwendungsgebiete gibt, werden unterschiedliche Methoden verwendet.
 
     \subsubsection{Art der Positionsbestimmung}
 
-    Ein Lokalisierungssystem kann verschiedene Arten von Informationsdaten bereitstellen. Es gibt dazu physische, symbolische, absolute und relative Modelle. 
+    Ein Lokalisierungssystem kann verschiedene Arten von Informationsdaten bereitstellen. Es gibt dazu physische, symbolische, absolute und relative Modelle.
 
       \begin{itemize}
         \item \textbf{Physische Positionierung}\\
         Die physische Positionierung wird in Form von Koordination bestimmt, meist in 2-D oder 3-D Karten. Längen- und Breitengrade spielen dabei eine wichtige Rolle.
         \item \textbf{Symbolische Positionierung}\\
-        Symbolische Positionierung wird sprachlich beschrieben, wie z.B.  Küche, Keller usw. 
+        Symbolische Positionierung wird sprachlich beschrieben, wie \zB Küche, Keller usw.
         \item \textbf{Absolute Positionierung}\\
-        Die absolute Positionierung verwendet Referenzgitter und Koordinaten. Das Paradebeispiel für absolute Ortung ist die Angabe von Längen­ und Breitengrad.   Die   darauf   aufsetzende   Technik, die   sich   diese   Kartographie   zu   Nutze macht, ist GPS. 
+        Die absolute Positionierung verwendet Referenzgitter und Koordinaten. Das Paradebeispiel für absolute Ortung ist die Angabe von Längen­ und Breitengrad.
+        Die darauf aufsetzende Technik, die sich diese Kartographie zu Nutze macht, ist GPS.
         \item \textbf{Relative Positionierung}\\
-        Die relative Positionierung verwendet legt ihre eigenen Rahmen vor, die auf Basisstationen oder definierten Punkten basieren. Anders als bei der absoluten Lokalisierung muss bei der relativen Positionsbestimmung die vorherige Position des Objektes bekannt sein, auf die wird dann die Position bezogen. 
+        Die relative Positionierung verwendet legt ihre eigenen Rahmen vor, die auf Basisstationen oder definierten Punkten basieren.
+        Anders als bei der absoluten Lokalisierung muss bei der relativen Positionsbestimmung die vorherige Position des Objektes bekannt sein, auf die wird dann die Position bezogen.
       \end{itemize}
 
 
@@ -46,21 +49,27 @@
 
     Lokalisierungstechniken können weiter als selbstortend oder fernortend (engl. self­positioning/remote­positioning) klassifiziert werden.
 
-Fernortende Positionierungssystem: Mobile, bewegliche Sender mit stationären, unbeweglichem Empfänger. Die Messdaten aller Empfänger werden gesammelt und die Position des Senders wird in der Zentrale berechnet. Hier ist ein Netzwerk notwendig, sämtliche Berechnungen werden durch eine zentrale Instanz ausgeführt.
+    Fernortende Positionierungssystem: Mobile, bewegliche Sender mit stationären, unbeweglichem Empfänger. Die Messdaten aller Empfänger werden gesammelt und die
+    Position des Senders wird in der Zentrale berechnet. Hier ist ein Netzwerk notwendig, sämtliche Berechnungen werden durch eine zentrale Instanz ausgeführt.
 
-Selbstortende Positionierungssystem: Der mobile, bewegliche Empfänger bekommt die Daten von verschiedenen Sendern, die sich auf bekannten Positionen befinden. Die Lokalisation des Empfängers wird durch die gemessenen Signale ermittelt. Das Objekt kann sich selbst orten, es ist kein Netzwerk notwendig.
+    Selbstortende Positionierungssystem: Der mobile, bewegliche Empfänger bekommt die Daten von verschiedenen Sendern, die sich auf bekannten Positionen befinden.
+    Die Lokalisation des Empfängers wird durch die gemessenen Signale ermittelt. Das Objekt kann sich selbst orten, es ist kein Netzwerk notwendig.
 
 
 
     \subsubsection{Algorithmen}
 
     Prinzipiell gibt es vier Möglichkeiten, eine Positionierung vorzunehmen.
-Lateration, also die Bestimmung der Position mit Hilfe von Entfernungsmessungen
-Angulation, hier werden Winkelmessungen zu Hilfe genommen
-Szenenanalyse, bei der Umgebungsparameter erfasst und ausgewertet werden 
-Nachbarschaft (engl. proximity) bei der physische Nahe ausgenutzt wird.
+    \begin{itemize}
+      \item Lateration, also die Bestimmung der Position mit Hilfe von Entfernungsmessungen
+      \item Angulation, hier werden Winkelmessungen zu Hilfe genommen
+      \item Szenenanalyse, bei der Umgebungsparameter erfasst und ausgewertet werden
+      \item Nachbarschaft (engl. proximity) bei der physische Nähe ausgenutzt wird.
+    \end{itemize}
 
-Die dahinterstehenden Algorithmen basieren auf die Methoden der Bestimmung von Distanz, Winkel, Dreiecke und Nachbarschaft können die ermittelten Informationen auch mit einer vorher bestimmten Radio-Map verglichen werden. Dieses Verfahren wird auch Fingerprinting genannt.
+    Die dahinterstehenden Algorithmen basieren auf den Methoden der Bestimmung von Distanzen, Winkelen, Dreiecken und Nachbarschaften.
+
+    Können die ermittelten Informationen auch mit einer vorher bestimmten Radio-Map verglichen werden bezeichnet man dieses Verfahren auch Fingerprinting.
 
 
 
@@ -73,7 +82,7 @@ Die dahinterstehenden Algorithmen basieren auf die Methoden der Bestimmung von D
         \item \textbf{GPS}\\
         OUTDOOR
         \item \textbf{RFID}\\
-        \item \textbf{WPS}\\      
+        \item \textbf{WPS}\\
       \end{itemize}
 
     \subsubsection{Optisches Tracking}
@@ -95,11 +104,11 @@ Die dahinterstehenden Algorithmen basieren auf die Methoden der Bestimmung von D
 
       % Das vom John ???
 
-      Nachteile: 
+      Nachteile:
       Muss sehr präzise sein.
       Störungen durch andere elektromagnetische Wellen im selben Frequenzbereich.
 
-      
+
 
       \textbf{Tracking mittels Laufzeitmessung}\\
 
@@ -118,7 +127,7 @@ Die dahinterstehenden Algorithmen basieren auf die Methoden der Bestimmung von D
 
 
       \textbf{Linien}\\
-      Zunächst wurde ein Konzept mit Linien erstellt. Der Hexacopter folgt einer einfarbigen Linie, bis er zu einer Kreuzung kommt, nun ist seine Aufgabe, die nächste Linie zu finden, um seinen Weg zum Ziel zu finden.  
+      Zunächst wurde ein Konzept mit Linien erstellt. Der Hexacopter folgt einer einfarbigen Linie, bis er zu einer Kreuzung kommt, nun ist seine Aufgabe, die nächste Linie zu finden, um seinen Weg zum Ziel zu finden.
 
       Vorteile: Der Hexacopter kann die Linie nur schwer verlieren
       Nachteile: Das verwendete Kamerasystem ist nicht in der Lage eine Linie zu tracken.
@@ -128,7 +137,7 @@ Die dahinterstehenden Algorithmen basieren auf die Methoden der Bestimmung von D
 
       Vorteile:
       System funktioniert ebenfalls im Dunkeln.
-      Nachteile: 
+      Nachteile:
       Jeder Tisch benötigt einen Stromanschluss.
       Die Wartung ist aufwändig.
 
@@ -149,8 +158,8 @@ Die dahinterstehenden Algorithmen basieren auf die Methoden der Bestimmung von D
 
       Nachteile:
       Aufwand im Restaurant
-      
-   
+
+
 
   \subsection{Tischkonzept}
 
