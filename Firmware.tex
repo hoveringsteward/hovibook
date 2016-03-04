@@ -5,6 +5,57 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Allgemeine technische Planung}
 
+  \subsection{Konvention}
+
+    \subsubsection{Koordinaten}
+    In der Arbeit wird folgende Konvention festgelegt. Die z-Achse ist die Höhe, die y-Achse ist vorwärts und rückwärts und die x-Achse ist Seitwärts.
+
+    % BILD %
+
+  \subsection{Multicopter}
+  Multicopter gehören zu der Luftfahrzeuggattung Hubschrauber.
+  Sie starten senkrecht und können durch den Antrieb der Rotoren Neigung erzeugen. Durch diese Neigung kann der Hexacopter nach vorne, zurück, nach links und nach rechts fliegen. 
+
+  \subsection{Anwendungsgebiete}
+  \begin{itemize}
+    \item Anfertigen von hoch aufgelösten Luftbildkarten
+    \item Landvermessung
+    \item Thermografie
+    \item Baudokumentation
+    \item Inspektion und Dokumentation von Brücken, Gebäuden, Gräben etc. mittels Foto und Film
+    \item Untermauerung von Gutachten durch bildliche Dokumentation von Brand-, Unfall- oder Wildschäden
+    \item Bestands- und Inventaraufnahmen im Straßenbau
+    \item Katastrophenschutz
+
+  \cite{copterAnwendung}
+
+
+  \subsubsection{Funktion}
+  Ein Multicopter besteht im Normalfall aus folgenden Komponenten:
+  Dem Empfängermodul, dem DJI NAZA-M Flightcontroller sowie der Multicopterhardware (Rotoren, Motoren, Gestell und Leistungselektronik). Der Empfänger des Multicopters kann von einem Sender Steuersignale empfangen und aufgrund der empfangenen Steuersignale Soll-Werte für die Motoren berechnen, um den Multicopter auf die entsprechende Höhe bzw. entsprechende Geschwindigkeit in x, y bzw. z Richtung zu bringen. Wobei onboard Neigungs- und Geschwindigkeitsensoren im DJI NAZA-M Modul für einen stabilen Flug sorgen. 
+
+  Funktion Blockschaltbild (Dokument)
+
+  \subsubsection{Multicopter Arten}
+  Es gibt verschiedene Arten von Multicoptern. 
+  Je nachdem wie viele Rotoren in einer Ebene liegen, setzt sich der Name zusammen.
+  Die bekannteste Art ist der Quadrocopter, welcher 4 Rotoren besitzt. Weiters gibt es Hexacopter mit 6 Rotoren und Octocopter mit 8.
+
+
+  \subsubsection{Konfiguration}
+  Grundsätzlich gibt es 2 Arten einen Multicopter zu Programmieren.
+  Einerseits die +-Konfiguration, andererseits die x- beziehungsweise H-Konfiguration. Dabei geht es um die Ausrichtung und die damit verbundene Fluglage.
+
+  % BILD mit 4, 6, 8 in + bzw x %
+
+  \subsubsection{Steuerungsarten} % das is schon wo anders begonnen%
+  Signale
+  Aileron
+  Elevator
+  Rudder
+  Throttle
+
+
   \subsection{Programmiersprache}
   Zum Programmieren des Mikrocontrollers wurde die Programmiersprache C verwendet.
 
