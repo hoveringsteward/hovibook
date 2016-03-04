@@ -501,14 +501,30 @@
 
     \subsubsection{Throttle anhand des Ultraschallsensors}
 
-    Starten und landen auf Landeplattformen (CHECK THROTTLE)
-    Der Hexacopter startet und landet auf den mit ebenfalls mit Colorcodes gekennzeichneten Landeplattformen.
-    Bei einem Fehler, besteht auch das Landen auf einem beliebigen Fleck
+    Der Hexacopter steht auf einer Landeplattform in seiner Base. Unter ihm ist ein Farbcode, diesen fokusiert er so lange, bis er den nächsten Farbcode trackt. Den zweiten Farbcode kann er erst scannen, wenn er hoch genug fliegt um an der Tischkante vorbei, den nächsten Farbcode zu scannen.
+    Beim Starten fliegt er vertikal nach oben, bis er den 2. Farbcode erkennt. Um beim Start nicht abzudriften, beschleunigt er, solange er sich unter einer Höhe von 50cm befindet, mit einer Hohen Änderungsrate. Ab dieser Höhe, beschleunigt er mit einer geringeren Erhöhung der Änderungsrate, bis er die 80cm-Grenze erreicht hat. 
+    zwischen 80 und 120cm bleibt die Beschleunigung gleich, das führt jedoch dazu, dass der Hexacopter den oberen Rand von 120 erreichen wird, da er bis jetzt nicht gebremst wird. Sobald er über 120cm kommt, wird die Beschleunigung nach unten hin verändert. Der Hexacopter pendelt also zwischen 80 und 120cm.
 
-    Höhe korrigieren (CHECK THROTTLE)
-    Höhenunterschied zwischen Tisch und Boden
+    \textbf{P-Regler}\\
+    Um Pendelungen entgegenzuwirken gibt es den sogenannten P-Regler.
+    % Erklärung P-Regler%
+
+    Nun muss er herausfinden, ob er sich noch über dem Tisch oder schon über dem Boden befindet. Dies stellt er fest, wenn 2 hintereinanderliegende Messungen 50cm von der Vorigen abweichen. Die zweite Messung ist erforderlich, um mögliche Fehlmessungen auszuschließen.
+
+    Wenn er nun über dem Boden fliegt, beträgt seine minimale Höhe bei 180 cm und seine maximale Höhe bei 220 cm.
+    Der Hexacopter beschleunigt nach dem selben Prinzip, wie über einem Tisch. Unter 100 cm ändert erhöht er seine Beschläunigung mit einem hohen Wert. Bis 180cm beschleunigt er mit einer niedrigeren Änderungsrate. Zwischen 180 und 220 cm kommt der P-Regler zum Einsatz. Sollte der Hexacopter über 220cm fliegen, wird die Beschleunigung durch eine negative Änderungsrate gesenkt.
+
+    Der Hexacopter fliegt mit diesen Werten, bis er den vorletzten Farbcode erreicht hat. Da die Farbcodes in einem Array abgespeichert werden, ist die Anzahl der darin gespeicherten Farbcodes bekannt. 
+
+    Beim letzten Farbcode angekommen, also dem am Tisch liegenden Farbcode, wird ebenfalls wieder durch die Kontrolle von 2 Werten, die sich um 50cm von der vorigen Messung unterscheiden müssen, analysiert, wann sich der Hexacopter auf dem Tisch befindet. Sobald er sich am Tisch befindet, landet er, indem er die Beschleunigung mit einer negativen Änderungsrate verlangsamt. Dabei muss er sich zwischen einer vom System vorgegebenen Mindest und Maximalgeschwindigkeit befinden. 
+
+    Nach der Landung wird die Routeninformation umgekehrt, die Rotation der Farbcodes muss beim Rückflug um 180 Grad gedreht sein.
+
+    Damit genügend Zeit für das herunternehmen des Cupcakes ist, verweilt der Hexacopter eine halbe Minute am Tisch, bevor er seinen Rückflug antritt.
 
     \subsubsection{Speichern der alten Daten}
+    Die alten Daten werden gespeichert, um die Differenzen von zwei Frames zu errechnen. Der Frame mit Index 0, ist der aktuelle Frame, der Frame mit dem Index 1, der alte. Bei jedem durchlauf, werden die Werte aktualisiert.
+
 
     \subsubsection{Ausgabe der Steuersignal}
     Nachdem die Steuersignale berechnet und korrigiert wurden müssen diese an den Hexacopter ausgegeben werden. Dies muss periodisch alle $\SI{20}{\milli\second}$ geschehen.
