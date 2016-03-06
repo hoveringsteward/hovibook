@@ -336,7 +336,7 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 			\begin{figure}[H]
 			\begin{centering}
-			\includegraphics[width = 0.5\textwidth]{Bilder/werte_abs}
+			\includegraphics[width = 1\textwidth]{Bilder/werte_abs}
 			\par\end{centering}
 			\caption[Werte ABS]{Werte für ABS\cite{werte_abs}}
 			\label{werte_abs}
@@ -352,7 +352,7 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 			\begin{figure}[H]
 			\begin{centering}
-			\includegraphics[width = 0.45\textwidth]{Bilder/auswahl_creo}
+			\includegraphics[width = 1\textwidth]{Bilder/auswahl_creo}
 			\par\end{centering}
 			\caption{Auswahlmenü Simulation}
 			\label{auswahl_creo}
@@ -368,14 +368,23 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 			\begin{figure}[H]
 				\begin{centering}
-					\subfigure[Lagerung 1. Stelle\label{lager_darstellung_1}]{\includegraphics[width = 0.4\textwidth]{Bilder/lager_darstellung_1}}
-					\subfigure[Lagerung 2. Stelle\label{lager_darstellung_2}]{\includegraphics[width = 0.4\textwidth]{Bilder/lager_darstellung_2}}
+					\subfigure[Lagerung 1. Stelle\label{lager_darstellung_1}]{\includegraphics[width = 0.45\textwidth]{Bilder/lager_darstellung_1}}
+					\subfigure[Lagerung 2. Stelle\label{lager_darstellung_2}]{\includegraphics[width = 0.45\textwidth]{Bilder/lager_darstellung_2}}
 				\par\end{centering}
 				\caption{Lagerung der Halterung in Simulation}
 				\label{Lagerung_Halterung}
 			\end{figure}
 
-	Der Ultraschallsensor wird durch eine Kraft ersetzt, diese kann man variieren, je nachdem um wieviel die Halterung belastet werden soll.
+	Der Ultraschallsensor wird durch eine Kraft ersetzt, diese wurde auf den vier Zylinder definiert (siehe folgende Abbildung).
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.45\textwidth]{Bilder/kraft_darstellung}
+			\par\end{centering}
+			\caption{Platzierung Kraft}
+			\label{kraft_darstellung}
+			\end{figure}
+
 	Nachdem alle Parameter definiert wurden, konnte die Simulation gestartet werden.
 
 	Es wurden zwei Simulationen durchgeführt, in der ersten wurde nur der Ultraschallsensor (8.5 g) als Belastung angenommen und im zweiten Fall  wurde die Halterung mit einer Last von 2 kg beansprucht.
@@ -384,7 +393,7 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 			\begin{figure}[H]
 			\begin{centering}
-			\includegraphics[width = 0.45\textwidth]{Bilder/max_spannung_f0_1_r0_5}
+			\includegraphics[width = 1\textwidth]{Bilder/max_spannung_f0_1_r0_5}
 			\par\end{centering}
 			\caption{max. Spannung bei 0.1 N}
 			\label{max_spannung_f0_1_r0_5}
@@ -397,8 +406,8 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 				\begin{figure}[H]
 					\begin{centering}
-						\subfigure[max. Spannung bei 20 N oben\label{max_spannung_f20_r0_5}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r0_5}}
-						\subfigure[max. Spannung bei 20 N unten\label{max_spannung_f20_r0_5_oben}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r0_5_oben}}
+						\subfigure[max. Spannung bei 20 N oben\label{max_spannung_f20_r0_5}]{\includegraphics[width = 1\textwidth]{Bilder/max_spannung_f20_r0_5}}
+						\subfigure[max. Spannung bei 20 N unten\label{max_spannung_f20_r0_5_oben}]{\includegraphics[width = 1\textwidth]{Bilder/max_spannung_f20_r0_5_oben}}
 					\par\end{centering}
 					\caption{max. Spannung bei 20 N}
 					\label{max_spannung_f20_r0_5}
@@ -412,8 +421,8 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 			\begin{figure}[H]
 				\begin{centering}
-					\subfigure[max. Spannung bei 20 N, Radius 0.5 mm\label{max_spannung_f20_r0_5}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r0_5}}
-					\subfigure[max. Spannung bei 20 N, Radius 1.0 mm\label{max_spannung_f20_r1}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r1}}
+					\subfigure[max. Spannung bei 20 N, Radius 0.5 mm\label{max_spannung_f20_r0_5}]{\includegraphics[width = 1\textwidth]{Bilder/max_spannung_f20_r0_5}}
+					\subfigure[max. Spannung bei 20 N, Radius 1.0 mm\label{max_spannung_f20_r1}]{\includegraphics[width = 1\textwidth]{Bilder/max_spannung_f20_r1}}
 				\par\end{centering}
 				\caption{max. Spannung bei 20 N, unterschiedliche Radien}
 				\label{max_spannung_f20_r0_5}
@@ -426,14 +435,21 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 	Dieses Vorkommen wird in der Mechanik als \textbf{Kerbwirkung} bezeichnet:
 
-			\begin{figure}[H]
-				\begin{centering}
-					\subfigure[Spannungsverteilung ohne Kerbe\label{spannungsverteilung_ohne_kerbe}]{\includegraphics[width = 0.4\textwidth]{Bilder/spannungsverteilung_ohne_kerbe}}
-					\subfigure[Spannungsverteilung mit Kerbe\label{spannungsverteilung_mit_kerbe}]{\includegraphics[width = 0.4\textwidth]{Bilder/spannungsverteilung_mit_kerbe}}
-				\par\end{centering}
-				\caption{Spannungsverteilung bei Zug und Biegung}
-				\label{spannungsverteilung_ohne_kerbe}
-			\end{figure}
+	\begin{figure}[H]
+	\begin{centering}
+	\includegraphics[width = 0.8\textwidth]{Bilder/spannungsverteilung_ohne_kerbe}
+	\par\end{centering}
+	\caption{Spannungsverteilung ohne Kerbe}
+	\label{spannungsverteilung_ohne_kerbe}
+	\end{figure}
+
+	\begin{figure}[H]
+	\begin{centering}
+	\includegraphics[width = 0.5\textwidth]{Bilder/spannungsverteilung_mit_kerbe}
+	\par\end{centering}
+	\caption{Spannungsverteilung mit Kerbe}
+	\label{spannungsverteilung_mit_kerbe}
+	\end{figure}
 
 	Abbildung \ref{spannungsverteilung_ohne_kerbe} zeigt die Spannungsverteilung in einem Zug,- \bzw Biegestab ohne Querschnittsbeeinflussungen.
 	Im Vergleich dazu wird in der Abbildung \ref{spannungsverteilung_mit_kerbe}, die Spannungsverteilung mit dem Einfluss einer Kerbe dargestellt.
@@ -441,15 +457,15 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 	Beansprucht man „A“ mit einer Kraft oder einem Moment, verteilt sich die Spannung gleichmäßig über das Werkstück.
 	Wird „B“, auf Zug oder Biegung beansprucht, kann man erkennen, dass sich die Spannung nur unter dem Kerbengrund verteilt.
-	Die Spannung „A“ wird in der Regel mit \sigma_n bezeichnet und die maximale Spannung in „B“ mit \sigma_max.
-	Bildet man die Division zwischen \sigma_n und \sigma_max, erhält man die Formzahl \alpha_k.
-	\alpha_k kann niemals kleiner als 1 werden, das würde bedeuten, dass die Kerbe als Stärkung des Querschnitts gelten würde.
+	Die Spannung „A“ wird in der Regel mit $\sigma_{n}$ bezeichnet und die maximale Spannung in „B“ mit $\sigma_{max}$.
+	Bildet man die Division zwischen $\sigma_{n}$ und $\sigma_{max}$, erhält man die Formzahl $\alpha_{k}$.
+	$\alpha_{k}$ kann niemals kleiner als 1 werden, das würde bedeuten, dass die Kerbe als Stärkung des Querschnitts gelten würde.
 
 	Die Form der Kerbe ist maßgebend, da diese die Spitzenwerte der Spannung beeinflussen, wie in Abbildung \ref{kerbform} ersichtlich ist.
 
 			\begin{figure}[H]
 			\begin{centering}
-			\includegraphics[width = 0.45\textwidth]{Bilder/kerbform}
+			\includegraphics[width = 0.4\textwidth]{Bilder/kerbform}
 			\par\end{centering}
 			\caption{Spannungsverteilung bei verschiedenen Kerbformen}
 			\label{kerbform}
@@ -463,8 +479,8 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 			\begin{figure}[H]
 				\begin{centering}
-					\subfigure[Fläche mit Radius\label{klammer_mit_radius}]{\includegraphics[width = 0.4\textwidth]{Bilder/klammer_mit_radius}}
-					\subfigure[Fläche ohne Radius\label{klammer_ohne_radius}]{\includegraphics[width = 0.4\textwidth]{Bilder/klammer_ohne_radius}}
+					\subfigure[Fläche mit Radius\label{klammer_mit_radius}]{\includegraphics[width = 0.5\textwidth]{Bilder/klammer_mit_radius}}
+					\subfigure[Fläche ohne Radius\label{klammer_ohne_radius}]{\includegraphics[width = 0.5\textwidth]{Bilder/klammer_ohne_radius}}
 				\par\end{centering}
 				\caption{Flächeneinfluss durch Radius}
 				\label{klammer_radius}
