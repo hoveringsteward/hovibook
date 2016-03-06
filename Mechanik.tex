@@ -315,7 +315,119 @@ Der gesamte Rotorschutz konnte dann mittels den vorgesehenen Schrauben an der Ce
 
 	\subsection{Berechnungen}
 
-	
+	Die Halterung des Ultraschallsensor wurde so dimensioniert, dass der Ultraschallsensor \bzw im Falle eines Absturzes auch noch die auftretenden Kräfte getragen werden können,
+	es ist trotzdem wichtig zu wissen, wie viel die Halterung maximal tragen kann.
+	Sollte sich herausstellen, dass das Werkstück nicht richtig konstruiert wurde, muss man Maßnahmen treffen um die Belastbarkeit zu steigern.
+
+	Man kann diese Belastungen händisch rechnen, jedoch ist das in diesem Fall sehr aufwändig, da die Lagerung sehr komplex zu rechnen wäre.
+	Es ist einfacher die Beanspruchungen in Programmen wie Creo simulieren und auswerten zu lassen.
+	Die Ergebnisse der Simulation sind so genau, dass man heutzutage in der Industrie nur mehr sehr selten solche Arten von Analysen händisch vornimmt.
+
+	Die maximalen Belastbarkeiten sind für jeden Kunststoff anders, jede Firma verwendet andere Stoffe um bessere Leistungen erzielen zu können, je nach dem Anwendungsgebiet.
+	Wollte man die Berechnungen auf die Kommastelle genau vornehmen, müsste man einen Zug,- oder Biegeversuch für den jeweiligen Werkstoff machen,
+	um die tatsächlichen Eigenschaften zu ermitteln.
+
+	In diesen Versuchen wird meist ein Stab mit einer vordefinierten Fläche und Länge hergestellt und dann in eine Zugprüfmaschine eingespannt.
+	Die Zugprüfmaschine zieht den Stab langsam auseinander bis dieser reißt, diese bestimmte Kraft und die Fläche des Stabes ergeben die maximale Streckspannung.
+	Diesen Versuch kann man analog dazu für die Biegung und Torsion machen, man erhält dadurch die maximale Bruch,- \bzw Torsionsspannung.
+
+	Da sich die Werte der einzelnen Hersteller nur minimal voneinander unterscheiden,
+	wurden in diesem Fall die Daten aus einer Tabelle eines anderen Kunstoffherstellers genommen (siehe Abbildung \ref{werte_abs}).
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.5\textwidth]{Bilder/werte_abs}
+			\par\end{centering}
+			\caption[Werte ABS]{Werte für ABS\cite{werte_abs}}
+			\label{werte_abs}
+			\end{figure}
+
+	Wichtig sind die Angaben: Dichte, Streck,- und Bruchspannung, nominelle Bruchdehnung und Elastizitätsmodul für Zug/Biegung (E-Modul) des Materials.
+	Diese Werte definieren die Eigenschaften des Materials, daher sind sie essenziell für die Berechnungen in Creo.
+
+	Creo bietet mit seinen Funktionen exakte Analysen an, die die maximalen Belastbarkeiten so genau berechnen wie sie tatsächlich auftreten.
+	In diesem Fall wurde die prinzipielle Situation simuliert, die Werte stimmen nicht exakt mit den realen Kräften überein, jedoch reichen diese um zu sehen, was passiert.
+
+	In Creo steht eine große Auswahl an Einspannmöglichkeiten bis zu Belastungen für ein Werkstück zu Verfügung (siehe folgende Abbildung).
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.45\textwidth]{Bilder/auswahl_creo}
+			\par\end{centering}
+			\caption{Auswahlmenü Simulation}
+			\label{auswahl_creo}
+			\end{figure}
+
+	Unter dem Menü „Verschiebung“ wird die gewünschte Lagerung definiert, man kann eine Fläche, Punkt oder Kante auswählen,
+	je nachdem wie das Prüfwerkstück gelagert werden soll und in welche Richtung dieses verschiebbar ist.
+	In dem Menü „Kraft/Moment“ gibt man dann an welche Belastung, in welcher Fläche/Punkt/Kante auf das Werkstück wirkt. Der Auswahlpunkt „Analysen und Studien“ startet die Simulation.
+
+	Der Sensor wird so montiert, dass er die Halterung nach unten zieht, die Folge ist, dass sich die Halterung, grob angenommen,
+	sich mit zwei Kanten an der Platte verkeilt (siehe Abbildung \ref{lager_darstellung_1} und \ref{lager_darstellung_2}).
+	Die Lagerung wird daher so definiert, dass diese zwei Kanten als Festlager angenommen werden (in keine Richtung verschiebbar).
+
+			\begin{figure}[H]
+				\begin{centering}
+					\subfigure[Lagerung 1. Stelle\label{lager_darstellung_1}]{\includegraphics[width = 0.4\textwidth]{Bilder/lager_darstellung_1}}
+					\subfigure[Lagerung 2. Stelle\label{lager_darstellung_2}]{\includegraphics[width = 0.4\textwidth]{Bilder/lager_darstellung_2}}
+				\par\end{centering}
+				\caption{Lagerung der Halterung in Simulation}
+				\label{Lagerung_Halterung}
+			\end{figure}
+
+	Der Ultraschallsensor wird durch eine Kraft ersetzt, diese kann man variieren, je nachdem um wieviel die Halterung belastet werden soll.
+	Nachdem alle Parameter definiert wurden, konnte die Simulation gestartet werden.
+
+	Es wurden zwei Simulationen durchgeführt, in der ersten wurde nur der Ultraschallsensor (8.5 g) als Belastung angenommen und im zweiten Fall  wurde die Halterung mit einer Last von 2 kg beansprucht.
+
+	Die Abbildung \ref{max_spannung_f0_1_r0_5} zeigt das Ergebnis der ersten Simulation mit einer Kraft von 0.1 N (0,01 g).
+
+			\begin{figure}[H]
+			\begin{centering}
+			\includegraphics[width = 0.45\textwidth]{Bilder/max_spannung_f0_1_r0_5}
+			\par\end{centering}
+			\caption{max. Spannung bei 0.1 N}
+			\label{max_spannung_f0_1_r0_5}
+			\end{figure}
+
+	Die maximale Spannung beträgt in diesem Fall etwa 0.20 N/mm^{2} an der oberen Lasche.
+	Es ist zu sehen, dass diese Belastung die Halterung kaum beeinflusst, das bedeutet die angenommen Dimensionen reichen aus um den Sensor zu halten.
+
+	Die Abbildungen \ref{max_spannung_f20_r0_5} und \ref{max_spannung_f20_r0_5_oben}  zeigen die Simulationsergebnisse mit einer Beanspruchung von 20 N (2 kg).
+
+				\begin{figure}[H]
+					\begin{centering}
+						\subfigure[max. Spannung bei 20 N oben\label{max_spannung_f20_r0_5}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r0_5}}
+						\subfigure[max. Spannung bei 20 N unten\label{max_spannung_f20_r0_5_oben}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r0_5_oben}}
+					\par\end{centering}
+					\caption{max. Spannung bei 20 N}
+					\label{max_spannung_f20_r0_5}
+				\end{figure}
+
+	Die maximale Spannung beträgt etwa 40.2 N, vergleicht man dies mit dem Ausschnitt aus dem Datenblatt (siehe Abbildung \ref{werte_abs}) sieht man,
+	dass die maximale Biegespannung an beiden Stellen überschritten wurde. In der Realität würde das bedeuten, dass die Lasche bei dieser Belastung sehr stark verformt oder gar gebrochen wäre.
+	Solche starken Beanspruchungen treten in diesem Fall niemals auf, da  bei einem Absturz die Halterung geschützt wäre.
+
+	Um auch im Notfall hohe Belastungen kompensieren zu können, wurden in den Kanten der Laschen Rundungen vorgesehen. Den Zweck dieser Rundungen zeigen die folgenden Abbildungen.
+
+			\begin{figure}[H]
+				\begin{centering}
+					\subfigure[max. Spannung bei 20 N, Radius 0.5 mm\label{max_spannung_f20_r0_5}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r0_5}}
+					\subfigure[max. Spannung bei 20 N, Radius 1.0 mm\label{max_spannung_f20_r1}]{\includegraphics[width = 0.4\textwidth]{Bilder/max_spannung_f20_r1}}
+				\par\end{centering}
+				\caption{max. Spannung bei 20 N, unterschiedliche Radien}
+				\label{max_spannung_f20_r0_5}
+			\end{figure}
+
+	Abbildung \ref{max_spannung_f20_r0_5} zeigt die Beanspruchung von 2 kg und einem Radius von 0.5 mm.
+	Das Ergebnis zeigt, wie schon erwähnt, dass die maximale Biegespannung überschritten wurde.
+	Abbildung \ref{max_spannung_f20_r1}, zeigt das Ergebnis mit der gleichen Kraft, aber einem Radius von 1 mm, also doppelt so groß wie in der ersten Simulation.
+	Man kann sehr gut erkennen, dass die Spannung von 40.2 N/mm^{2} auf 30.3 N/mm^{2} gesunken ist, also um fast das eineinhalb-fache.
+
+	Dieses Vorkommen wird in der Mechanik als \uline{Kerbwirkung} bezeichnet:
+
+
+
 
 			\newpage
 
