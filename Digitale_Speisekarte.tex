@@ -8,16 +8,6 @@
   \subsection{Entwicklungsumgebungen}
 
     \subsubsection{PhpStorm}
-<<<<<<< HEAD
-
-PhpStorm ist eine integrierte Entwicklungsumgebung für die Programmiersprache PHP, für welche man eine kostenpflichtige Lizenz zur Verwendung benötigt. Diese Entwicklungsumgebung wurde von JetBrains entwickelt und erschien erstmals 2009 auf dem Markt. Zu den besonderen Features von PhpStorm zählen Tools zur Kontrolle der Versionierung, Refaktorisierung, Code- und Syntax-Highlighting. Außerdem unterstützt es PHP-Unit, welches von Symfony verwendet wird und zum Testen von PHP-Skripten dient. 
-=======
-PhpStorm ist eine integrierte Entwicklungsumgebung für die Programmiersprache PHP, für welche man eine kostenpflichtige Lizenz zur Verwendung benötigt. Diese Entwicklungsumgebung wurde von JetBrains entwickelt und erschien erstmals 2009 auf dem Markt. Zu den besonderen Features von PhpStorm zählen Tools zur Kontrolle der Versionierung, Refaktorisierung, Code- und Syntax-Highlighting. Außerdem unterstützt es PHP-Unit, welches von Symfony verwendet wird und zum Testen von PHP-Skripten dient.
-
-    \subsubsection{Eclipse}
-
-Eclipse, entwickelt von der Eclipse Foundation, ist ein Open Source Programmierwerkzeug. Ursprünglich wurde es als integrierte Entwicklungsumgebung für die Programmiersprache Java entwickelt, heutzutage wird es jedoch auch zur Bewältigung einiger anderer Entwicklungsaufgaben verwendet.
->>>>>>> f2d6fa9565df022610eaec6028357515b0c6a99b
 
     \subsubsection{Allgemeiner Code-Aufbau}
     
@@ -34,28 +24,17 @@ In der anschließenden Grafik ist ist der allgemeine Aufbau der Webapplikation a
 
 MySQL ist ein relationales Datenbanksystem, welches sowohl als kommerzielle Enterpriseversion wie auch als Open-Source-Software verfügbar ist. MySQL basiert wie der Name bereits vermuten lässt auf der Datenbanksprache SQL(=Structured Quere Language), welche zur Definition von Datenstrukturen und zum Verwalten von darauf basierenden Datenbeständen zuständig ist. Es dient daher zur elektronischen Datenverwaltung und beruht auf einem tabellenbasierten Datenbankmodell.
 
-<<<<<<< HEAD
     \subsubsection{Apache HTTP Server}
 
 Der Apache HTTP Server ist eine Open-Source-Software, welche von der Apache Software Foundation entwickelt wurde. Der Apache Webserver kann mit den Betriebsystemen Linux, Unix, Windows, Mac OS X, Betware und OpenBSD arbeiten. 
 
     \subsubsection{MAMP}
-=======
-    \subsubsection{Symfony}
-
-Symfony ist ein Open Source Web Application Framework, welches das Model-View-Controller-Schema nützt und den Datenbankzugriff mittels einem objektrelationalen Abbild regelt.
-
-Durch die Einteilung in Model, View und Controller, ergibt sich beim Entwickeln einer Web Applikation mithilfe von Symfony eine ordentliche Struktur.
-Beim Model kann man zur Speicherung der Objekte Doctrine verwenden, welches als Bibliothek zur objektrelationalen Abbildung dient.
-Die View-Ebene ist für die visuelle Darstellung der Applikation zuständig. Für die  Darstellung werden meistens Templates miteinbezogen. Symfony unterstützt hierbei die Template Engine Twig.
-Der Controller verwaltet die visuellen Darstellungen der Applikation und nimmt von ihnen Benutzeraktionen entgegen, wertet diese aus und behandelt sie entsprechend. Außerdem fungiert der Controller als Schnittstelle zwischen Modell und View, was bedeutet, dass er die Daten an die von der einen Schicht zur anderen weiterleitet.
->>>>>>> f2d6fa9565df022610eaec6028357515b0c6a99b
-
+    
 MAMP ist eine Distribution von LAMP, welches auf Linux-Basis entwickelt wurde. Es dient dazu dynamische Webseiten zur Verfügung zu stellen. MAMP ist auf das Betriebssystem Mac OS X angepasst. Das Package verwendet den Apache HTTP Server und das Datenbanksystem MySQL. Außerdem basieren sie auf der Programmiersprache PHP. Dadurch ergibt sich auch die Bezeichnung dieses Softwarepackets, da es sich aus den Anfangsbuchstaben der verwendeten Komponenten zusammenstellt.
 
     \subsubsection{Doctrine}
     
-    Doctrine ist ein Framework, welches dabei hilft ein objektrelationales Abbild zu erschaffen. Bei objektrelationalen Abbildungen werden Tabellen wie Klassen und Tabellenzeilen wie Objekte behandelt. Das vereinfacht den Zugriff auf verschiedene Datenbanken im Vergleich zu dem Zugriff mittels Plain PHP um ein Vielfaches. 
+Doctrine ist ein Framework, welches dabei hilft ein objektrelationales Abbild zu erschaffen. Bei objektrelationalen Abbildungen werden Tabellen wie Klassen und Tabellenzeilen wie Objekte behandelt. Das vereinfacht den Zugriff auf verschiedene Datenbanken im Vergleich zu dem Zugriff mittels Plain PHP um ein Vielfaches. 
     
     \subsubsection{Symfony}
 
@@ -63,7 +42,6 @@ Da Frameworks, welche auf dem Model-View-Controller Schema beruhen, den Arbeitsa
 Symfony ist ein Open Source Web Application Framework, welches sowohl das Model-View-Controller Schema nützt als auch den Datenbankzugriff mittels einem objektrelationalen Abbild regelt, weshalb es die ideale Wahl für die Umsetzung der digitalen Speisekarte und des Adminbereichs ist. Wie bereits erwähnt, ergibt sich durch die Einteilung in Model, View und Controller während dem Entwicklungsprozess eine strukturierte Ordnung im Code. In der Model Schicht, welche die darzustellenden Daten zur Verfügung stellt, empfiehlt es sich in der Kombination mit Symfony Doctrine zu verwenden. Die View-Ebene ist für die visuelle Darstellung der Applikation zuständig. Für die  Darstellung werden meistens Templates miteinbezogen. Symfony unterstützt hierbei die Template Engine Twig auf welche im Kapitel „Frontend“ noch genauer eingegangen wird.
 Der Controller verwaltet die Darstellung der Applikation und nimmt von ihr Benutzeraktionen entgegen, wertet diese aus und behandelt sie entsprechend. Außerdem fungiert der Controller als Schnittstelle zwischen Model und View, was bedeutet, dass er die Daten von der einen Schicht zur anderen weiterleitet.
     
-
     \subsubsection{ER-Modell}
 
 Bevor die Datenbank mithilfe von Doctrine generiert wurde, wurde ein Entity Relationship Modell angefertigt um zu visualisieren wie die Tabellenverbindungen am geeignetsten aufbereitet werden können.  
@@ -174,12 +152,7 @@ Zur Umsetzung der Screendesigns wurde mit dem freien CSS–Framework Bootstrap g
 
     \subsubsection{Sass}
 
-<<<<<<< HEAD
 Damit die Designelemente von Bootstrap vereinfacht angepasst werden konnten, wurde die Stylesheet-Sprache Sass(Syntactically Awesome Stylesheets) verwendet. Sass erleichtert als Preprozessor die Erzeugung von CSS(Cascading Style Sheets). 
-=======
-was ist sass? sass mit bootstrap?
-durch ändern der klassenvariablen layout angepasst
->>>>>>> f2d6fa9565df022610eaec6028357515b0c6a99b
 
     \subsubsection{Gulp}
 
@@ -227,9 +200,3 @@ Für das Streaming Build System Gulp wurde eine Javascript-Datei generiert. In d
   \subsection{Herausforderungen und Lösungen}
   
 (Text folgt noch)
-
-
-<<<<<<< HEAD
-=======
-twig daten holen von controller
->>>>>>> f2d6fa9565df022610eaec6028357515b0c6a99b
