@@ -1,4 +1,3 @@
-% !TEX root = diplomarbeit.tex
 \chapter{Sensoren}
 \renewcommand{\kapitelautor}{Autor: Lucas Ullrich}
 
@@ -18,13 +17,12 @@ Mit diesem ist es möglich sogenannte Colorcodes oder einfache Objekte zu erkenn
 \begin{figure}[H]
   \begin{centering}
     \subfigure[Colorcode]{\includegraphics[width = 0.4\textwidth]{Bilder/Colorcode}}
-    \subfigure[Objekt]{\includegraphics[width = 0.4\textwidth]{Bilder/Objekt}}
+    \subfigure[Objekt]{\includegraphics[width = 0.4\textwidth]{Bilder/Colorcode}} %%%%%%%%%Objekt statt Colorcode
   \par\end{centering}
   \caption{Erkennbare Objekttypen}
   \label{PIXY_Objekte}
 \end{figure}
 
-\needspace{2cm}
   \subsection{Technische Planung}
     \subsubsection{Mögliche Verfahren zur Positionserkennung}
     Hier muss grundsätzlich zwischen zwei Messmethoden unterschieden werden:
@@ -138,20 +136,9 @@ while(frame == 0) {
     Um nicht ewig in dieser Schleife fest zu hängen, wenn kein Bild erkannt wird und einen Fehler auslösen zu können wird die gesamte Funktion der Bildauswertung
     nach 255 Versuchen verlassen.
 
-    Die weiteren Werte eines Objekts werden der Reihe nach in einer \gls{Struktur} abgespeichert, hier ist nichts Besonderes mehr zu beachten.
+    Die weiteren Werte eines Objekts werden der Reihe nach in einer Structur abgespeichert, hier ist nichts besonderes mehr zu beachten.
 
   \subsection{Herausforderungen und Lösungen}
-  Besonders das Beispielprogramm\cite{PIXY_Porting_Examplecode} für eine Bildauswertung stellte einige Herausforderungen dar. Hier sind unterschiedliche Codeschnippsel in einem
-  großen Beispiel zusammengefasst. Das ist besonders bei durch die ähnlichen Funktionen des Codes schwer auseinander zu halten. So steht eine Funktion für die Erkennung eines
-  neuen Bildes, diese zählt aber nur Bilder pro Sekunde, eine andere ist dann für die gesamte Auswertung und sucht dafür erneut nach einem Bild.
-
-  Diese Zusammenhänge konnten durch einige Überlegungen erkannt werden und darauffolgend die eigene Firmware geschrieben werden.
-
-  Ein weiteres Problem stellt die Empfindlichkeit der Kamera bei wechselnden Lichtverhältnissen dar. Da diese über die Farbsignatur eines Objektes arbeitet werden bereits
-  sehr kleine Differenzen unterschieden um verschiedene Objekte erkennen zu können \bzw keine Störungen durch den Hintergrund zu erhalten. Dies wird jedoch ebenso in der
-  anderen Richtung zu einem Problem. Wechselt das Licht ein wenig kann ein Farbcode oft nicht mehr zuverlässig erkannt werden und die Kamera muss über einen Computer nachkalibriert
-  werden. Eine mögliche Lösung ist das konstante Beleuchten der Farbcodes mit einer sehr bestimmten Leuchtstärke, hier kann es leicht zu Überbelichtungen kommen, besonders bei
-  dunklen Verhältnissen, als auch die Umrüstung auf einen \gls{Infrarot}-Kit. Bei einem Infrarot-Kit fällt jedoch die Individualität jedes einzelnen Markers weg.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ultraschallsensor HC-SR04}
@@ -214,42 +201,34 @@ void ReadHeight(void) {
   \textcolor{red}{to be continued after realtime measurements}
 
 \chapter{Aktoren}
-\renewcommand{\kapitelautor}{Autor: Christina Bornberg, Lucas Ullrich}
+\renewcommand{\kapitelautor}{Autor: Lucas Ullrich}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Propeller, A E R und T}
-Der Hexacopter selbst vefügt über 6 Rotoren. Diese werden für die unterschiedlichen Flugrichtungen von dem Flightcontroller angesteuert.
-Der Flightcontroller liest die Daten an den einzelnen Steuerpins als Servo-Impulse ein. Die Daten werden dabei in einer Periode von $\SI{20}{\milli\second}$ gesendet.
-Die Information selbst liegt in den ersten $\SI{2}{\milli\second}$. Für den Impuls beträgt die Mittelstellung $\SI{1.5}{\milli\second}$, das Minimum $\SI{1}{\milli\second}$
-und das Maximum $\SI{2}{\milli\second}$. Das Signal folgt somit den Konventionen eines Servo-Impulses.
 
-\textcolor{red}{OSZIBILD: min, max Impuls}
 
   \subsection{Technische Planung}
     \subsubsection{Steuerbefehle}
-    Der Hexacopter wird über 4 unterschiedliche Steuerbefehle gesteuert:
+    Der Hexacopter wird über die 4 Steuerbefehle Aileron, Elevator, Rudder und Throttle gesteuert.
 
     \begin{itemize}
       \item \textbf{Aileron}\\
-      auch Rollen (engl. roll) genannt, ist für die Bewegung nach Links und Rechts zuständig.
+      Aileron, auch Rollen (engl. roll) genannt, ist für die Bewegung nach Links und Rechts zuständig.
 
       \item \textbf{Elevator}\\
-      auch Nicken (engl. pitch) genannt, ist für die Vorwärts- und Rückwärtsbewegung zuständig.
+      Elevator, auch Nicken (engl. pitch) genannt, ist für die Vorwärts- und Rückwertsbewegung zuständig.
 
       \item \textbf{Rudder}\\
-      auch Gieren (engl. yaw) genannt, ist für die Rotation an der Hochachse zuständig.
+      Rudder, auch Gieren (engl. yaw) genannt, ist für die Rotation an der Hochachse zuständig.
 
       \item \textbf{Throttle}\\
-      reguliert die Höhe.
+      Throttle reguliert die Höhe.
       %Uplift and Downfall
+
     \end{itemize}
-    Quelle: Technikblog\cite{GrundlagenMulticopter} \textcolor{red}{Ergänzung? (chrisy?)}
 
-    \subsubsection{Propeller}
-
-
+    Quelle: TITEL FEHLT \cite{GrundlagenMulticopter}
 
   \subsection{Umsetzung}
-  Um den Hexacopter steuern zu können müssen die einzelnen Impulse von dem Mikrocontroller imitiert werden.
 
   \subsection{Herausforderungen und Lösungen}

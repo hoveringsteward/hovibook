@@ -63,6 +63,9 @@
 \providecommand{\tightlist}{%
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+%%für Bilder nebeneinander
+\usepackage{subfigure}
+
 %um Schusterjungen und Hurenkinder vermeiden zu können
 \usepackage{needspace}
 
@@ -70,9 +73,7 @@
 \usepackage{xcolor}
 
 %Für Bilddarstellung
-\usepackage{subfigure}
 \usepackage{float}
-%\usepackage{subcaption}
 
 %Einheitendarstellung
 \usepackage{siunitx}
@@ -80,11 +81,6 @@
   locale = DE ,
   per-mode = symbol
 }
-
-%%%%%%%%%%% GLOSSAR teil 1/2 - muss getestet werden
-\usepackage[toc,acronym]{glossaries}
-\makeglossaries
-\input{Glossar}
 
 \makeatother
 
@@ -172,7 +168,7 @@
 % das kann auch ganz oben stehen
 \lstset{basicstyle = \ttfamily\footnotesize,
 	keywordstyle = \color{blue},
-	stringstyle = \color{orange},
+	stringstyle = \color{cyan},
 	commentstyle = \color{lightgray},
 	numbers = left,
 	numberstyle = \tiny,
@@ -379,7 +375,7 @@ EVO-tech GmbH
 
 \include{Firmware}
 
-\include{Kommunikation_Applikation_und_Hexacopter}
+\include{Kommunikaion_Applikation_und_Hexacopter}
 
 \include{Mechanik}
 
@@ -394,11 +390,5 @@ EVO-tech GmbH
 
 \bibliographystyle{plaindin}
 \bibliography{diplom}
-
-
-%%%%%%%%%%%%% GLOSSAR teil 2/2 - muss getestet werden
-\printglossary[type=\acronymtype]
-\printglossaries
-
 
 \end{document}
